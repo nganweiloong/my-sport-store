@@ -18,13 +18,13 @@ function Nav() {
       <div className="nav-list">
         <ul className="primary-nav">
           <li>
-            <a>Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
-            <a>About</a>
+            <a href="#">About</a>
           </li>
           <li>
-            <a>Products</a>
+            <a href="#">Products</a>
           </li>
         </ul>
         <div className="secondary-nav">
