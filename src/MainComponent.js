@@ -1,4 +1,5 @@
 import React from "react";
+import FeatureProducts from "./Component/FeatureProducts";
 import Nav from "./Component/Nav";
 import Poster from "./Component/Poster";
 
@@ -9,7 +10,7 @@ function MainComponent() {
         <Nav />
       </header>
       <main>
-        <Poster />{" "}
+        <Poster /> <FeatureProducts />
       </main>
     </div>
   );
