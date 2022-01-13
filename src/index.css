@@ -74,6 +74,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: initial;
 }
 h1,
 h2,
@@ -422,6 +423,125 @@ article {
   width: 92%;
   margin: auto;
   max-width: var(--max-width);
+  padding: 3rem 0.3rem;
 }
 
+.shop-info-article h3 {
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+.article-container {
+  display: grid;
+  gap: 1rem;
+}
+.info-article-container {
+  background: var(--clr-grey-10);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  gap: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+@media screen and (min-width: 576px) {
+  .article-container {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 2rem;
+  }
+
+  .info-article-container {
+    padding: 2rem;
+  }
+}
 /* -----mission vision history */
+
+/* ------------------newsletter */
+
+.container-background-3 {
+  background: var(--clr-grey-10);
+}
+
+.newsletter-container {
+  width: 92%;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem 0;
+}
+.newsletter-container h3 {
+  font-size: 1.5rem;
+}
+
+.newsletter-container span {
+  color: var(--clr-gold);
+}
+.newsletter-container .newsletter {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 800px;
+}
+
+.newsletter p {
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+.contact-form {
+  width: 90vw;
+  max-width: 500px;
+  background-color: cyan;
+  display: flex;
+  border: 2px solid black;
+}
+
+.contact-form input {
+  width: 67%;
+  padding: 0.35em;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  /* border-right: 2px solid black; */
+}
+.contact-form button {
+  display: inline-block;
+  background-color: var(--clr-gold);
+  color: darkblue;
+  padding: 0.3em 0.5em;
+  width: 33%;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.social-icons {
+  margin-top: 2rem;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  width: 70%;
+}
+
+.social-icons .icons {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons .icons a:hover {
+  transform: translateY(-10%);
+  /* background: red; */
+}
+@media screen and (min-width: 800px) {
+  .social-icons {
+    width: 100%;
+  }
+
+  .social-icons .icons {
+    gap: 1.2rem;
+  }
+}
+/* ------------------newsletter */
