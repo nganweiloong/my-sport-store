@@ -621,6 +621,7 @@ article {
   font-size: 1.4rem;
   position: relative;
   font-weight: 300;
+  /* background: red; */
 }
 .about-subheader h2:after {
   content: "";
@@ -638,7 +639,7 @@ article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
 }
 .img-wrapper {
   width: 100%;
@@ -657,6 +658,7 @@ article {
   position: relative;
   display: inline-block;
   margin-bottom: 2rem;
+  /* background: red; */
 }
 
 .about-us-info h2:after {
@@ -699,3 +701,74 @@ article {
   }
 }
 /* ------------------------------------ABOUT US-------------------------------------------- */
+
+/* -------------------our history */
+.our-history-container {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.img-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.img-wrapper img {
+  max-width: 500px;
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+}
+
+.our-history-info h2 {
+  font-size: 2rem;
+  color: #e0c56e;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.our-history-info h2:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 60%;
+  background: black;
+  left: 0%;
+  bottom: -0.5rem;
+}
+.our-history-info p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .our-history-container {
+    flex-direction: row-reverse;
+
+    gap: 2rem;
+  }
+
+  .img-wrapper {
+    width: 50%;
+  }
+  .img-wrapper img {
+    max-width: 100%;
+  }
+  .our-history-info {
+    width: 60%;
+    align-self: flex-start;
+  }
+
+  .our-history-info h2 {
+    font-size: 3rem;
+  }
+
+  .our-history-info p {
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* -------------------our history */
