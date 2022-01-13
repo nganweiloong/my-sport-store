@@ -63,6 +63,14 @@ Global Styles
 }
 .main {
   min-height: calc(100vh - 4.1rem);
+
+  /* background: red; */
+}
+
+.fixed-container {
+  margin: auto;
+  width: 92%;
+  max-width: var(--max-width);
 }
 body {
   font-family: "Roboto Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -587,3 +595,107 @@ article {
   }
 }
 /* footer */
+
+/* ------------------------------------ABOUT US-------------------------------------------- */
+
+.about-container {
+  padding-top: 2rem;
+}
+
+.about-container h1 {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: -0.1rem;
+  font-size: 2rem;
+  /* background: cyan; */
+  margin: 2rem auto 3rem;
+}
+
+.about-subheader {
+  display: flex;
+  gap: 20vw;
+  justify-content: center;
+  align-items: center;
+}
+.about-subheader h2 {
+  font-size: 1.4rem;
+  position: relative;
+  font-weight: 300;
+}
+.about-subheader h2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-image: linear-gradient(to right, black, brown, var(--clr-gold));
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.6rem;
+}
+.about-us-container {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.img-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.img-wrapper img {
+  max-width: 500px;
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+}
+
+.about-us-info h2 {
+  font-size: 2rem;
+  color: #e0c56e;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.about-us-info h2:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 60%;
+  background: black;
+  left: 0%;
+  bottom: -0.5rem;
+}
+.about-us-info p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .about-us-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .img-wrapper {
+    width: 50%;
+  }
+  .img-wrapper img {
+    max-width: 100%;
+  }
+  .about-us-info {
+    width: 60%;
+    align-self: flex-start;
+  }
+
+  .about-us-info h2 {
+    font-size: 3rem;
+  }
+
+  .about-us-info p {
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+/* ------------------------------------ABOUT US-------------------------------------------- */
