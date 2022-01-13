@@ -8,14 +8,18 @@ import Poster from "./Component/Poster";
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Component/Home";
+import About from "./Component/About";
 
 function MainComponent() {
   return (
     <BrowserRouter>
       <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <div className="main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
       <Footer />
     </BrowserRouter>
   );
