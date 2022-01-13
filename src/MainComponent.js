@@ -9,6 +9,7 @@ import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Component/Home";
 import About from "./Component/About";
+import Product from "./Component/Product/Product";
 
 function MainComponent() {
   return (
@@ -18,6 +19,7 @@ function MainComponent() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Product />} />
         </Routes>
       </div>
       <Footer />

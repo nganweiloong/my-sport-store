@@ -26,7 +26,7 @@ function Nav() {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/about">Products</Link>
+              <Link to="/products">Products</Link>
             </li>
           </ul>
           <div className="secondary-nav">
