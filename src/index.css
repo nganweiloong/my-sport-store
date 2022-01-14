@@ -772,3 +772,67 @@ article {
 }
 
 /* -------------------our history */
+
+/* product page */
+
+.product-container {
+  /* background-color: cyan; */
+  padding: 1rem 0.5rem;
+}
+
+.product-search-wrapper h3 {
+  margin: 0;
+}
+.product-search-wrapper {
+  /* background-color: #008000; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1.1rem;
+}
+.product-search {
+  /* background-color: green; */
+  display: flex;
+  width: 92%;
+  max-width: 800px;
+}
+
+.product-search input {
+  padding: 0.5em 1em;
+  font-family: inherit;
+  font-size: 1rem;
+  letter-spacing: 0.08rem;
+  width: 100%;
+  /* border: 1px solid var(--clr-gold); */
+}
+
+.product-search input:focus {
+  color: var(--clr-gold);
+}
+
+.product-search button {
+  padding: 1em;
+  background-color: black;
+  color: white;
+
+  place-content: center;
+}
+.slider-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  padding: 0.8em 1.9em;
+  color: white;
+  gap: 0.4rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border-radius: 5px;
+}
+
+.product-grid {
+  display: flex;
+}
+
+/* product page */

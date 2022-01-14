@@ -5,7 +5,7 @@ import OurHistory from "./OurHistory";
 
 function About() {
   return (
-    <div className="container-backgrodund-2">
+    <div className="container-background-3">
       <div className="about-container fixed-container">
         <div className="about-header">
           <h1>ABOUT</h1>
