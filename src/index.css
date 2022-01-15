@@ -834,6 +834,7 @@ article {
 }
 
 .product-grid {
+  align-self: flex-start;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 0.5rem;
@@ -901,7 +902,7 @@ article {
 
 /* filter product */
 .filter-product {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   /* background-color: beige; */
@@ -921,4 +922,9 @@ article {
   padding: 0.3em 1em;
 }
 
+@media screen and (min-width: 1000px) {
+  .filter-product {
+    display: flex;
+  }
+}
 /* filter product */

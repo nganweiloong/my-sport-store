@@ -12,12 +12,15 @@ import { data } from "./data";
 import FilterProduct from "./FilterProduct";
 
 function Product() {
-  console.log(data);
+  const [products, setproducts] = useState(data);
+  const [productsClone, setproductsClone] = useState(products);
+
   return (
     <div className="container-background">
       <div className="product-container fixed-container">
-        <form className="product-search-wrapper">
+        <div className="product-search-wrapper">
           <h3>Available Products</h3>
+
           <div className="product-search">
             <input type="text" placeholder="Search..." />
             <button>
@@ -28,10 +31,16 @@ function Product() {
             <FontAwesomeIcon icon={faSlidersH} />
             <span>Filter</span>
           </button>
-          <FilterProduct />
-        </form>
+          <FilterProduct
+            productsClone={productsClone}
+            setproductsClone={setproductsClone}
+            products={products}
+            setproducts={setproducts}
+            data={data}
+          />
+        </div>
         <div className="product-grid">
-          {data.map((data) => (
+          {products.map((data) => (
             <ProductItem key={data.id} detail={data} />
           ))}
         </div>
@@ -75,7 +84,7 @@ function ProductItem(props) {
           starDimension="15px"
           starSpacing="0.2px"
         />
-        <span>1.3k Sold</span>
+        <span>{category}</span>
       </div>
     </div>
   );
