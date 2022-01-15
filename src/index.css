@@ -66,7 +66,9 @@ Global Styles
 
   /* background: red; */
 }
-
+button {
+  font-family: inherit;
+}
 .fixed-container {
   margin: auto;
   width: 92%;
@@ -818,7 +820,7 @@ article {
 
   place-content: center;
 }
-.slider-filter {
+.slider-filter-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -879,4 +881,44 @@ article {
   font-size: 0.7rem;
   padding-top: 0.1rem;
 }
+
+@media screen and (min-width: 1000px) {
+  .product-container {
+    display: flex;
+  }
+  .product-search-wrapper {
+    width: 25%;
+  }
+  .product-grid {
+    /* background-color: red; */
+    width: 75%;
+  }
+  .slider-filter-btn {
+    display: none;
+  }
+}
 /* product page */
+
+/* filter product */
+.filter-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background-color: beige; */
+  gap: 2rem;
+}
+
+.filter-product h4 {
+  font-size: 1.4rem;
+  color: var(--clr-gold);
+}
+.filter-product ul button {
+  font-size: 1rem;
+}
+
+.btn-filter {
+  font-size: 1.2rem;
+  padding: 0.3em 1em;
+}
+
+/* filter product */
