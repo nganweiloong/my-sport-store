@@ -8,6 +8,7 @@ function FilterProduct({
   products2,
   setproducts2,
   productData,
+  setinput,
 }) {
   const categories = productData.map((data) => data.category);
   const categoriesUnique = ["All", ...new Set(categories)];
@@ -84,6 +85,7 @@ function FilterProduct({
     setBrandFilter("");
     setCategoryFilter("");
     setproducts2(productData);
+    setinput("");
   }
 
   return (

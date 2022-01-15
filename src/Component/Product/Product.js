@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAdjust,
@@ -14,8 +14,23 @@ import { productData } from "./data2";
 
 function Product() {
   const [products, setproducts] = useState(data);
-  const [productsClone, setproductsClone] = useState(products);
   const [products2, setproducts2] = useState(productData);
+  const [input, setinput] = useState("");
+
+  useEffect(() => {
+    const item = productData.filter((product) => {
+      if (input === "") {
+        return product;
+      } else if (product.name.toLowerCase().includes(input.toLowerCase())) {
+        return product;
+      }
+    });
+    setproducts2(item);
+  }, [input]);
+
+  function handleFilterInput(e) {
+    setinput(e.target.value);
+  }
 
   return (
     <div className="container-background">
@@ -24,7 +39,12 @@ function Product() {
           <h3>Available Products</h3>
 
           <div className="product-search">
-            <input type="text" placeholder="Search..." />
+            <input
+              value={input}
+              onChange={(e) => handleFilterInput(e)}
+              type="text"
+              placeholder="Search..."
+            />
             <button>
               <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
             </button>
@@ -34,16 +54,13 @@ function Product() {
             <span>Filter</span>
           </button>
           <FilterProduct
-            productsClone={productsClone}
-            setproductsClone={setproductsClone}
-            products={products}
-            setproducts={setproducts}
-            data={data}
             products2={products2}
             setproducts2={setproducts2}
             productData={productData}
+            setinput={setinput}
           />
         </div>
+
         <div className="product-grid">
           {products2.map((data) => (
             <ProductItem detail={data} />
