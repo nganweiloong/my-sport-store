@@ -275,3 +275,9 @@ export const productData = [
     url: "/images/tshirt/Untitled.png",
   },
 ];
+
+export const featureProduct = [
+  productData[19],
+  productData[20],
+  productData[21],
+];

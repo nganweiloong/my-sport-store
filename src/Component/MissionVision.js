@@ -4,9 +4,12 @@ import {
   faBars,
   faCartPlus,
   faPeopleArrows,
+  faUserCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import { mvv } from "./mission-vision-values";
 
 function MissionVision() {
+  console.log(mvv);
   return (
     <div className="container-background-2">
       <div className="shop-info-container">
@@ -20,9 +23,9 @@ function MissionVision() {
           </p>
         </div>
         <div className="article-container">
-          <Article />
-          <Article />
-          <Article />
+          {mvv.map((m) => (
+            <Article keys={m.id} content={m} />
+          ))}
         </div>
       </div>
     </div>
@@ -31,11 +34,12 @@ function MissionVision() {
 
 export default MissionVision;
 
-function Article() {
+function Article(props) {
+  const { icon, id, title } = props.content;
   return (
     <div className="info-article-container">
-      <FontAwesomeIcon icon={faBars} size="2x" className="article-icon" />
-      <h3>Mission</h3>
+      {icon}
+      <h3>{title}</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Congue quisque

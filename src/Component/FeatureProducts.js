@@ -1,4 +1,5 @@
 import React from "react";
+import { featureProduct } from "./Product/data2";
 
 function FeatureProducts() {
   return (
@@ -7,9 +8,9 @@ function FeatureProducts() {
         <div className="feature-products">
           <h2 className="title">Featured Products</h2>
           <div className="product-wrapper">
-            <FeatureProductList />
-            <FeatureProductList />
-            <FeatureProductList />
+            {featureProduct.map((prod, i) => (
+              <FeatureProductList keys={i} {...prod} />
+            ))}
           </div>
           <button className="btn-shop btn-view">View All Products</button>
         </div>
@@ -20,13 +21,13 @@ function FeatureProducts() {
 
 export default FeatureProducts;
 
-function FeatureProductList() {
+function FeatureProductList({ name, priceAfter, url }) {
   return (
     <div className="feature-product">
-      <img src="/images/product/feature-test-2.jpg"></img>
+      <img src={url}></img>
       <div className="feature-product-detail">
-        <h4>Shoe 1</h4>
-        <span className="feature-product-price">RM599.99</span>
+        <h4>{name}</h4>
+        <span className="feature-product-price">RM{priceAfter}</span>
       </div>
     </div>
   );
