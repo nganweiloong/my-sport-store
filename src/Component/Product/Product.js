@@ -39,6 +39,9 @@ function Product() {
             products={products}
             setproducts={setproducts}
             data={data}
+            products2={products2}
+            setproducts2={setproducts2}
+            productData={productData}
           />
         </div>
         <div className="product-grid">
@@ -67,7 +70,6 @@ function ProductItem(props) {
     url,
   } = props.detail;
 
-  console.log(rating);
   return (
     <div className="product-item">
       <div className="product-img-wrapper">

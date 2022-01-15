@@ -1,11 +1,21 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-input-slider";
 
-function FilterProduct({ products, setproducts, data }) {
-  const categories = data.map((data) => data.category);
+function FilterProduct({
+  products,
+  setproducts,
+  data,
+  products2,
+  setproducts2,
+  productData,
+}) {
+  const categories = productData.map((data) => data.category);
   const categoriesUnique = ["All", ...new Set(categories)];
-  const brandUnique = ["All", ...new Set(data.map((data) => data.brand))];
-  const price = data.map((data) => data.priceAfter);
+  const brandUnique = [
+    "All",
+    ...new Set(productData.map((data) => data.brand)),
+  ];
+  const price = productData.map((data) => data.priceAfter);
   const maxPrice = Math.max(...price);
 
   //   const [priceRange, setPriceRange] = useState({ x: maxPrice });
@@ -17,7 +27,7 @@ function FilterProduct({ products, setproducts, data }) {
   //filter-------------------------------------
 
   useEffect(() => {
-    const newItem = data
+    const newItem = productData
       .filter((data) => {
         if (brandFilter) {
           return data.brand === brandFilter;
@@ -31,14 +41,14 @@ function FilterProduct({ products, setproducts, data }) {
         return data;
       })
       .filter((product) => {
-        return product.priceAfter < priceRange.x;
+        return product.priceAfter <= Math.ceil(priceRange.x);
       });
 
-    setproducts(newItem);
+    setproducts2(newItem);
   }, [priceRange]);
 
   useEffect(() => {
-    const newItem = data
+    const newItem = productData
       .filter((data) => {
         if (brandFilter) {
           return data.brand === brandFilter;
@@ -52,7 +62,7 @@ function FilterProduct({ products, setproducts, data }) {
         return data;
       });
 
-    setproducts(newItem);
+    setproducts2(newItem);
   }, [categoryFilter, brandFilter]);
 
   function handleFilterBrand(brand) {
@@ -73,7 +83,7 @@ function FilterProduct({ products, setproducts, data }) {
   function clearFilter() {
     setBrandFilter("");
     setCategoryFilter("");
-    setproducts(data);
+    setproducts2(productData);
   }
 
   return (
@@ -122,7 +132,7 @@ function FilterProduct({ products, setproducts, data }) {
         <Slider
           axis="x"
           x={priceRange.x}
-          xmax={maxPrice}
+          xmax={Math.ceil(maxPrice)}
           onChange={({ x }) => {
             setPriceRange((priceRange) => ({ ...priceRange, x }));
           }}
