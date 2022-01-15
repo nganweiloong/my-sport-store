@@ -88,7 +88,11 @@ function FilterProduct({ products, setproducts, data }) {
           {categoriesUnique.map((category) => (
             <li>
               <button onClick={() => handleFilterCategory(category)}>
-                {category}
+                <span
+                  className={`${category === categoryFilter ? "selected" : ""}`}
+                >
+                  {category}
+                </span>
               </button>
             </li>
           ))}
@@ -101,7 +105,11 @@ function FilterProduct({ products, setproducts, data }) {
             {brandUnique.map((category) => (
               <li>
                 <button onClick={() => handleFilterBrand(category)}>
-                  {category}
+                  <span
+                    className={`${category === brandFilter ? "selected" : ""}`}
+                  >
+                    {category}
+                  </span>
                 </button>
               </li>
             ))}
