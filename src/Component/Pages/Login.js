@@ -1,19 +1,30 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const [errorMsg, setErrorMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
+  const [loading, setLoading] = useState(false);
+  const { login, currentUser } = useAuth();
 
-  const handleLogin = (e) => {
+  async function handleLogin(e) {
     e.preventDefault();
-    console.log(email, password);
-  };
+    try {
+      setErrorMsg("");
+      setLoading(true);
+      await login(email, password);
+    } catch {
+      setErrorMsg("Failed to login");
+    }
+    setLoading(false);
+  }
   return (
     <form onSubmit={handleLogin}>
+      {errorMsg && <h1>{errorMsg}</h1>}
+      {currentUser?.email}
       <h3>
         current input
         {email}

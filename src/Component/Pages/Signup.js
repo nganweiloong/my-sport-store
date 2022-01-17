@@ -29,7 +29,7 @@ function Signup() {
   return (
     <form onSubmit={handleSignup}>
       {errorMsg && <h2>{errorMsg} </h2>}
-      current user => {currentUser.email}
+      current user => {currentUser?.email}
       <h1>Sign Up</h1>
       <h4>
         {fullname}
