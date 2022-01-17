@@ -952,3 +952,47 @@ article {
   }
 }
 /* filter product */
+
+/* login page */
+.login-background {
+  height: calc(100vh - 4.1rem);
+  background-image: url(../public/images/sign-in-background.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-title {
+  align-self: center;
+  margin-bottom: 2rem;
+}
+.error-msg {
+  background-color: pink;
+  padding: 0.35em 0.5em;
+}
+.login-form input {
+  width: 100%;
+  font: inherit;
+  padding: 0.35em 0.5em;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: hsla(210, 36%, 96%, 0.9);
+  border-radius: 5px;
+  padding: 4rem 1rem;
+  max-width: 450px;
+  margin: auto;
+}
+
+.login-form label {
+  font-size: 1rem;
+}
+.login-form .btn-shop {
+  padding: 0.35em 0.5em;
+}
+/* login page */
