@@ -15,14 +15,15 @@ function Login() {
   return (
     <form onSubmit={handleLogin}>
       <h3>
+        current input
         {email}
         {password}
       </h3>
       <label>login</label>
-      <input onSubmit={(e) => setEmail(e.target.value)} type="email"></input>
+      <input onChange={(e) => setEmail(e.target.value)} type="email"></input>
       <label>password</label>
       <input
-        onSubmit={(e) => setPassword(e.target.value)}
+        onChange={(e) => setPassword(e.target.value)}
         type="password"
       ></input>
       <button className="btn-shop">login now</button>
