@@ -9,7 +9,6 @@ import {
 import { mvv } from "./mission-vision-values";
 
 function MissionVision() {
-  console.log(mvv);
   return (
     <div className="container-background-2">
       <div className="shop-info-container">

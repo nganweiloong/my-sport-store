@@ -6,8 +6,10 @@ import {
   faCartPlus,
   faPeopleArrows,
 } from "@fortawesome/free-solid-svg-icons";
+import { useAuth } from "../context/AuthContext";
 
 function Nav() {
+  const { currentUser, logout } = useAuth();
   return (
     <header>
       <div className="navbar">
@@ -36,7 +38,14 @@ function Nav() {
             </div>
             <div>
               <FontAwesomeIcon icon={faPeopleArrows} />
-              <Link to="/login">Login</Link>
+              {currentUser ? (
+                <div>
+                  {currentUser?.email}
+                  <button onClick={logout}>logout</button>
+                </div>
+              ) : (
+                <Link to="/login">Login</Link>
+              )}
             </div>
           </div>
         </div>

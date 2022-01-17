@@ -12,6 +12,8 @@ import About from "./Component/About";
 import Product from "./Component/Product/Product";
 import Login from "./Component/Pages/Login";
 import Signup from "./Component/Pages/Signup";
+import CartPage from "./Component/Pages/CartPage";
+import NoFound from "./Component/Pages/NoFound";
 
 function MainComponent() {
   return (
@@ -24,6 +26,8 @@ function MainComponent() {
           <Route path="/products" element={<Product />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/:anyPages" element={<NoFound />} />
         </Routes>
       </div>
       <Footer />

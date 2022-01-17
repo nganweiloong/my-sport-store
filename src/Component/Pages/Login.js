@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 
 function Login() {
@@ -9,6 +9,7 @@ function Login() {
   const [successMsg, setSuccessMsg] = useState("");
   const [loading, setLoading] = useState(false);
   const { login, currentUser } = useAuth();
+  const navigate = useNavigate();
 
   async function handleLogin(e) {
     e.preventDefault();
@@ -16,6 +17,7 @@ function Login() {
       setErrorMsg("");
       setLoading(true);
       await login(email, password);
+      navigate("/cart");
     } catch {
       setErrorMsg("Failed to login");
     }
