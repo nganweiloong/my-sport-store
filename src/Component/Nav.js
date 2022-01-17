@@ -36,7 +36,7 @@ function Nav() {
             </div>
             <div>
               <FontAwesomeIcon icon={faPeopleArrows} />
-              <a>Login</a>
+              <Link to="/login">Login</Link>
             </div>
           </div>
         </div>

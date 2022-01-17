@@ -10,6 +10,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Component/Home";
 import About from "./Component/About";
 import Product from "./Component/Product/Product";
+import Login from "./Component/Pages/Login";
+import Signup from "./Component/Pages/Signup";
 
 function MainComponent() {
   return (
@@ -20,6 +22,8 @@ function MainComponent() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Product />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
       <Footer />

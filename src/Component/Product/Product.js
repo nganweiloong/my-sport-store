@@ -61,10 +61,17 @@ function Product() {
           />
         </div>
 
-        <div className="product-grid">
-          {products2.map((data) => (
-            <ProductItem detail={data} />
-          ))}
+        <div className="product-grid-container">
+          <div className="sorting">
+            <h4>{products2.length} items found</h4>
+            <div className="line"></div>
+            <div>Sort by</div>
+          </div>
+          <div className="product-grid">
+            {products2.map((data) => (
+              <ProductItem detail={data} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

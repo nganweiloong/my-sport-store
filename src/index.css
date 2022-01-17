@@ -884,7 +884,24 @@ article {
   font-size: 0.7rem;
   padding-top: 0.1rem;
 }
+.sorting {
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.sorting h4 {
+  margin: 0;
+}
 
+.sorting .line {
+  height: 1px;
+  background-color: var(--clr-gold);
+  flex: 1;
+}
+.sorting div {
+}
 @media screen and (min-width: 1000px) {
   .product-container {
     display: flex;
@@ -892,10 +909,11 @@ article {
   .product-search-wrapper {
     width: 25%;
   }
-  .product-grid {
-    /* background-color: red; */
-    width: 75%;
+  .product-grid-container {
+    padding-top: 0.5rem;
+    width: 76%;
   }
+
   .slider-filter-btn {
     display: none;
   }
