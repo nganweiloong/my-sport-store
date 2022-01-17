@@ -313,8 +313,7 @@ article {
   outline: none;
   padding: 1em 2em;
   font-size: 1.7rem;
-  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
-    transform 0.1s;
+  transition: box-shadow 0.2s, transform 0.1s;
   user-select: none;
   -webkit-user-select: none;
   width: auto;
@@ -329,6 +328,10 @@ article {
   background-color: #f7f7f7;
   border-color: #000000;
   transform: scale(0.96);
+}
+
+.btn-shop:hover {
+  transform: rotate(-2deg);
 }
 
 /* feature product */

@@ -14,21 +14,24 @@ import Login from "./Component/Pages/Login";
 import Signup from "./Component/Pages/Signup";
 import CartPage from "./Component/Pages/CartPage";
 import NoFound from "./Component/Pages/NoFound";
+import ScrollToTop from "./Component/ScrollToTop";
 
 function MainComponent() {
   return (
     <BrowserRouter>
       <Nav />
       <div className="main">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Product />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/:anyPages" element={<NoFound />} />
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products" element={<Product />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/:anyPages" element={<NoFound />} />
+          </Routes>
+        </ScrollToTop>
       </div>
       <Footer />
     </BrowserRouter>

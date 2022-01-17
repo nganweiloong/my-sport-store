@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import slidedata from "./Slidedata";
 
 function Poster() {
@@ -55,7 +56,11 @@ function Poster() {
               quisque egestas diam in arcu cursus euismod quis. Tristique magna
               sit amet purus gravida quis blandit.
             </p>
-            <button className="btn-shop">Shop Now!</button>
+
+            <Link to="/products">
+              {" "}
+              <button className="btn-shop">Shop Now!</button>
+            </Link>
           </div>
         </div>
         <div className="feature-info">

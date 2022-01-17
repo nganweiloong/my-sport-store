@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { featureProduct } from "./Product/data2";
 
 function FeatureProducts() {
@@ -12,7 +13,9 @@ function FeatureProducts() {
               <FeatureProductList keys={i} {...prod} />
             ))}
           </div>
-          <button className="btn-shop btn-view">View All Products</button>
+          <Link to="/products">
+            <button className="btn-shop btn-view">View All Products</button>
+          </Link>
         </div>
       </div>
     </div>
