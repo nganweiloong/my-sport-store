@@ -83,8 +83,8 @@ function FilterProduct({ setproducts2, productData, setinput }) {
       <div className="product-category">
         <h4>Category</h4>
         <ul>
-          {categoriesUnique.map((category) => (
-            <li>
+          {categoriesUnique.map((category, i) => (
+            <li key={i}>
               <button onClick={() => handleFilterCategory(category)}>
                 <span
                   className={`${category === categoryFilter ? "selected" : ""}`}
@@ -100,8 +100,8 @@ function FilterProduct({ setproducts2, productData, setinput }) {
         <h4>Brand</h4>
         {
           <ul>
-            {brandUnique.map((category) => (
-              <li>
+            {brandUnique.map((category, i) => (
+              <li key={i}>
                 <button onClick={() => handleFilterBrand(category)}>
                   <span
                     className={`${category === brandFilter ? "selected" : ""}`}

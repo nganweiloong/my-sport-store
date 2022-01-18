@@ -23,7 +23,7 @@ function MissionVision() {
         </div>
         <div className="article-container">
           {mvv.map((m) => (
-            <Article keys={m.id} content={m} />
+            <Article key={m.id} content={m} />
           ))}
         </div>
       </div>

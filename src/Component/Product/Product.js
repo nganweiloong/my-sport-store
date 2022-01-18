@@ -125,7 +125,7 @@ function Product() {
           </div>
           <div className="product-grid">
             {products2.map((data) => (
-              <ProductItem detail={data} />
+              <ProductItem key={data.id} detail={data} />
             ))}
           </div>
         </div>

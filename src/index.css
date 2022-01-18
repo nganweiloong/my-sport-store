@@ -976,6 +976,10 @@ article {
   background-color: pink;
   padding: 0.35em 0.5em;
 }
+.success-msg {
+  background-color: hsl(125, 71%, 66%);
+  padding: 0.35em 0.5em;
+}
 .login-form input {
   width: 100%;
   font: inherit;

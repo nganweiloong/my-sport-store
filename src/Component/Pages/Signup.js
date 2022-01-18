@@ -11,7 +11,7 @@ function Signup() {
   const [errorMsg, setErrorMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
   const [loading, setLoading] = useState(false);
-  const { signup, currentUser } = useAuth();
+  const { signup, fsCollection } = useAuth();
   const navigate = useNavigate();
 
   async function handleSignup(e) {
@@ -22,8 +22,16 @@ function Signup() {
     try {
       setErrorMsg("");
       setLoading(true);
-      await signup(email, password);
-      navigate("/");
+      const credentials = await signup(email, password);
+      await fsCollection(credentials, email, fullname, password);
+      console.log("running inside try");
+      setSuccessMsg(
+        "Your account has been successfully created, you will now automatically get redicrected to home page"
+      );
+      setTimeout(() => {
+        setSuccessMsg("");
+        navigate("/");
+      }, 2000);
     } catch {
       setErrorMsg("Failed to create an account!");
     }
@@ -37,6 +45,14 @@ function Signup() {
             <form className="login-form" onSubmit={handleSignup}>
               <h2 className="login-form-title">Sign Up</h2>
               {errorMsg && <div className="error-msg">{errorMsg}</div>}
+              {successMsg && <div className="success-msg">{successMsg}</div>}
+              <div className="input-field">
+                <input
+                  onChange={(e) => setFullname(e.target.value)}
+                  type="text"
+                  placeholder="Enter your full name"
+                ></input>
+              </div>
               <div className="input-field">
                 <input
                   onChange={(e) => setEmail(e.target.value)}

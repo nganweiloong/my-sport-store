@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 
-import { auth } from "../Config/firebase";
+import { auth, fs } from "../Config/firebase";
 
 const AuthContext = React.createContext();
 export function useAuth() {
@@ -19,6 +19,14 @@ export function AuthProvider({ children }) {
     return auth.signInWithEmailAndPassword(email, password);
   }
 
+  function fsCollection(credential, email, fullName, password) {
+    fs.collection("userInfo").doc(credential.user.uid).set({
+      FullName: fullName,
+      Email: email,
+      Pssword: password,
+    });
+  }
+
   function logout() {
     return auth.signOut(auth);
   }
@@ -32,7 +40,7 @@ export function AuthProvider({ children }) {
 
     return unsubscribe;
   }, []);
-  const value = { currentUser, signup, login, logout };
+  const value = { currentUser, signup, login, logout, fsCollection };
   return (
     <AuthContext.Provider value={value}>
       {!loading && children}

@@ -10,7 +10,7 @@ function FeatureProducts() {
           <h2 className="title">Featured Products</h2>
           <div className="product-wrapper">
             {featureProduct.map((prod, i) => (
-              <FeatureProductList keys={i} {...prod} />
+              <FeatureProductList key={i} {...prod} />
             ))}
           </div>
           <Link to="/products">
