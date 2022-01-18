@@ -1,6 +1,6 @@
 import MainComponent from "./MainComponent";
 import { AuthProvider } from "./context/AuthContext";
-import ProductsPovider from "./Component/Pages/ProductContext";
+import ProductsPovider from "./context/ProductContext";
 
 function App() {
   return (

@@ -5,11 +5,12 @@ import StarRatings from "react-star-ratings";
 import { data } from "./data";
 import FilterProduct from "./FilterProduct";
 import { productData } from "./data2";
-
+import { useProductsContext } from "../../context/ProductContext";
 function Product() {
   const [products2, setproducts2] = useState(productData);
   const [input, setinput] = useState("");
   const [select, setSelect] = useState("all");
+  const { productsDB } = useProductsContext();
 
   useEffect(() => {
     let sortedProduct = null;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { fs } from "../../Config/firebase";
+import { fs } from "../Config/firebase";
 
 const ProductsContext = React.createContext();
 export function useProductsContext() {
