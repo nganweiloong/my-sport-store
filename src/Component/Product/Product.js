@@ -1,22 +1,67 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAdjust,
-  faFileSignature,
-  faFilter,
-  faSearch,
-  faSlidersH,
-} from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faSlidersH } from "@fortawesome/free-solid-svg-icons";
 import StarRatings from "react-star-ratings";
 import { data } from "./data";
 import FilterProduct from "./FilterProduct";
 import { productData } from "./data2";
 
 function Product() {
-  const [products, setproducts] = useState(data);
   const [products2, setproducts2] = useState(productData);
   const [input, setinput] = useState("");
+  const [select, setSelect] = useState("all");
 
+  useEffect(() => {
+    let sortedProduct = null;
+    switch (select) {
+      case "lowToHigh":
+        sortedProduct = [...productData].sort(lowToHigh);
+        setproducts2(sortedProduct);
+
+        break;
+      case "highToLow":
+        sortedProduct = [...productData].sort(highToLow);
+        setproducts2(sortedProduct);
+
+        break;
+
+      case "rating":
+        sortedProduct = [...productData].sort(sortRating);
+        setproducts2(sortedProduct);
+        break;
+      default:
+        return;
+    }
+  }, [select]);
+
+  function lowToHigh(a, b) {
+    if (a.priceAfter < b.priceAfter) {
+      return -1;
+    }
+    if (a.priceAfter > b.priceAfter) {
+      return 1;
+    }
+    return 0;
+  }
+
+  function highToLow(a, b) {
+    if (a.priceAfter < b.priceAfter) {
+      return 1;
+    }
+    if (a.priceAfter > b.priceAfter) {
+      return -1;
+    }
+    return 0;
+  }
+  function sortRating(a, b) {
+    if (a.rating < b.rating) {
+      return 1;
+    }
+    if (a.rating > b.rating) {
+      return -1;
+    }
+    return 0;
+  }
   useEffect(() => {
     const item = productData.filter((product) => {
       if (input === "") {
@@ -63,9 +108,20 @@ function Product() {
 
         <div className="product-grid-container">
           <div className="sorting">
-            <h4>{products2.length} items found</h4>
+            <h4>{products2?.length} items found</h4>
             <div className="line"></div>
-            <div>Sort by</div>
+            <div>
+              <select
+                value={select}
+                onChange={(e) => setSelect(e.target.value)}
+              >
+                <option onSelect={() => console.log("niama")} value="highToLow">
+                  Price: high to low
+                </option>
+                <option value="lowToHigh">Price: low to high</option>
+                <option value="rating">Rating</option>
+              </select>
+            </div>
           </div>
           <div className="product-grid">
             {products2.map((data) => (

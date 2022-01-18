@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-input-slider";
 
-function FilterProduct({
-  products,
-  setproducts,
-  data,
-  products2,
-  setproducts2,
-  productData,
-  setinput,
-}) {
+function FilterProduct({ setproducts2, productData, setinput }) {
   const categories = productData.map((data) => data.category);
   const categoriesUnique = ["All", ...new Set(categories)];
   const brandUnique = [
