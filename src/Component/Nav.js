@@ -9,7 +9,7 @@ import {
 import { useAuth } from "../context/AuthContext";
 
 function Nav() {
-  const { currentUser, logout } = useAuth();
+  const { currentUser, logout, username } = useAuth();
   return (
     <header>
       <div className="navbar">
@@ -40,10 +40,7 @@ function Nav() {
               <FontAwesomeIcon icon={faPeopleArrows} />
               {currentUser ? (
                 <div>
-                  {currentUser?.email.substring(
-                    0,
-                    currentUser?.email.lastIndexOf("@")
-                  )}
+                  {username && username}
                   <Link to="/">
                     <button onClick={logout}>logout</button>
                   </Link>

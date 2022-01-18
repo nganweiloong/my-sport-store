@@ -19,6 +19,7 @@ function CartPage() {
 
   useEffect(() => {
     if (!currentUser) {
+      alert("Please login first");
       navigate("/login");
     }
   }, []);

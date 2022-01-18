@@ -25,7 +25,9 @@ function MainComponent() {
             <Route path="/products" element={<Product />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+
             <Route path="/:anyPages" element={<NoFound />} />
+
             {true && <Route path="/cart" element={<CartPage />} />}
           </Routes>
         </ScrollToTop>

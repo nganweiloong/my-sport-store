@@ -1,10 +1,13 @@
 import MainComponent from "./MainComponent";
 import { AuthProvider } from "./context/AuthContext";
+import ProductsPovider from "./Component/Pages/ProductContext";
 
 function App() {
   return (
     <AuthProvider>
-      <MainComponent />
+      <ProductsPovider>
+        <MainComponent />
+      </ProductsPovider>
     </AuthProvider>
   );
 }

@@ -10,6 +10,7 @@ export function useAuth() {
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState();
   const [loading, setLoading] = useState(true);
+  const [username, setUsername] = useState();
 
   function signup(email, password) {
     return auth.createUserWithEmailAndPassword(email, password);
@@ -35,12 +36,24 @@ export function AuthProvider({ children }) {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       console.log("running authstate");
       setCurrentUser(user);
+      if (user) {
+        console.log("running authstate2");
+        fs.collection("userInfo")
+          .doc(user.uid)
+          .get()
+          .then((info) => {
+            setUsername(info.data().FullName);
+          });
+      } else {
+        setUsername(null);
+      }
+
       setLoading(false);
     });
 
     return unsubscribe;
   }, []);
-  const value = { currentUser, signup, login, logout, fsCollection };
+  const value = { currentUser, signup, login, logout, fsCollection, username };
   return (
     <AuthContext.Provider value={value}>
       {!loading && children}
