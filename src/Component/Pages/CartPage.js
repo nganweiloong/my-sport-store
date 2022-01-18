@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import { useEffect } from "react/cjs/react.development";
 import { useAuth } from "../../context/AuthContext";
 
 function CartPage() {
@@ -16,7 +17,11 @@ function CartPage() {
     }
   }
 
-  console.log("running cart");
+  useEffect(() => {
+    if (!currentUser) {
+      navigate("/login");
+    }
+  }, []);
 
   return (
     <div>

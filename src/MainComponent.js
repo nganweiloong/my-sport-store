@@ -26,7 +26,7 @@ function MainComponent() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/:anyPages" element={<NoFound />} />
-            {currentUser && <Route path="/cart" element={<CartPage />} />}
+            {true && <Route path="/cart" element={<CartPage />} />}
           </Routes>
         </ScrollToTop>
       </div>

@@ -34,14 +34,19 @@ function Nav() {
           <div className="secondary-nav">
             <div>
               <FontAwesomeIcon icon={faCartPlus} />
-              <a>Carts</a>
+              <Link to="/cart">Carts</Link>
             </div>
             <div>
               <FontAwesomeIcon icon={faPeopleArrows} />
               {currentUser ? (
                 <div>
-                  {currentUser?.email}
-                  <button onClick={logout}>logout</button>
+                  {currentUser?.email.substring(
+                    0,
+                    currentUser?.email.lastIndexOf("@")
+                  )}
+                  <Link to="/">
+                    <button onClick={logout}>logout</button>
+                  </Link>
                 </div>
               ) : (
                 <Link to="/login">Login</Link>

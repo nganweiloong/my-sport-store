@@ -71,6 +71,7 @@ function FilterProduct({ setproducts2, productData, setinput }) {
     setCategoryFilter("");
     setproducts2(productData);
     setinput("");
+    setPriceRange({ x: maxPrice });
   }
 
   return (
