@@ -165,10 +165,11 @@ function ProductItem(props) {
         <StarRatings
           className="star"
           starRatedColor={"hsl(38, 87%, 50%)"}
-          rating={parseInt(rating)}
+          rating={rating}
           numberOfStars={5}
           starDimension="15px"
           starSpacing="0.2px"
+          half={true}
         />
         <span>{rating}</span>
       </div>

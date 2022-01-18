@@ -18,42 +18,35 @@ function FilterProduct({ setproducts2, productData, setinput }) {
   const [categoryFilter, setCategoryFilter] = useState("");
   const [brandFilter, setBrandFilter] = useState("");
   //filter-------------------------------------
+  const filterByBrand = (data) => {
+    if (brandFilter) {
+      return data.brand === brandFilter;
+    }
+    return data;
+  };
+
+  const filterByCategory = (data) => {
+    if (categoryFilter) {
+      return data.category === categoryFilter;
+    }
+    return data;
+  };
+
+  const filterByPrice = (product) => {
+    return product.priceAfter <= Math.ceil(priceRange.x);
+  };
 
   useEffect(() => {
     const newItem = productData
-      .filter((data) => {
-        if (brandFilter) {
-          return data.brand === brandFilter;
-        }
-        return data;
-      })
-      .filter((data) => {
-        if (categoryFilter) {
-          return data.category === categoryFilter;
-        }
-        return data;
-      })
-      .filter((product) => {
-        return product.priceAfter <= Math.ceil(priceRange.x);
-      });
+      .filter(filterByBrand)
+      .filter(filterByCategory)
+      .filter(filterByPrice);
 
     setproducts2(newItem);
   }, [priceRange]);
 
   useEffect(() => {
-    const newItem = productData
-      .filter((data) => {
-        if (brandFilter) {
-          return data.brand === brandFilter;
-        }
-        return data;
-      })
-      .filter((data) => {
-        if (categoryFilter) {
-          return data.category === categoryFilter;
-        }
-        return data;
-      });
+    const newItem = productData.filter(filterByBrand).filter(filterByCategory);
 
     setproducts2(newItem);
   }, [categoryFilter, brandFilter]);
