@@ -1071,3 +1071,41 @@ article {
   gap: 1rem;
 }
 /* cart page  */
+
+.total-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: flex-end;
+}
+
+.total-detail span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.total-detail-price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.67rem;
+
+  text-align: left;
+}
+.total-detail-price div {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.btn-cartpage {
+  padding: 0.4em;
+  color: gold;
+  background-color: royalblue;
+  transition: all 0.2s linear;
+}
+.btn-cartpage:hover {
+  background-color: rgb(7, 48, 230);
+  transform: none;
+}
+
+@media screen and (max-width: 600px) {
+}
+/* cart page  */

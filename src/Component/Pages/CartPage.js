@@ -8,7 +8,14 @@ import { faMinus, faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
 function CartPage() {
   const { currentUser, cartProducts } = useAuth();
   const navigate = useNavigate();
-
+  const cartQuantityArr = cartProducts.map((product) => product.quantity);
+  const cartPriceArr = cartProducts.map((product) => product.TotalProductPrice);
+  const totalPrice = cartPriceArr.reduce((a, num) => {
+    return a + num;
+  }, 0);
+  const totalItem = cartQuantityArr.reduce((a, num) => {
+    return a + num;
+  }, 0);
   useEffect(() => {}, []);
 
   useEffect(() => {
@@ -23,6 +30,7 @@ function CartPage() {
       <div className="cart-page-container fixed-container">
         <h2>My Cart</h2>
         {cartProducts.length === 0 && <h2>Your cart is empty</h2>}
+
         <ul className="cart-list">
           {cartProducts.map((product) => {
             const { id } = product;
@@ -33,6 +41,28 @@ function CartPage() {
             );
           })}
         </ul>
+        <div className="total-detail">
+          <div className="total-detail-price">
+            <div>
+              <span>Total item </span>
+              <span>{totalItem}</span>
+            </div>
+            <div>
+              <span>Total Price </span>
+              <span>RM {totalPrice}</span>
+            </div>
+            <button
+              onClick={() => {
+                alert(
+                  "Thank you for testing up my website. :) Have a nice day!"
+                );
+              }}
+              className="btn-shop btn-cartpage"
+            >
+              Pay now
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -50,12 +80,7 @@ function CartItem(props) {
     Product.quantity += 1;
     Product.TotalProductPrice = Product.quantity * Product.priceAfter;
     auth.onAuthStateChanged((user) => {
-      fs.collection(`Cart ${user.uid}`)
-        .doc(props.product.ID)
-        .update(Product)
-        .then(() => {
-          console.log("added");
-        });
+      fs.collection(`Cart ${user.uid}`).doc(props.product.ID).update(Product);
     });
   }
   function handleCartDecrement() {
@@ -65,12 +90,7 @@ function CartItem(props) {
     Product.quantity -= 1;
     Product.TotalProductPrice = Product.quantity * Product.priceAfter;
     auth.onAuthStateChanged((user) => {
-      fs.collection(`Cart ${user.uid}`)
-        .doc(props.product.ID)
-        .update(Product)
-        .then(() => {
-          console.log("reduced");
-        });
+      fs.collection(`Cart ${user.uid}`).doc(props.product.ID).update(Product);
     });
   }
 
