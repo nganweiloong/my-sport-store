@@ -9,7 +9,7 @@ import {
 import { useAuth } from "../context/AuthContext";
 
 function Nav() {
-  const { currentUser, logout, username, uuid } = useAuth();
+  const { currentUser, logout, username, totalProduct } = useAuth();
   return (
     <header>
       <div className="navbar">
@@ -32,21 +32,30 @@ function Nav() {
             </li>
           </ul>
           <div className="secondary-nav">
-            <div>
+            <div className="cart-icon">
               <FontAwesomeIcon icon={faCartPlus} />
               <Link to="/cart">Carts</Link>
+              <div
+                className={`cart-icon-amount ${
+                  totalProduct > 0 && "show-cart-icon-amount"
+                } `}
+              >
+                {totalProduct}
+              </div>
             </div>
             <div>
-              <FontAwesomeIcon icon={faPeopleArrows} />
               {currentUser ? (
-                <div>
-                  {uuid && uuid}
-                  <Link to="/">
-                    <button onClick={logout}>logout</button>
+                <div className="login-logout">
+                  <span>{username && username}</span>
+                  <Link className="logout-btn" to="/">
+                    <button onClick={logout}>Sign out</button>
                   </Link>
                 </div>
               ) : (
-                <Link to="/login">Login</Link>
+                <>
+                  <FontAwesomeIcon icon={faPeopleArrows} />
+                  <Link to="/login">Login</Link>
+                </>
               )}
             </div>
           </div>

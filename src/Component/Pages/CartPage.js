@@ -52,6 +52,7 @@ function CartPage() {
               <span>RM {totalPrice}</span>
             </div>
             <button
+              disabled={totalItem === 0}
               onClick={() => {
                 alert(
                   "Thank you for testing up my website. :) Have a nice day!"

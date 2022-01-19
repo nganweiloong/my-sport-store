@@ -203,6 +203,57 @@ header {
   width: 100%;
   transition: 0.1s linear width;
 }
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon-amount {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--clr-gold);
+  height: 17px;
+  width: 17px;
+  display: none;
+  place-items: center;
+  font-size: 0.7rem;
+  border-radius: 100%;
+}
+
+.show-cart-icon-amount {
+  display: grid;
+}
+
+.login-logout {
+  display: flex;
+  position: relative;
+}
+.logout-btn {
+  position: absolute;
+  bottom: -1.3rem;
+  right: 0;
+}
+.logout-btn button {
+  font-size: 1rem;
+  font-weight: 500;
+  color: darkgoldenrod;
+}
+
+.logout-btn:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 50%;
+  width: 0%;
+  bottom: 1px;
+  transform: translateX(-50%);
+  background-color: var(--clr-gold);
+  transition: all 0.2s linear;
+}
+.logout-btn:hover::after {
+  width: 100%;
+}
 @media screen and (min-width: 981px) {
   .faBar-wrapper {
     display: none;
@@ -542,7 +593,7 @@ article {
   border: 1px solid black;
   box-shadow: var(--box-shadow);
   padding: 2rem;
-  width: 70%;
+  /* width: 70%; */
 }
 
 .social-icons .icons {

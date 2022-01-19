@@ -13,6 +13,7 @@ export function AuthProvider({ children }) {
   const [username, setUsername] = useState();
   const [uuid, setUuid] = useState();
   const [cartProducts, setCartProducts] = useState([]);
+  const [totalProduct, setTotalProduct] = useState();
 
   function signup(email, password) {
     return auth.createUserWithEmailAndPassword(email, password);
@@ -50,6 +51,7 @@ export function AuthProvider({ children }) {
           });
 
         fs.collection(`Cart ${user.uid}`).onSnapshot((snapshot) => {
+          setTotalProduct(snapshot.docs.length);
           const newCartProduct = snapshot.docs.map((doc) => ({
             ID: doc.id,
             ...doc.data(),
@@ -61,6 +63,7 @@ export function AuthProvider({ children }) {
         setUsername(null);
         setUuid(null);
         setCartProducts([]);
+        setTotalProduct(null);
       }
 
       setLoading(false);
@@ -78,6 +81,7 @@ export function AuthProvider({ children }) {
     uuid,
     cartProducts,
     setCartProducts,
+    totalProduct,
   };
   return (
     <AuthContext.Provider value={value}>
