@@ -55,7 +55,7 @@ function CartPage() {
               disabled={totalItem === 0}
               onClick={() => {
                 alert(
-                  "Thank you for testing up my website. :) Have a nice day!"
+                  "Payment feature still in testing stage, Thank you for testing up my website. :) Have a nice day!"
                 );
               }}
               className="btn-shop btn-cartpage"

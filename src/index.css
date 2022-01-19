@@ -206,8 +206,13 @@ header {
 
 .cart-icon {
   position: relative;
+  transition: all 0.2s linear;
 }
 
+.cart-icon:hover {
+  background: var(--clr-grey-10);
+  border-radius: 20px;
+}
 .cart-icon-amount {
   position: absolute;
   top: 0px;
@@ -900,8 +905,14 @@ article {
 .product-item {
   background-color: #fff;
   padding: 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
+.product-detail-wrapper {
+  /* position: absolute; */
+}
 .product-img-wrapper {
   /* border: 1px solid red; */
   height: 250px;
@@ -923,6 +934,9 @@ article {
 .product-price-before {
   color: var(--clr-grey-2);
   text-decoration: line-through;
+}
+.product-price-after {
+  font-weight: 700;
 }
 
 .star-rating {
@@ -1069,7 +1083,6 @@ article {
 }
 .cart-page-container img {
   width: 100%;
-  width: 100px;
 
   object-fit: contain;
   max-height: 100px;

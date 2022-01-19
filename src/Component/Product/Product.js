@@ -91,33 +91,36 @@ function ProductItem(props) {
 
   return (
     <div className="product-item">
-      <div className="product-img-wrapper">
-        <img className="product-img" src={url}></img>
+      <div>
+        <div className="product-img-wrapper">
+          <img className="product-img" src={url}></img>
+        </div>
+        <h4 className="product-title">{name}</h4>
       </div>
-      <h4 className="product-title">{name}</h4>
-      <div className="product-price">
-        <span className="product-price-before">RM{priceBefore}</span>
-        <span className="product-price-after">RM{priceAfter}</span>
+      <div className="product-detail-wrapper">
+        <div className="product-price">
+          <span className="product-price-before">RM{priceBefore}</span>
+          <span className="product-price-after">RM{priceAfter.toFixed(2)}</span>
+        </div>
+        <div className="star-rating">
+          <StarRatings
+            className="star"
+            starRatedColor={"hsl(38, 87%, 50%)"}
+            rating={rating}
+            numberOfStars={5}
+            starDimension="15px"
+            starSpacing="0.2px"
+            half={true}
+          />
+          <span>{rating}</span>
+        </div>
+        <button
+          onClick={() => handleAddCart(props.detail)}
+          className="btn-shop btn-addcart"
+        >
+          Add to cart
+        </button>
       </div>
-
-      <div className="star-rating">
-        <StarRatings
-          className="star"
-          starRatedColor={"hsl(38, 87%, 50%)"}
-          rating={rating}
-          numberOfStars={5}
-          starDimension="15px"
-          starSpacing="0.2px"
-          half={true}
-        />
-        <span>{rating}</span>
-      </div>
-      <button
-        onClick={() => handleAddCart(props.detail)}
-        className="btn-shop btn-addcart"
-      >
-        Add to cart
-      </button>
     </div>
   );
 }
