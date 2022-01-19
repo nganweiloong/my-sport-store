@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-
+import { fs, auth } from "../../Config/firebase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus, faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
 
@@ -28,7 +28,7 @@ function CartPage() {
             const { id } = product;
             return (
               <li key={id}>
-                <CartItem {...product} />{" "}
+                <CartItem product={product} />{" "}
               </li>
             );
           })}
@@ -40,7 +40,45 @@ function CartPage() {
 
 export default CartPage;
 
-function CartItem({ url, priceAfter, quantity, name, TotalProductPrice }) {
+function CartItem(props) {
+  const [productCount, setProductCount] = useState(1);
+  const { url, priceAfter, quantity, name, TotalProductPrice } = props.product;
+
+  function handleCartIncrement() {
+    let Product;
+    Product = props.product;
+    Product.quantity += 1;
+    Product.TotalProductPrice = Product.quantity * Product.priceAfter;
+    auth.onAuthStateChanged((user) => {
+      fs.collection(`Cart ${user.uid}`)
+        .doc(props.product.ID)
+        .update(Product)
+        .then(() => {
+          console.log("added");
+        });
+    });
+  }
+  function handleCartDecrement() {
+    if (quantity === 1) return;
+    let Product;
+    Product = props.product;
+    Product.quantity -= 1;
+    Product.TotalProductPrice = Product.quantity * Product.priceAfter;
+    auth.onAuthStateChanged((user) => {
+      fs.collection(`Cart ${user.uid}`)
+        .doc(props.product.ID)
+        .update(Product)
+        .then(() => {
+          console.log("reduced");
+        });
+    });
+  }
+
+  const handleDelete = () => {
+    auth.onAuthStateChanged(async (user) => {
+      await fs.collection(`Cart ${user.uid}`).doc(props.product.ID).delete();
+    });
+  };
   return (
     <div className="cart-items">
       <div className="img-wrapper">
@@ -52,20 +90,20 @@ function CartItem({ url, priceAfter, quantity, name, TotalProductPrice }) {
         <div className="cart-item-quantity">
           Quantity{" "}
           <div className="btn-wrap">
-            <button>
+            <button onClick={handleCartDecrement}>
               <FontAwesomeIcon icon={faMinus} />
             </button>
             {quantity}
             <button>
               {" "}
-              <FontAwesomeIcon icon={faPlus} />
+              <FontAwesomeIcon onClick={handleCartIncrement} icon={faPlus} />
             </button>
           </div>
         </div>
       </div>
       <div className="totalproductprice">
-        <span>Total : RM{TotalProductPrice}</span>
-        <button>
+        <span>Total : RM{TotalProductPrice.toFixed(2)}</span>
+        <button onClick={handleDelete}>
           <FontAwesomeIcon icon={faTrash} size="2x"></FontAwesomeIcon>
         </button>
       </div>
