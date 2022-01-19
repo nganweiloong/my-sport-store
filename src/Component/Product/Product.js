@@ -83,7 +83,7 @@ function ProductItem(props) {
   return (
     <div className="product-item">
       <div className="product-img-wrapper">
-        <img className="product-img"></img>
+        <img className="product-img" src={url}></img>
       </div>
       <h4 className="product-title">{name}</h4>
       <div className="product-price">
