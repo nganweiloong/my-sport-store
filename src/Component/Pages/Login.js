@@ -18,7 +18,7 @@ function Login() {
       setErrorMsg("");
       setLoading(true);
       await login(email, password);
-      navigate("/cart");
+      navigate("/");
     } catch {
       setErrorMsg("Failed to login");
     }

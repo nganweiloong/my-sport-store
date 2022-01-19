@@ -12,6 +12,7 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [username, setUsername] = useState();
   const [uuid, setUuid] = useState();
+  const [cartProducts, setCartProducts] = useState([]);
 
   function signup(email, password) {
     return auth.createUserWithEmailAndPassword(email, password);
@@ -36,6 +37,7 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       console.log("running authstate");
+
       setCurrentUser(user);
       if (user) {
         console.log("running authstate2");
@@ -46,10 +48,19 @@ export function AuthProvider({ children }) {
           .then((info) => {
             setUsername(info.data().FullName);
           });
+
+        fs.collection(`Cart ${user.uid}`).onSnapshot((snapshot) => {
+          const newCartProduct = snapshot.docs.map((doc) => ({
+            ID: doc.id,
+            ...doc.data(),
+          }));
+          setCartProducts(newCartProduct);
+        });
       } else {
         console.log("running authstate2-else");
         setUsername(null);
         setUuid(null);
+        setCartProducts([]);
       }
 
       setLoading(false);
@@ -65,6 +76,8 @@ export function AuthProvider({ children }) {
     fsCollection,
     username,
     uuid,
+    cartProducts,
+    setCartProducts,
   };
   return (
     <AuthContext.Provider value={value}>
