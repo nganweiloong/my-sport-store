@@ -23,11 +23,11 @@ export function AuthProvider({ children }) {
     return auth.signInWithEmailAndPassword(email, password);
   }
 
-  function fsCollection(credential, email, fullName, password) {
+  function fsCollection(credential, email, username, password) {
     fs.collection("userInfo").doc(credential.user.uid).set({
-      FullName: fullName,
+      Username: username,
       Email: email,
-      Pssword: password,
+      Password: password,
     });
   }
 
@@ -47,7 +47,7 @@ export function AuthProvider({ children }) {
           .doc(user.uid)
           .get()
           .then((info) => {
-            setUsername(info.data().FullName);
+            setUsername(info.data().Username);
           });
 
         fs.collection(`Cart ${user.uid}`).onSnapshot((snapshot) => {

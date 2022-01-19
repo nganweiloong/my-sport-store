@@ -204,15 +204,18 @@ header {
   transition: 0.1s linear width;
 }
 
-.cart-icon {
+.cart-icon,
+.btn-login {
   position: relative;
   transition: all 0.2s linear;
 }
 
-.cart-icon:hover {
+.cart-icon:hover,
+.btn-login:hover {
   background: var(--clr-grey-10);
   border-radius: 20px;
 }
+
 .cart-icon-amount {
   position: absolute;
   top: 0px;
@@ -1005,8 +1008,10 @@ article {
 }
 
 .filter-product h4 {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   color: var(--clr-gold);
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid grey;
 }
 .filter-product ul button {
   font-size: 1rem;
@@ -1014,6 +1019,17 @@ article {
 .filter-product .selected {
   color: red;
   font-weight: 700;
+}
+
+.filter-product li button {
+  font-size: 1.2rem;
+  transition: all 0.2s linear;
+  padding-top: 0.3em;
+}
+.filter-product li button:hover {
+  color: #e0c56e;
+  font-weight: 700;
+  border-bottom: 1px solid var(--clr-gold);
 }
 
 .btn-filter {

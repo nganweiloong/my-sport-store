@@ -4,7 +4,7 @@ import { useAuth } from "../../context/AuthContext";
 import { Animated } from "react-animated-css";
 
 function Signup() {
-  const [fullname, setFullname] = useState("");
+  const [username, setusername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
@@ -19,11 +19,15 @@ function Signup() {
     if (password !== passwordConfirm) {
       return setErrorMsg("Passwords do not match");
     }
+
+    if (password.length > 20) {
+      return setErrorMsg("The password has exceeded the maximum limit (20)");
+    }
     try {
       setErrorMsg("");
       setLoading(true);
       const credentials = await signup(email, password);
-      await fsCollection(credentials, email, fullname, password);
+      await fsCollection(credentials, email, username, password);
       console.log("running inside try");
       setSuccessMsg(
         "Your account has been successfully created, you will now automatically get redicrected to home page"
@@ -48,9 +52,11 @@ function Signup() {
               {successMsg && <div className="success-msg">{successMsg}</div>}
               <div className="input-field">
                 <input
-                  onChange={(e) => setFullname(e.target.value)}
+                  onChange={(e) => setusername(e.target.value)}
                   type="text"
-                  placeholder="Enter your full name"
+                  placeholder="Username (Maximum 15 characters)"
+                  maxLength={15}
+                  minLength={6}
                 ></input>
               </div>
               <div className="input-field">
@@ -84,35 +90,6 @@ function Signup() {
         </Animated>
       </div>
     </div>
-    // <form onSubmit={handleSignup}>
-    //   {errorMsg && <h2>{errorMsg} </h2>}
-    //   current user => {currentUser?.email}
-    //   <h1>Sign Up</h1>
-    //   <h4>
-    //     {fullname}
-    //     {email}
-    //     {password}
-    //     {passwordConfirm}
-    //   </h4>
-    //   {/* <label>Full name</label>
-    //   <input onChange={(e) => setFullname(e.target.value)} type="text"></input> */}
-    //   <label>email</label>
-    //   <input onChange={(e) => setEmail(e.target.value)} type="email"></input>
-    //   <label>password</label>
-    //   <input
-    //     onChange={(e) => setPassword(e.target.value)}
-    //     type="password"
-    //   ></input>
-    //   <label>password confirm</label>
-    //   <input
-    //     onChange={(e) => setPasswordConfirm(e.target.value)}
-    //     type="password"
-    //   ></input>
-    //   Already got account ? Login in <Link to="/login">here</Link>
-    //   <button disabled={loading} className="btn-shop">
-    //     Sign up
-    //   </button>
-    // </form>
   );
 }
 

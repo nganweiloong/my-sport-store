@@ -85,6 +85,7 @@ function ProductItem(props) {
           console.log("added succesfully!");
         });
     } else {
+      alert("Please login first ");
       navigate("/login");
     }
   }

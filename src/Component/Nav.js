@@ -52,10 +52,10 @@ function Nav() {
                   </Link>
                 </div>
               ) : (
-                <>
+                <div className="btn-login">
                   <FontAwesomeIcon icon={faPeopleArrows} />
                   <Link to="/login">Login</Link>
-                </>
+                </div>
               )}
             </div>
           </div>

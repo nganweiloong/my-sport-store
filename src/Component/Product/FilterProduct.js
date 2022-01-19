@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-input-slider";
 import { useProductsContext } from "../../context/ProductContext";
 
 function FilterProduct() {
+  const [categorySelected, setcategorySelected] = useState("All");
+  const [brandSelected, setBrandSelected] = useState("All");
   const {
     brandUnique,
     brandFilter,
@@ -16,6 +18,9 @@ function FilterProduct() {
     clearFilter,
   } = useProductsContext();
 
+  useEffect(() => {
+    clearFilter();
+  }, []);
   return (
     <div className="filter-product">
       <div className="product-category">
@@ -23,9 +28,16 @@ function FilterProduct() {
         <ul>
           {categoriesUnique.map((category, i) => (
             <li key={i}>
-              <button onClick={() => handleFilterCategory(category)}>
+              <button
+                onClick={() => {
+                  handleFilterCategory(category);
+                  setcategorySelected(category);
+                }}
+              >
                 <span
-                  className={`${category === categoryFilter ? "selected" : ""}`}
+                  className={`${
+                    category === categorySelected ? "selected" : ""
+                  }`}
                 >
                   {category}
                 </span>
@@ -38,13 +50,18 @@ function FilterProduct() {
         <h4>Brand</h4>
         {
           <ul>
-            {brandUnique.map((category, i) => (
+            {brandUnique.map((brand, i) => (
               <li key={i}>
-                <button onClick={() => handleFilterBrand(category)}>
+                <button
+                  onClick={() => {
+                    handleFilterBrand(brand);
+                    setBrandSelected(brand);
+                  }}
+                >
                   <span
-                    className={`${category === brandFilter ? "selected" : ""}`}
+                    className={`${brand === brandSelected ? "selected" : ""}`}
                   >
-                    {category}
+                    {brand}
                   </span>
                 </button>
               </li>
@@ -65,7 +82,14 @@ function FilterProduct() {
         />
         <p>RM0 - RM{priceRange.x}</p>
       </div>
-      <button onClick={clearFilter} className="btn-shop btn-filter">
+      <button
+        onClick={() => {
+          clearFilter();
+          setBrandSelected("All");
+          setcategorySelected("All");
+        }}
+        className="btn-shop btn-filter"
+      >
         Clear Filter
       </button>
     </div>
