@@ -8,16 +8,7 @@ import { useProductsContext } from "../../context/ProductContext";
 function Product() {
   const [products2, setproducts2] = useState(productData);
 
-  const {
-    productsDB,
-    setProductsDB,
-    products,
-    setProducts,
-    select,
-    setSelect,
-    input,
-    setInput,
-  } = useProductsContext();
+  const { products, select, setSelect, input, setInput } = useProductsContext();
 
   function handleFilterInput(e) {
     setInput(e.target.value);
@@ -44,11 +35,7 @@ function Product() {
             <FontAwesomeIcon icon={faSlidersH} />
             <span>Filter</span>
           </button>
-          <FilterProduct
-            setproducts2={setproducts2}
-            productData={productData}
-            setInput={setInput}
-          />
+          <FilterProduct />
         </div>
 
         <div className="product-grid-container">
