@@ -11,6 +11,7 @@ export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState();
   const [loading, setLoading] = useState(true);
   const [username, setUsername] = useState();
+  const [uuid, setUuid] = useState();
 
   function signup(email, password) {
     return auth.createUserWithEmailAndPassword(email, password);
@@ -38,6 +39,7 @@ export function AuthProvider({ children }) {
       setCurrentUser(user);
       if (user) {
         console.log("running authstate2");
+        setUuid(user.uid);
         fs.collection("userInfo")
           .doc(user.uid)
           .get()
@@ -45,7 +47,9 @@ export function AuthProvider({ children }) {
             setUsername(info.data().FullName);
           });
       } else {
+        console.log("running authstate2-else");
         setUsername(null);
+        setUuid(null);
       }
 
       setLoading(false);
@@ -53,7 +57,15 @@ export function AuthProvider({ children }) {
 
     return unsubscribe;
   }, []);
-  const value = { currentUser, signup, login, logout, fsCollection, username };
+  const value = {
+    currentUser,
+    signup,
+    login,
+    logout,
+    fsCollection,
+    username,
+    uuid,
+  };
   return (
     <AuthContext.Provider value={value}>
       {!loading && children}

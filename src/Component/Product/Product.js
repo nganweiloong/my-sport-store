@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faSlidersH } from "@fortawesome/free-solid-svg-icons";
 import StarRatings from "react-star-ratings";
 import FilterProduct from "./FilterProduct";
-import { productData } from "./data2";
 import { useProductsContext } from "../../context/ProductContext";
+import { useAuth } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
+import { fs } from "../../Config/firebase";
 function Product() {
-  const [products2, setproducts2] = useState(productData);
-
   const { products, select, setSelect, input, setInput } = useProductsContext();
 
   function handleFilterInput(e) {
@@ -40,7 +40,7 @@ function Product() {
 
         <div className="product-grid-container">
           <div className="sorting">
-            <h4>{products2?.length} items found</h4>
+            <h4>{products?.length} items found</h4>
             <div className="line"></div>
             <div>
               <select
@@ -68,17 +68,26 @@ export default Product;
 
 function ProductItem(props) {
   const [Srating, setSRating] = useState(2);
-  const {
-    id,
-    brand,
-    name,
-    priceBefore,
-    priceAfter,
-    discount,
-    rating,
-    category,
-    url,
-  } = props.detail;
+  const { name, priceBefore, priceAfter, discount, rating, url } = props.detail;
+  const navigate = useNavigate();
+  const { uuid } = useAuth();
+
+  let Product;
+  function handleAddCart(product) {
+    if (uuid !== null) {
+      Product = product;
+      Product["quantity"] = 1;
+      Product["TotalProductPrice"] = Product.quantity * Product.priceAfter;
+      fs.collection("Cart " + uuid)
+        .doc(product.ID)
+        .set(Product)
+        .then(() => {
+          console.log("added succesfully!");
+        });
+    } else {
+      navigate("/login");
+    }
+  }
 
   return (
     <div className="product-item">
@@ -103,6 +112,12 @@ function ProductItem(props) {
         />
         <span>{rating}</span>
       </div>
+      <button
+        onClick={() => handleAddCart(props.detail)}
+        className="btn-shop btn-addcart"
+      >
+        Add to cart
+      </button>
     </div>
   );
 }

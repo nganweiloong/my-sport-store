@@ -898,6 +898,13 @@ article {
   margin: 0;
 }
 
+.product-item .btn-addcart {
+  font-size: 1rem;
+  padding: 0.15em 1em;
+  margin: 0.5rem auto;
+  display: block;
+}
+
 .sorting .line {
   height: 1px;
   background-color: var(--clr-gold);
