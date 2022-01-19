@@ -1,23 +1,39 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-input-slider";
+import { useProductsContext } from "../../context/ProductContext";
 
-function FilterProduct({ setproducts2, productData, setinput }) {
-  const categories = productData.map((data) => data.category);
+function FilterProduct({ setinput }) {
+  const {
+    productsDB,
+    setProductsDB,
+    products,
+    setProducts,
+    setSelect,
+    select,
+    input,
+    setInput,
+    isLoading,
+    // categoriesUnique,
+    // brandUnique,
+    // priceRange
+  } = useProductsContext();
+  const categories = productsDB.map((data) => data.category);
   const categoriesUnique = ["All", ...new Set(categories)];
-  const brandUnique = [
-    "All",
-    ...new Set(productData.map((data) => data.brand)),
-  ];
-  const price = productData.map((data) => data.priceAfter);
+  const brandUnique = ["All", ...new Set(productsDB.map((data) => data.brand))];
+  const price = productsDB.map((data) => data.priceAfter);
   const maxPrice = Math.max(...price);
-
-  //   const [priceRange, setPriceRange] = useState({ x: maxPrice });
-  const [priceRange, setPriceRange] = useState({ x: maxPrice });
-
+  const [priceRange, setPriceRange] = useState({ x: 0 });
   //filter-------------------------------------
   const [categoryFilter, setCategoryFilter] = useState("");
   const [brandFilter, setBrandFilter] = useState("");
   //filter-------------------------------------
+
+  useEffect(() => {
+    setPriceRange({
+      x: Math.max(...productsDB.map((data) => data.priceAfter)),
+    });
+  }, [productsDB]);
+
   const filterByBrand = (data) => {
     if (brandFilter) {
       return data.brand === brandFilter;
@@ -36,50 +52,39 @@ function FilterProduct({ setproducts2, productData, setinput }) {
     return product.priceAfter <= Math.ceil(priceRange.x);
   };
 
-  useEffect(() => {
-    const newItem = productData
-      .filter(filterByBrand)
-      .filter(filterByCategory)
-      .filter(filterByPrice);
-
-    setproducts2(newItem);
-  }, [priceRange]);
-
-  useEffect(() => {
-    const newItem = productData.filter(filterByBrand).filter(filterByCategory);
-
-    setproducts2(newItem);
-  }, [categoryFilter, brandFilter]);
-
-  function handleFilterBrand(brand) {
+  const handleFilterBrand = (brand) => {
     if (brand === "All") {
       setBrandFilter("");
     } else {
       setBrandFilter(brand);
     }
-  }
-  function handleFilterCategory(category) {
+  };
+  const handleFilterCategory = (category) => {
     if (category === "All") {
       setCategoryFilter("");
     } else {
       setCategoryFilter(category);
     }
-  }
+  };
+
+  useEffect(() => {
+    const newItem = productsDB
+      .filter(filterByBrand)
+      .filter(filterByCategory)
+      .filter(filterByPrice);
+    setProducts(newItem);
+  }, [categoryFilter, brandFilter, priceRange]);
 
   function clearFilter() {
     setBrandFilter("");
     setCategoryFilter("");
-    setproducts2(productData);
-    setinput("");
+    setProducts(productsDB);
+    setInput("");
     setPriceRange({ x: maxPrice });
   }
 
   return (
     <div className="filter-product">
-      {/* <h5>CurrentFilter!</h5>
-      <code>{categoryFilter}</code>
-      <code>{brandFilter}</code> */}
-
       <div className="product-category">
         <h4>Category</h4>
         <ul>

@@ -1,12 +1,15 @@
 import MainComponent from "./MainComponent";
 import { AuthProvider } from "./context/AuthContext";
 import ProductsPovider from "./context/ProductContext";
+import LocalProductsProvider from "./context/LocalProductContext";
 
 function App() {
   return (
     <AuthProvider>
       <ProductsPovider>
-        <MainComponent />
+        <LocalProductsProvider>
+          <MainComponent />
+        </LocalProductsProvider>
       </ProductsPovider>
     </AuthProvider>
   );

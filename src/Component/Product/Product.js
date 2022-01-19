@@ -2,80 +2,25 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faSlidersH } from "@fortawesome/free-solid-svg-icons";
 import StarRatings from "react-star-ratings";
-import { data } from "./data";
 import FilterProduct from "./FilterProduct";
 import { productData } from "./data2";
 import { useProductsContext } from "../../context/ProductContext";
 function Product() {
   const [products2, setproducts2] = useState(productData);
-  const [input, setinput] = useState("");
-  const [select, setSelect] = useState("all");
-  const { productsDB } = useProductsContext();
 
-  useEffect(() => {
-    let sortedProduct = null;
-    switch (select) {
-      case "lowToHigh":
-        sortedProduct = [...productData].sort(lowToHigh);
-        setproducts2(sortedProduct);
-
-        break;
-      case "highToLow":
-        sortedProduct = [...productData].sort(highToLow);
-        setproducts2(sortedProduct);
-
-        break;
-
-      case "rating":
-        sortedProduct = [...productData].sort(sortRating);
-        setproducts2(sortedProduct);
-        break;
-      default:
-        return;
-    }
-  }, [select]);
-
-  function lowToHigh(a, b) {
-    if (a.priceAfter < b.priceAfter) {
-      return -1;
-    }
-    if (a.priceAfter > b.priceAfter) {
-      return 1;
-    }
-    return 0;
-  }
-
-  function highToLow(a, b) {
-    if (a.priceAfter < b.priceAfter) {
-      return 1;
-    }
-    if (a.priceAfter > b.priceAfter) {
-      return -1;
-    }
-    return 0;
-  }
-  function sortRating(a, b) {
-    if (a.rating < b.rating) {
-      return 1;
-    }
-    if (a.rating > b.rating) {
-      return -1;
-    }
-    return 0;
-  }
-  useEffect(() => {
-    const item = productData.filter((product) => {
-      if (input === "") {
-        return product;
-      } else if (product.name.toLowerCase().includes(input.toLowerCase())) {
-        return product;
-      }
-    });
-    setproducts2(item);
-  }, [input]);
+  const {
+    productsDB,
+    setProductsDB,
+    products,
+    setProducts,
+    select,
+    setSelect,
+    input,
+    setInput,
+  } = useProductsContext();
 
   function handleFilterInput(e) {
-    setinput(e.target.value);
+    setInput(e.target.value);
   }
 
   return (
@@ -100,10 +45,9 @@ function Product() {
             <span>Filter</span>
           </button>
           <FilterProduct
-            products2={products2}
             setproducts2={setproducts2}
             productData={productData}
-            setinput={setinput}
+            setInput={setInput}
           />
         </div>
 
@@ -116,16 +60,14 @@ function Product() {
                 value={select}
                 onChange={(e) => setSelect(e.target.value)}
               >
-                <option onSelect={() => console.log("niama")} value="highToLow">
-                  Price: high to low
-                </option>
+                <option value="highToLow">Price: high to low</option>
                 <option value="lowToHigh">Price: low to high</option>
                 <option value="rating">Rating</option>
               </select>
             </div>
           </div>
           <div className="product-grid">
-            {products2.map((data) => (
+            {products.map((data) => (
               <ProductItem key={data.id} detail={data} />
             ))}
           </div>
@@ -154,7 +96,7 @@ function ProductItem(props) {
   return (
     <div className="product-item">
       <div className="product-img-wrapper">
-        <img className="product-img" src={url}></img>
+        <img className="product-img"></img>
       </div>
       <h4 className="product-title">{name}</h4>
       <div className="product-price">
