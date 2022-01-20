@@ -115,18 +115,35 @@ function ProductsPovider({ children }) {
 
     switch (select) {
       case "lowToHigh":
-        sortedProduct = [...productsDB].sort(lowToHigh);
+        sortedProduct = [...productsDB]
+          .filter(filterByBrand)
+          .filter(filterByName)
+          .filter(filterByPrice)
+          .filter(filterByCategory)
+          .sort(lowToHigh);
+
         setProducts(sortedProduct);
 
         break;
       case "highToLow":
-        sortedProduct = [...productsDB].sort(highToLow);
+        sortedProduct = [...productsDB]
+          .filter(filterByBrand)
+          .filter(filterByName)
+          .filter(filterByPrice)
+          .filter(filterByCategory)
+          .sort(highToLow);
+
         setProducts(sortedProduct);
 
         break;
 
       case "rating":
-        sortedProduct = [...productsDB].sort(sortRating);
+        sortedProduct = [...productsDB]
+          .filter(filterByBrand)
+          .filter(filterByName)
+          .filter(filterByPrice)
+          .filter(filterByCategory)
+          .sort(sortRating);
         setProducts(sortedProduct);
         break;
       default:

@@ -988,6 +988,14 @@ article {
 .sorting h4 {
   margin: 0;
 }
+.sort-select {
+  padding: 0.15rem 0.5rem;
+  border: none;
+  outline: 1px solid var(--clr-gold);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
 
 .product-item .btn-addcart {
   font-size: 1rem;

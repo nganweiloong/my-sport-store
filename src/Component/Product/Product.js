@@ -44,11 +44,12 @@ function Product() {
             <div className="line"></div>
             <div>
               <select
+                className="sort-select"
                 value={select}
                 onChange={(e) => setSelect(e.target.value)}
               >
-                <option value="highToLow">Price: high to low</option>
-                <option value="lowToHigh">Price: low to high</option>
+                <option value="highToLow">Price: High to Low</option>
+                <option value="lowToHigh">Price: Low to High</option>
                 <option value="rating">Rating</option>
               </select>
             </div>
@@ -99,7 +100,7 @@ function ProductItem(props) {
       </div>
       <div>
         <div className="product-img-wrapper">
-          <img className="product-img" src={url}></img>
+          <img className="product-img" src={url} alt={name}></img>
         </div>
         <h4 className="product-title">{name}</h4>
       </div>
