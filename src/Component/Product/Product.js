@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { fs } from "../../Config/firebase";
 function Product() {
   const { products, select, setSelect, input, setInput } = useProductsContext();
+  const [showFilter, setShowFilter] = useState(false);
 
   function handleFilterInput(e) {
     setInput(e.target.value);
@@ -31,11 +32,14 @@ function Product() {
               <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
             </button>
           </div>
-          <button className="slider-filter-btn">
+          <button
+            onClick={() => setShowFilter(!showFilter)}
+            className="slider-filter-btn"
+          >
             <FontAwesomeIcon icon={faSlidersH} />
             <span>Filter</span>
           </button>
-          <FilterProduct />
+          <FilterProduct showFilter={showFilter} />
         </div>
 
         <div className="product-grid-container">

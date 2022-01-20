@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-input-slider";
 import { useProductsContext } from "../../context/ProductContext";
 
-function FilterProduct() {
+function FilterProduct({ showFilter }) {
   const [categorySelected, setcategorySelected] = useState("All");
   const [brandSelected, setBrandSelected] = useState("All");
+
   const {
     brandUnique,
     brandFilter,
@@ -22,7 +23,7 @@ function FilterProduct() {
     clearFilter();
   }, []);
   return (
-    <div className="filter-product">
+    <div className={`filter-product ${showFilter && "show-filter-product"}`}>
       <div className="product-category">
         <h4>Category</h4>
         <ul>
