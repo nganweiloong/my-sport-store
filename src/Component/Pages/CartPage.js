@@ -103,7 +103,7 @@ function CartItem(props) {
   return (
     <div className="cart-items">
       <div className="img-wrapper">
-        <img src={url}></img>
+        <img src="/images/product/feature-test-1.jpg"></img>
       </div>
       <div className="cart-item-detail">
         <h3>{name}</h3>

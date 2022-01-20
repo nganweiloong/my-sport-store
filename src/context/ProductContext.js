@@ -43,7 +43,6 @@ function ProductsPovider({ children }) {
   const [priceRange, setPriceRange] = useState({ x: 0 });
   const [categoryFilter, setCategoryFilter] = useState(null);
   const [brandFilter, setBrandFilter] = useState(null);
-  const [isAllSelected, setisAllSelected] = useState(true);
 
   useEffect(() => {
     setPriceRange({
@@ -104,7 +103,8 @@ function ProductsPovider({ children }) {
   function clearFilter() {
     setBrandFilter("");
     setCategoryFilter("");
-    setProducts(productsDB);
+    setProducts(productsDB.sort(highToLow));
+    setSelect("highToLow");
     setInput("");
     setPriceRange({ x: maxPrice });
   }

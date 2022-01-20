@@ -100,6 +100,9 @@ function ProductItem(props) {
       </div>
       <div>
         <div className="product-img-wrapper">
+          <div className="product-offer">
+            <span className="discount-amount">{discount}%</span> OFF!
+          </div>
           <img className="product-img" src={url} alt={name}></img>
         </div>
         <h4 className="product-title">{name}</h4>

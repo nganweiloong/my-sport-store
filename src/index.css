@@ -918,8 +918,27 @@ article {
   /* position: absolute; */
 }
 .product-img-wrapper {
-  /* border: 1px solid red; */
+  position: relative;
   height: 250px;
+}
+.product-offer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.6em;
+  background-color: red;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  clip-path: polygon(100% 0, 100% 100%, 52% 78%, 0 100%, 0 0);
+}
+.discount-amount {
+  color: gold;
+  font-weight: 700;
+  font-size: 1rem;
 }
 .product-img {
   object-fit: contain;
