@@ -37,11 +37,8 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
-      console.log("running authstate");
-
       setCurrentUser(user);
       if (user) {
-        console.log("running authstate2");
         setUuid(user.uid);
         fs.collection("userInfo")
           .doc(user.uid)
@@ -59,7 +56,6 @@ export function AuthProvider({ children }) {
           setCartProducts(newCartProduct);
         });
       } else {
-        console.log("running authstate2-else");
         setUsername(null);
         setUuid(null);
         setCartProducts([]);

@@ -67,7 +67,7 @@ function Product() {
 export default Product;
 
 function ProductItem(props) {
-  const [Srating, setSRating] = useState(2);
+  const [showAddNoti, setShowAddNoti] = useState(false);
   const { name, priceBefore, priceAfter, discount, rating, url } = props.detail;
   const navigate = useNavigate();
   const { uuid } = useAuth();
@@ -80,10 +80,12 @@ function ProductItem(props) {
       Product["TotalProductPrice"] = Product.quantity * Product.priceAfter;
       fs.collection("Cart " + uuid)
         .doc(product.ID)
-        .set(Product)
-        .then(() => {
-          console.log("added succesfully!");
-        });
+        .set(Product);
+
+      setShowAddNoti(true);
+      setTimeout(() => {
+        setShowAddNoti(false);
+      }, 500);
     } else {
       alert("Please login first ");
       navigate("/login");
@@ -92,6 +94,9 @@ function ProductItem(props) {
 
   return (
     <div className="product-item">
+      <div className={`add-cart-noti ${showAddNoti && "show-add-cart-noti"}`}>
+        Added to cart
+      </div>
       <div>
         <div className="product-img-wrapper">
           <img className="product-img" src={url}></img>

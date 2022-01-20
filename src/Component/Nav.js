@@ -17,7 +17,9 @@ function Nav() {
     <header>
       <div className="navbar">
         <div className="logo">
-          <img src="/images/logo.svg"></img>
+          <Link to="/">
+            <img src="/images/logo.svg"></img>
+          </Link>
         </div>
         <button onClick={() => setSidebarShow(true)} className="faBar-wrapper">
           <FontAwesomeIcon icon={faBars} size="2x" className="faBars" />

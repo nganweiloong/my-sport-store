@@ -30,10 +30,8 @@ function ProductsPovider({ children }) {
   }, []);
 
   useEffect(() => {
-    console.log("assigning to products from DB,setting isloading to false..");
     setProducts(productsDB);
     setIsLoading(false);
-    console.log(isLoading);
   }, [productsDB]);
 
   //filter-------------------------------------

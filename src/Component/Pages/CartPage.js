@@ -49,7 +49,7 @@ function CartPage() {
             </div>
             <div>
               <span>Total Price </span>
-              <span>RM {totalPrice}</span>
+              <span>RM {totalPrice.toFixed(2)}</span>
             </div>
             <button
               disabled={totalItem === 0}
@@ -107,7 +107,7 @@ function CartItem(props) {
       </div>
       <div className="cart-item-detail">
         <h3>{name}</h3>
-        <h4>RM{priceAfter}</h4>
+        <h4>RM{priceAfter.toFixed(2)}</h4>
         <div className="cart-item-quantity">
           Quantity{" "}
           <div className="btn-wrap">
