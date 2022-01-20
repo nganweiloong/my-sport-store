@@ -63,9 +63,11 @@ Global Styles
 }
 .main {
   min-height: calc(100vh - 4.1rem);
-
-  /* background: red; */
 }
+
+/* .main {
+  background-color: red;
+} */
 button {
   font-family: inherit;
 }
@@ -208,6 +210,20 @@ header {
 .btn-login {
   position: relative;
   transition: all 0.2s linear;
+}
+.add-cart-noti {
+  background: hsl(125, 71%, 66%);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.25em;
+  position: absolute;
+  bottom: -2rem;
+  left: -40%;
+  display: none;
+}
+
+.show-add-cart-noti {
+  display: block;
 }
 
 .cart-icon:hover,
@@ -441,6 +457,8 @@ article {
   /* max-width: 400px; */
   background-color: white;
   width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: var(--box-shadow);
 }
 
 .feature-product img {
@@ -643,12 +661,7 @@ article {
 }
 .footer-title {
   text-align: center;
-  padding: 1rem;
-}
-.footer-title h3 {
-  margin: 0;
-  font-size: 1rem;
-  margin-top: 0.5rem;
+  padding: 0.4rem;
 }
 
 @media screen and (min-width: 761px) {
@@ -911,6 +924,7 @@ article {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  box-shadow: var(--box-shadow);
 }
 
 .product-detail-wrapper {
@@ -1054,6 +1068,7 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: auto;
 }
 
 .login-form-title {
@@ -1189,3 +1204,64 @@ article {
 @media screen and (max-width: 600px) {
 }
 /* cart page  */
+
+/* sidebar */
+.sidebar-background {
+  background-color: hsla(0, 0%, 0%, 0.6);
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+}
+
+.show-sidebar-background {
+  display: block;
+}
+
+.sidebar {
+  width: 80%;
+  background-color: #fff;
+  height: 100%;
+  position: absolute;
+  transform: translateX(-100%);
+  transition: all 0.15s linear;
+  max-width: 400px;
+  z-index: 2;
+}
+.show-sidebar {
+  transform: translateX(0%);
+}
+
+.side-header {
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 1px solid var(--clr-grey-10); */
+  padding: 1rem;
+}
+.sidebar-link {
+  padding: 1rem;
+}
+
+.icon-close {
+  color: var(--clr-gold);
+}
+.sidebar-link li {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.sidebar-footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sidebar-footer {
+  font-size: 1.4rem;
+}
+/* sidebar */

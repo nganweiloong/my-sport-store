@@ -11,6 +11,7 @@ function ProductsPovider({ children }) {
   const [select, setSelect] = useState("all");
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(true);
+  const [sidebarShow, setSidebarShow] = useState(false);
   const getProducts = async () => {
     const products = await fs.collection("sportproducts").get();
     // await print(products);
@@ -164,7 +165,11 @@ function ProductsPovider({ children }) {
     return 0;
     //filter-------------------------------------
   }
-  // filter product------------------------------------------------------
+
+  // sidebar show
+
+  // sidebar show
+
   const value = {
     productsDB,
     setProductsDB,
@@ -185,6 +190,8 @@ function ProductsPovider({ children }) {
     setPriceRange,
     maxPrice,
     clearFilter,
+    sidebarShow,
+    setSidebarShow,
   };
   return (
     <ProductsContext.Provider value={value}>

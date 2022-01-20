@@ -11,28 +11,30 @@ import Signup from "./Component/Pages/Signup";
 import CartPage from "./Component/Pages/CartPage";
 import NoFound from "./Component/Pages/NoFound";
 import ScrollToTop from "./Component/ScrollToTop";
+import Sidebar from "./Component/Sidebar";
 
 function MainComponent() {
   const { currentUser } = useAuth();
   return (
     <BrowserRouter>
-      <Nav />
-      <div className="main">
-        <ScrollToTop>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/products" element={<Product />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-
-            <Route path="/:anyPages" element={<NoFound />} />
-
-            {true && <Route path="/cart" element={<CartPage />} />}
-          </Routes>
-        </ScrollToTop>
-      </div>
-      <Footer />
+      <main>
+        <Sidebar />
+        <Nav />
+        <div className="main">
+          <ScrollToTop>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/products" element={<Product />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/:anyPages" element={<NoFound />} />
+              {true && <Route path="/cart" element={<CartPage />} />}
+            </Routes>
+          </ScrollToTop>
+        </div>
+        <Footer />
+      </main>
     </BrowserRouter>
   );
 }

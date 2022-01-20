@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,16 +7,19 @@ import {
   faPeopleArrows,
 } from "@fortawesome/free-solid-svg-icons";
 import { useAuth } from "../context/AuthContext";
+import { useProductsContext } from "../context/ProductContext";
 
 function Nav() {
   const { currentUser, logout, username, totalProduct } = useAuth();
+  const { sidebarShow, setSidebarShow } = useProductsContext();
+
   return (
     <header>
       <div className="navbar">
         <div className="logo">
           <img src="/images/logo.svg"></img>
         </div>
-        <button className="faBar-wrapper">
+        <button onClick={() => setSidebarShow(true)} className="faBar-wrapper">
           <FontAwesomeIcon icon={faBars} size="2x" className="faBars" />
         </button>
         <div className="nav-list">
@@ -35,6 +38,7 @@ function Nav() {
             <div className="cart-icon">
               <FontAwesomeIcon icon={faCartPlus} />
               <Link to="/cart">Carts</Link>
+
               <div
                 className={`cart-icon-amount ${
                   totalProduct > 0 && "show-cart-icon-amount"
