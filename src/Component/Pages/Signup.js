@@ -61,6 +61,7 @@ function Signup() {
               </div>
               <div className="input-field">
                 <input
+                  maxLength={15}
                   onChange={(e) => setEmail(e.target.value)}
                   type="email"
                   placeholder="Email"
@@ -68,6 +69,8 @@ function Signup() {
               </div>
               <div className="input-field">
                 <input
+                  maxLength={15}
+                  minLength={6}
                   onChange={(e) => setPassword(e.target.value)}
                   type="password"
                   placeholder="Password"
@@ -75,6 +78,8 @@ function Signup() {
               </div>
               <div className="input-field">
                 <input
+                  maxLength={15}
+                  minLength={6}
                   onChange={(e) => setPasswordConfirm(e.target.value)}
                   type="password"
                   placeholder="Password Confirmation"
