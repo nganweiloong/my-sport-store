@@ -1319,3 +1319,34 @@ article {
   font-size: 1.4rem;
 }
 /* sidebar */
+
+/* payment */
+.paymentContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 2rem;
+  border: 1px solid var(--clr-gold);
+  padding: 2rem;
+}
+.paymentContainer h6 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.paymentContainer button {
+  display: block;
+  margin-left: auto;
+  background-color: var(--clr-red-dark);
+  font-size: 1rem;
+  padding: 0.55em 0.75em;
+  color: #fff;
+  border-radius: 4px;
+}
+.paymentContainer input {
+  width: 100%;
+  padding: 0.5rem;
+}
+.form-group {
+  margin-bottom: 1rem;
+}

@@ -12,9 +12,10 @@ import CartPage from "./Component/Pages/CartPage";
 import NoFound from "./Component/Pages/NoFound";
 import ScrollToTop from "./Component/ScrollToTop";
 import Sidebar from "./Component/Sidebar";
+import PaymentPage from "./Component/Pages/PaymentPage";
 
 function MainComponent() {
-  const { currentUser } = useAuth();
+  const { toPayPrice, currentUser } = useAuth();
   return (
     <BrowserRouter>
       <main>
@@ -29,7 +30,10 @@ function MainComponent() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/:anyPages" element={<NoFound />} />
-              {true && <Route path="/cart" element={<CartPage />} />}
+              <Route path="/cart" element={<CartPage />} />
+              {currentUser && (
+                <Route path="/cart/payment" element={<PaymentPage />} />
+              )}
             </Routes>
           </ScrollToTop>
         </div>

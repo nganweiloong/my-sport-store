@@ -4,9 +4,11 @@ import { useAuth } from "../../context/AuthContext";
 import { fs, auth } from "../../Config/firebase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus, faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
+import StripeCheckout from "react-stripe-checkout";
 
 function CartPage() {
-  const { currentUser, cartProducts } = useAuth();
+  const { currentUser, cartProducts, toPayPrice, setToPayPrice } = useAuth();
+  const [toPay, setToPay] = useState(false);
   const navigate = useNavigate();
   const cartQuantityArr = cartProducts.map((product) => product.quantity);
   const cartPriceArr = cartProducts.map((product) => product.TotalProductPrice);
@@ -54,9 +56,8 @@ function CartPage() {
             <button
               disabled={totalItem === 0}
               onClick={() => {
-                alert(
-                  "Payment feature still in testing stage, Thank you for testing up my website. :) Have a nice day!"
-                );
+                setToPayPrice(totalPrice.toFixed(2));
+                navigate("/cart/payment");
               }}
               className="btn-shop btn-cartpage"
             >
@@ -64,6 +65,7 @@ function CartPage() {
             </button>
           </div>
         </div>
+        {toPay && <Payment />}
       </div>
     </div>
   );

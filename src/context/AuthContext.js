@@ -14,6 +14,7 @@ export function AuthProvider({ children }) {
   const [uuid, setUuid] = useState();
   const [cartProducts, setCartProducts] = useState([]);
   const [totalProduct, setTotalProduct] = useState();
+  const [toPayPrice, setToPayPrice] = useState();
 
   function signup(email, password) {
     return auth.createUserWithEmailAndPassword(email, password);
@@ -78,6 +79,8 @@ export function AuthProvider({ children }) {
     cartProducts,
     setCartProducts,
     totalProduct,
+    toPayPrice,
+    setToPayPrice,
   };
   return (
     <AuthContext.Provider value={value}>

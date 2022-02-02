@@ -1,5 +1,4 @@
 import React from "react";
-
 import { mvv } from "./mission-vision-values";
 import { useInView } from "react-intersection-observer";
 import { Animated } from "react-animated-css";
