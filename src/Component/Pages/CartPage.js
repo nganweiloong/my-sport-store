@@ -65,7 +65,6 @@ function CartPage() {
             </button>
           </div>
         </div>
-        {toPay && <Payment />}
       </div>
     </div>
   );
