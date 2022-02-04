@@ -61,7 +61,7 @@ function Signup() {
               </div>
               <div className="input-field">
                 <input
-                  maxLength={15}
+                  maxLength={40}
                   onChange={(e) => setEmail(e.target.value)}
                   type="email"
                   placeholder="Email"
