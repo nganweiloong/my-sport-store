@@ -1,0 +1,2822 @@
+{
+"responseCode": 200,
+"responseMessage": "Config",
+"response": {
+"token": "2e9bc2f2a1ad83cd7aed4df0cd89f02da585cbbf7cf730dc45a9fc76aa7950f6c4955b9a309ce87f9db4beb911953a",
+"config": [
+{
+"key": "tv",
+"name": "tv",
+"value": {
+"locale": {
+"en": {
+"perMonthShortText": "/mth",
+"totalPacksAvailable": "",
+"channelText": "channel",
+"andText": "and",
+"appText": "app",
+"appsText": "apps",
+"channelsText": "channels"
+},
+"bm": {
+"andText": "dan",
+"appsText": "aplikasi",
+"appText": "aplikasi",
+"channelsText": "saluran",
+"channelText": "saluran",
+"perMonthShortText": "/bln",
+"totalPacksAvailable": ""
+}
+},
+"banner": {
+"videoSrc": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/video/jan/2023-sports-image_eng-(1).mp4\n",
+"subTitleBm": "<u><a href=\"https://www.astro.com.my/general-terms-and-conditions-for-astro-subscribers\" style=\"color: #FFFFFF\" target=\"__blank\">*Tertakluk T&S</a></u>",
+"subTitleEn": "<a href=\"https://www.astro.com.my/general-terms-and-conditions-for-astro-subscribers\" style=\"color: #FFFFFF\" target=\"__blank\"><u>*T&C applied</u></a>",
+"titleEn": "Sports + HBO GO + Disney+ Hotstar + Astro 100 channels + only at RM99.99/ month*",
+"titleBm": "Sports + HBP GO + Disney+ Hotstar + Astro 100 saluran + hanya pada RM99.99/ bulan* ",
+"backgroundImageDesktop": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e6038fef63f73ab9dccbdc_230203_Desktop_ACM_Homepage_MFL_Adaptation%20(1).jpg",
+"backgroundImageMobile": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e603a3d8c53c314ba0f4c7_230203_Mobile_ACM_ExploreMore_MFL_Adaptation.jpg",
+"cta_1": {
+"url": "#packs",
+"textEn": "Discover more pack",
+"textBm": "Teroka pek lain"
+},
+"cta_2": {
+"url": "https://shop.astro.com.my/movies-pack/build?lead=new",
+"textEn": "Get Movies Pack",
+"textBm": "Dapatkan Pek Movies"
+}
+},
+"packArrangement": {
+"topPacks": [
+"pSports",
+"pPrimary",
+"pPremiumPack1"
+],
+"plusPacks": [
+"pSportsPlus",
+"pMoviesPlus",
+"pEntertainmentPlus"
+],
+"allNewPacks": [
+"pPlatinumLite",
+"pPremiumPack5",
+"pPremiumPack1"
+],
+"morePacks": [
+"pPremiumPack4",
+"pPlatinum"
+]
+},
+"packs": [
+{
+"titleEn": "Top packs just for you",
+"titleBm": "Pek popular hanya untuk anda",
+"descriptionEn": "Enjoy up to 20% OFF when you sign up today!<a href=\"https://acm-cms-assets.eco.astro.com.my/acm/media/shop/mar/t-c_astro-rara-campaign-(20230323).pdf\" target=\"_blank\"><span style=\"color: #E6007D\"> *T&C applies</span></a>",
+"descriptionBm": "Pengalaman Astro baharu sudah tiba, dengan Jaminan Wang Dikembalikan! Info lanjut\nDaftar sekarang dan nikmati langganan 1-bln PERCUMA, serta akses tanpa caj untuk satu hiburan tambahan pilihan anda selama 24-bln! !<a href=\"https://acm-cms-assets.eco.astro.com.my/acm/media/shop/mar/t-c_astro-rara-campaign-(20230323).pdf\" target=\"_blank\"><span style=\"color: #E6007D\">*Tertakluk pada T&S</a>",
+"packIds": [
+"primaryPack",
+"sportsPack",
+"moviesPack"
+]
+},
+{
+"titleEn": "Get the Plus experience",
+"titleBm": "Dapatkan pengalaman Plus",
+"descriptionEn": "",
+"descriptionBm": "",
+"packIds": [
+"premiumPackOne",
+"entertainmentPack",
+"premiumPackTwo",
+"premiumPackThree",
+"platinumPack"
+]
+},
+{
+"titleBm": "Memperkenalkan pek All-New Entertainment",
+"titleEn": "Introducing the All-New Entertainment packs"
+},
+{
+"titleBm": "Lebih banyak pek anda akan nikmati",
+"titleEn": "More packs you'll enjoy"
+}
+]
+},
+"schema_id": null,
+"editable": true
+},
+{
+"key": "whatsapp",
+"name": "whatsapp",
+"value": {
+"titleEn": "Need more details about our TV packs? We got you!",
+"titleBm": "Perlukan butiran lanjut tentang pek TV kami? Kami dapat awak!",
+"descriptionEn": "Chat with our representative via WhatsApp",
+"descriptionBm": "Berbual dengan wakil kami melalui WhatsApp",
+"icon_alt": "Chat on Whatsapp",
+"icon": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/chat_icon.svg",
+"cta": {
+"link": "https://api.whatsapp.com/send/?phone=60395433838&text=ENQUIRIES",
+"textEn": "Chat with our representative via WhatsApp",
+"textBm": "Berbual dengan wakil kami melalui WhatsApp"
+}
+},
+"schema_id": null,
+"editable": true
+},
+{
+"key": "packs",
+"name": "packs",
+"value": {
+"sportsPack": {
+"promotion": {
+"textEn": "Enjoy 1-mth FREE + Complimentary Add-On",
+"textBm": "Percuma 1 bln + Add-On tanpa caj"
+},
+"packIcon": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/6310424b81e79c3a4d47290b_625cce7fd6bb009409d2c29f_Sports%2520Pack%2520icon.png",
+"title": {
+"titleEn": "Sports Pack",
+"titleBm": "Pek Sports"
+},
+"price": "RM99.99",
+"originalPrice": "RM129.99",
+"tag": {
+"textEn": "For the first 8 months",
+"textBm": "Untuk 8 bulan pertama"
+},
+"bannerImgUrl": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/Project-High-Council.jpeg",
+"description": {
+"textEn": "Catch all live local & international sporting actions including Liga Malaysia, Premier League, F1, MotoGP & UFC in one pack.",
+"textBm": "Saksikan semua aksi sukan tempatan & antarabangsa secara langsung termasuk Liga Malaysia, Liga Perdana, F1, MotoGP & UFC dalam satu pek."
+},
+"detailLink": "https://shop.astro.com.my/sports-pack/build?lead=new",
+"content": {
+"textEn": "95+ channels and 2 apps",
+"textBm": "3 aplikasi and 90+ saluran"
+},
+"appIcons": "https://acm-general-web-dev.pink.cat/channel-thumbnails/thumbnail_sports_pack.png",
+"plusPack": {
+"promoCard": {
+"title": {
+"textEn": "Upgrade to Sports Plus",
+"textBm": "Naik taraf ke Sports Plus"
+},
+"description": {
+"textEn": "Add Netflix Standard, Korean and Horror at +RM30/bln only!",
+"textBm": "Tambah Netflix Standard, saluran Korea & Horror pada +RM30/ bln sahaja!"
+}
+},
+"promotion": {
+"textEn": "Enjoy 1-mth FREE + Complimentary Add-On",
+"textBm": "Percuma 1 bln + Add-On tanpa caj"
+},
+"packIcon": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/634e069bfe791eb447575f99_MicrosoftTeams-image%20(1).png",
+"title": {
+"textEn": "Sports Plus Pack",
+"textBm": "Pek Sports Plus"
+},
+"price": "RM129.99",
+"originalPrice": null,
+"tag": {
+"textEn": "For the first 8 months",
+"textBm": "Untuk 8 bulan pertama"
+},
+"bannerImgUrl": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e6812bc8176655830400b9_221215_TopBanner_ACM_Detailpage_Refresh_SportsPack_Visa.jpg",
+"description": {
+"textEn": "Catch all the live sporting actions at the home of sports, and now with the best of Korean, Horror shows, and Netflix.",
+"textBm": "Saksikan semua acara langsung sukan dalam pek Sports Plus baharu. Kini dengan drama Korea, filem seram terhebat, dan Netflix."
+},
+"detailLink": "https://shop.astro.com.my/sports-plus-pack/build?lead=new",
+"content": {
+"textEn": "99+ channels and 3 apps",
+"textBm": "99+ saluran dan 3 aplikasi"
+},
+"appIcons": "https://acm-general-web-dev.pink.cat/channel-thumbnails/thumbnail_sports_plus_pack.png"
+}
+},
+"primaryPack": {
+"promotion": "null",
+"packIcon": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/61dae6d16729ac75e15c4713_61c06fdcc414140b14e8e19f_logo.png",
+"title": {
+"textEn": "Primary Pack",
+"textBm": "Pek Primary"
+},
+"price": "RM59.99",
+"originalPrice": null,
+"tag": "null",
+"bannerImgUrl": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/Project-High-Council.jpeg",
+"description": {
+"textEn": "Take family time to new heights with local & international favourites",
+"textBm": "Masa bersama keluarga kini lebih hebat dengan pelbagai kegemaran rancangan tempatan & antarabangsa"
+},
+"detailLink": "https://shop.astro.com.my/primary-pack/build?lead=new",
+"content": {
+"textEn": "80+ channels and 1 app",
+"textBm": "80+ saluran dan 1 app"
+},
+"appIcons": "https://acm-general-web-dev.pink.cat/channel-thumbnails/thumbnail_primary_pack.png",
+"plusPack": "null"
+},
+"moviesPack": {
+"promotion": {
+"textEn": "Enjoy 1-mth FREE + Complimentary Add-On",
+"textBm": "Percuma 1 bln + Add-On tanpa caj"
+},
+"packIcon": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/631042495e2fe0555d8e325a_625ccea87c5e564d104364cf_Movies%2520Pack%2520icon.png",
+"title": {
+"textEn": "Movies Pack",
+"textBm": "Pek Movies"
+},
+"price": "RM94.99",
+"originalPrice": null,
+"tag": {
+"textEn": "For the first 8 months",
+"textBm": "Untuk 8 bulan pertama"
+},
+"bannerImgUrl": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e621f8814c3209a81a86de_movies.jpg",
+"description": {
+"textEn": "Discover award-winning films and original series at the home of movies, which includes Disney+ Hotstar & HBO",
+"textBm": "Temui pelbagai seleksi filem & siri original terbaik di destinasi filem termasuk Disney+ Hotstar & HBO"
+},
+"detailLink": "https://shop.astro.com.my/movies-pack/details",
+"content": {
+"textEn": "90+ channels and 3 apps",
+"textBm": "90+ saluran dan 3 aplikasi"
+},
+"appIcons": "https://acm-general-web-dev.pink.cat/channel-thumbnails/thumbnail_movies_pack.png",
+"plusPack": {
+"promoCard": {
+"title": {
+"textEn": "Upgrade to Movies Plus",
+"textBm": "Naik taraf ke Movies Plus"
+},
+"description": {
+"textEn": "Add Netflix Standard, Korean and Horror at +RM35/bln only!",
+"textBm": "Tambah Netflix Standard, saluran Korea & Horror pada +RM35/ bln sahaja!"
+}
+},
+"promotion": {
+"textEn": "Enjoy 1-mth FREE + Complimentary Add-On",
+"textBm": "Percuma 1 bln + Add-On tanpa caj"
+},
+"packIcon": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/634dddea5765a95e9ad0e78e_MicrosoftTeams-image.png",
+"title": {
+"textEn": "Movies Plus Pack",
+"textBm": "Pek Movies Plus"
+},
+"price": "RM129.99",
+"originalPrice": null,
+"tag": {
+"textEn": "For the first 8 months",
+"textBm": "Untuk 8 bulan pertama"
+},
+"bannerImgUrl": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e6818ac81766f19c040860_movies%20plus-1.jpg",
+"description": {
+"textEn": "Award-winning films and original series with the all-new Movies Plus pack. From the best of Disney+ Hotstar, HBO and now Korean, Horror shows and Netflix.",
+"textBm": "Award-winning films and original series with the all-new Movies Plus pack. From the best of Disney+ Hotstar, HBO and now Korean, Horror shows and Netflix."
+},
+"detailLink": "https://shop.astro.com.my/movies-plus-pack/build?lead=new",
+"content": {
+"textEn": "94+ channels and 4 apps",
+"textBm": "94+ saluran dan 4 aplikasi"
+},
+"appIcons": "https://acm-general-web-dev.pink.cat/channel-thumbnails/thumbnail_movies_plus_pack.png"
+}
+},
+"premiumPackOne": {
+"promotion": {
+"textEn": "Enjoy 1-mth FREE + Complimentary Add-On",
+"textBm": "Percuma 1 bln + Add-On tanpa caj"
+},
+"packIcon": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63104249df75a6cc9c0c7f47_62bcf4c0d01c09c84f7ae40f_Premium%2520Pack.png",
+"title": {
+"textEn": "Premium Pack 1: Sports & Movies",
+"textBm": "Pek Premium 1: Sports & Movies"
+},
+"price": "RM129.99",
+"originalPrice": null,
+"tag": {
+"textEn": "For the first 8 months",
+"textBm": "Untuk 8 bulan pertama"
+},
+"bannerImgUrl": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e622ff5f7ee2422da52f1c_ACM-Desktop.jpg",
+"description": {
+"textEn": "Experience a Premium selection at the home of movies & sports, which includes Movies Pack from Disney+ Hotstar, HBO and Sports Pack, all in one place.",
+"textBm": "Alami seleksi premium di destinasi filem & sukan termasuk Pek Movies daripada Disney+ Hotstar, HBO & Pek Sports, semua di satu tempat."
+},
+"detailLink": "https://shop.astro.com.my/premium-pack-1/details",
+"content": {
+"textEn": "105+ channels and 4 apps",
+"textBm": "105+ saluran dan 4 aplikasi"
+},
+"plusPack": "null"
+},
+"premiumPackTwo": {
+"promotion": {
+"textEn": "Enjoy 1-mth FREE + Complimentary Add-On",
+"textBm": "Percuma 1 bln + Add-On tanpa caj"
+},
+"packIcon": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63104249df75a6cc9c0c7f47_62bcf4c0d01c09c84f7ae40f_Premium%2520Pack.png",
+"title": {
+"textEn": "Premium Pack 2: Entertainment Plus & Sports",
+"textBm": "Pek Premium 2: Entertainment Plus & Sports"
+},
+"price": "RM149.99",
+"originalPrice": null,
+"tag": {
+"textEn": "For the first 8 months",
+"textBm": "Untuk 8 bulan pertama"
+},
+"bannerImgUrl": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e6226a61ca75cf062714ac_pp2.jpg",
+"description": {
+"textEn": "Get an amazing viewing experience at the home of sports & entertainment, featuring Sports Pack and Entertainment Plus Pack (with Netflix). Complimentary Astro GO+ until 14th Mar 2023",
+"textBm": "Dapatkan pengalaman tontonan hebat di destinasi sukan & hiburan, memaparkan Pek Sukan & Pek Entertainment Plus (dengan Netflix). Percuma Astro GO+ sehingga 14hb Mar 2023"
+},
+"detailLink": "https://shop.astro.com.my/premium-pack-2/build?lead=new",
+"content": {
+"textEn": "115+ channels and 5 apps",
+"textBm": "115+ saluran dan 5 aplikasi"
+},
+"plusPack": "null"
+},
+"premiumPackThree": {
+"promotion": {
+"textEn": "Enjoy 1-mth FREE + Complimentary Add-On",
+"textBm": "Percuma 1 bln + Add-On tanpa caj"
+},
+"packIcon": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63104249df75a6cc9c0c7f47_62bcf4c0d01c09c84f7ae40f_Premium%2520Pack.png",
+"title": {
+"textEn": "Premium Pack 3: Entertainment Plus & Movies",
+"textBm": "Pek Premium 3: Entertainment Plus & Movies"
+},
+"price": "RM154.99",
+"originalPrice": null,
+"tag": {
+"textEn": "For the first 8 months",
+"textBm": "Untuk 8 bulan pertama"
+},
+"bannerImgUrl": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e622ad5f7ee21742a528fd_pp3.jpg",
+"description": {
+"textEn": "Be captivated at the home of movies & entertainment, with the best of streaming apps you love in one place including Netflix, Disney+ Hotstar & HBO GO.",
+"textBm": "Terpesona di destinasi filem & hiburan dengan aplikasi penstriman terhebat yang anda gemari di satu tempat termasuk Netflix, Disney+ Hotstar & HBO GO."
+},
+"detailLink": "https://shop.astro.com.my/premium-pack-3/build?lead=new",
+"content": {
+"textEn": "110+ channels and 6 apps",
+"textBm": "110+ saluran dan 6 aplikasi"
+},
+"plusPack": "null"
+},
+"entertainmentPack": {
+"promotion": {
+"textEn": "Enjoy 1-mth FREE + Complimentary Add-On",
+"textBm": "Percuma 1 bln + Add-On tanpa caj"
+},
+"packIcon": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/61dae6c8aa2e7a0358cd4f64_61c078e4f437b251b572b6e1_logoimage.png",
+"title": {
+"textEn": "Entertainment Pack",
+"textBm": "Pek Entertainment"
+},
+"price": "RM89.99",
+"originalPrice": null,
+"tag": {
+"textEn": "For the first 8 months",
+"textBm": "Untuk 8 bulan pertama"
+},
+"bannerImgUrl": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63f8233613e0d2075858449b_Astro%20ceria.jpg",
+"description": {
+"textEn": "Delight your loved ones at the home of entertainment, containing a wider selection of local, international & kids titles. You can also choose to have any one of our Asian Favourites",
+"textBm": "Hiburkan keluarga anda di destinasi hiburan yang mempunyai pelbagai seleksi tempatan, antarabangsa & kanak-kanak"
+},
+"detailLink": "https://shop.astro.com.my/entertainment-pack/build?lead=new",
+"content": {
+"textEn": "95+ channels and 3 apps",
+"textBm": "95+ saluran dan 3 aplikasi"
+},
+"plusPack": {
+"promoCard": {
+"title": {
+"textEn": "Upgrade to Entertainment Plus",
+"textBm": "Naik taraf ke Entertainment Plus"
+},
+"description": {
+"textEn": "Add Netflix Standard, Korean and Horror at +RM40/mth only!",
+"textBm": "Tambah Netflix Standard, saluran Korea & Horror pada +RM40/ bln sahaja!"
+}
+},
+"promotion": {
+"textEn": "Enjoy 1-mth FREE + Complimentary Add-On",
+"textBm": "Percuma 1 bln + Add-On tanpa caj"
+},
+"packIcon": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/634dce5441e7665ccc692425_entertainmentplus.png",
+"title": {
+"textEn": "Entertainment Plus Pack",
+"textBm": "Pek Entertainment Plus"
+},
+"price": "RM129.99",
+"originalPrice": null,
+"tag": {
+"textEn": "For the first 8 months",
+"textBm": "Untuk 8 bulan pertama"
+},
+"bannerImgUrl": "https://product.astro.com.my/bm/img/5df887b040a1a9d6b16b68f8/63e65d486fd2cc6a6061919c_ent%20plus.jpg",
+"description": {
+"textEn": "Now you can immerse yourself with full access to Netflix on Astro Box & your other preferred devices. Catch also the best of Korean & Horror shows.",
+"textBm": "Kini anda boleh menikmati akses penuh ke Netflix di Astro Box & peranti pilihan anda. Saksikan jua rancangan Korean & Horror terhebat."
+},
+"detailLink": "https://shop.astro.com.my/entertainment-plus-pack/build?lead=new",
+"content": {
+"textEn": "100+ channels and 4 apps",
+"textBm": "100+ saluran dan 4 aplikasi"
+},
+"appIcons": "https://acm-general-web-dev.pink.cat/channel-thumbnails/thumbnail_sports_plus_pack.png"
+}
+},
+"platinumPack": {
+"promotion": {
+"textEn": "Enjoy 1-mth FREE + Complimentary Add-On",
+"textBm": "Percuma 1 bln + Add-On tanpa caj"
+},
+"packIcon": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/61dae6cc208344189a7ee8a3_61c0c7d5323f84042867c0e8_61b2232403730b69f8a65033_icon-Platinum%25402x.png",
+"titleEn": "Platinum Pack",
+"titleBm": "Pek Platinum",
+"price": "RM194.99",
+"originalPrice": null,
+"tag": {
+"textEn": "For the first 8 months",
+"textBm": "Untuk 8 bulan pertama"
+},
+"bannerImgUrl": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e620ca56d4f7ff35ec81bc_platinum.jpg",
+"description": {
+"textEn": "Be captivated at the home of movies & entertainment, with the best of streaming apps you love in one place including Netflix, Disney+ Hotstar & HBO GO.",
+"textBm": "Anda berhak hiburan terbaik dengan pek yang mengandungi semua termasuk Netflix, Pek Movies (Disney+ Hotstar), Pek Sports & Pek Entertainment Plus. Termasuk Astro GO+"
+},
+"detailLink": "https://shop.astro.com.my/platinum-pack/details",
+"content": {
+"textEn": "140+ channels and 7 apps",
+"textBm": "140+ saluran dan 7 aplikasi"
+},
+"plusPack": "null"
+}
+},
+"schema_id": null,
+"editable": true
+},
+{
+"key": "astrogo",
+"name": "astrogo",
+"value": {
+"carousel": {
+"en": [
+{
+"heading": "Experience top-class entertainment your way",
+"title": "Astro GO",
+"description": "From trending shows to essential live sports, access thousands of content anytime, anywhere. ",
+"media": {
+"mobile": {
+"videoUrl": "https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided-flow-homepage-assets/221017-local-360x616.webm",
+"imageUrl": "https://resizer-acm.eco.astro.com.my/tr:h-616/https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided/acm_hero-banner_local_mobile_360x550px_1.jpg",
+"alt": "Astro Local"
+},
+"desktop": {
+"videoUrl": "https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided-flow-homepage-assets/221017-local-1280x616.webm",
+"imageUrl": "https://resizer-acm.eco.astro.com.my/tr:h-616/https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided/acm_hero-banner_local_desktop_1280x550px.jpg",
+"alt": "Astro Local"
+}
+},
+"button": {
+"text": "Get Astro GO now",
+"url": "https://onelink.to/phh42h"
+}
+}
+],
+"bm": [
+{
+"heading": "Experience top-class entertainment your way",
+"title": "Astro GO",
+"description": "From trending shows to essential live sports, access thousands of content anytime, anywhere. ",
+"media": {
+"mobile": {
+"videoUrl": "https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided-flow-homepage-assets/221017-local-360x616.webm",
+"imageUrl": "https://resizer-acm.eco.astro.com.my/tr:h-616/https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided/acm_hero-banner_local_mobile_360x550px_1.jpg",
+"alt": "Astro Local"
+},
+"desktop": {
+"videoUrl": "https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided-flow-homepage-assets/221017-local-1280x616.webm",
+"imageUrl": "https://resizer-acm.eco.astro.com.my/tr:h-616/https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided/acm_hero-banner_local_desktop_1280x550px.jpg",
+"alt": "Astro Local"
+}
+},
+"button": {
+"text": "Get Astro GO now",
+"url": "https://onelink.to/phh42h"
+}
+}
+]
+},
+"colorful_text": {
+"en": {
+"title": "A streaming companion made for what you love",
+"description": "Stay close to your favourite movies, channels, and more with Astro GO – at home, on the road, via any devices."
+},
+"bm": {
+"title": "A streaming companion made for what you love",
+"description": "Stay close to your favourite movies, channels, and more with Astro GO – at home, on the road, via any devices."
+}
+},
+"feature_cards": {
+"header": {
+"en": "Tap into your streaming privileges",
+"bm": "Tap into your streaming privileges"
+},
+"button": {
+"en": {
+"text": "Stream now",
+"url": "https://onelink.to/phh42h"
+},
+"bm": {
+"text": "Stream now",
+"url": "https://onelink.to/phh42h"
+}
+},
+"en": [
+{
+"title": "New user pre-access",
+"description": "Stream all content instantly before your Astro box arrives.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/new_customer.svg"
+},
+{
+"title": "No subscription fee",
+"description": "Unlimited entertainment on the Astro GO app, FREE for all users.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/money.svg"
+},
+{
+"title": "More cloud, more screens",
+"description": "1500 hours cloud recording, up to 4 shared screens, all yours.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloudscreen.svg"
+},
+{
+"title": "Features for your favourites",
+"description": "Enjoy cool features to keep track of what you love.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/fav.svg"
+}
+],
+"bm": [
+{
+"title": "New user pre-access",
+"description": "Stream all content instantly before your Astro box arrives.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/new_customer.svg"
+},
+{
+"title": "No subscription fee",
+"description": "Unlimited entertainment on the Astro GO app, FREE for all users.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/money.svg"
+},
+{
+"title": "More cloud, more screens",
+"description": "1500 hours cloud recording, up to 4 shared screens, all yours.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloudscreen.svg"
+},
+{
+"title": "Features for your favourites",
+"description": "Enjoy cool features to keep track of what you love.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/fav.svg"
+}
+]
+},
+"pack_card": {
+"header": {
+"en": "Get the upgraded streaming experience with Astro GO+",
+"bm": "Get the upgraded streaming experience with Astro GO+"
+},
+"en": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/astrogo.svg",
+"logo_name": "<p style=\"background: linear-gradient(90deg, #DF147D 0%, #582898 100%);-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent;\">Astro GO+</p>",
+"title": "<p>RM5.99<p style=\"font-size: 16px; line-height: 22px; margin-left: 5px\">/ mth</p></p>",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/high_council_1.png",
+"description": "An add-on service that maximises your streaming experience.",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/multi_devices.svg",
+"text": "Watch on <b>4 screens</b> at a time"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg",
+"text": "<b>1500 hours</b> of cloud recording"
+}
+],
+"buttonText": "Upgrade now",
+"buttonUrl": "https://store.astro.com.my/astro-go-plus"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/astrogo.svg",
+"logo_name": "Astro GO",
+"title": "FREE",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/harimau.png",
+"description": "A FREE streaming app dedicated for all Astro customers.",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/multi_devices.svg",
+"text": "Watch on <b>2 screens</b> at a time"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg",
+"text": "<b>200 hours</b> of cloud recording"
+}
+],
+"buttonText": "Stream now",
+"buttonUrl": "https://onelink.to/phh42h"
+}
+],
+"bm": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/astrogo.svg",
+"logo_name": "<p style=\"color: #e6007d\">Astro GO+</p>",
+"title": "<p>RM5.99<p style=\"font-size: 16px; line-height: 22px; margin-left: 5px\">/ mth</p></p>",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/high_council_1.png",
+"description": "An add-on service that maximises your streaming experience.",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Subscription details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/multi_devices.svg",
+"text": "Watch on <b>4 screens</b> at a time"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg",
+"text": "<b>1500 hours</b> of cloud recording"
+}
+],
+"buttonText": "Upgrade Now",
+"buttonUrl": "https://product.astro.com.my/"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/astrogo.svg",
+"logo_name": "Astro GO",
+"title": "FREE",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/harimau.png",
+"description": "A FREE streaming app dedicated for all Astro customers.",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Subscription details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/multi_devices.svg",
+"text": "Watch on <b>2 screens</b> at a time"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg",
+"text": "<b>200 hours</b> of cloud recording"
+}
+],
+"buttonText": "Stream now",
+"buttonUrl": "https://onelink.to/phh42h"
+}
+]
+},
+"feature_banner": {
+"header": {
+"en": "More cool features built just for you",
+"bm": "More cool features built just for you"
+},
+"en": [
+{
+"title": "Interactive mode",
+"description": "Stream LIVE matches, get instant highlights & statistics, and more of what football fans need.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/interactive-mode.png",
+"video_url": "",
+"is_new": false
+},
+{
+"title": "Multi-user profiles",
+"description": "Build up to 5 personal profiles for tailored content. Enjoy more of what you love, and your loved ones can too.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/mup_1.png",
+"video_url": "",
+"is_new": true
+},
+{
+"title": "Smart search",
+"description": "Have something in mind? Just type in a little clue, and we’ll find it for you in no time.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/search.png",
+"video_url": "",
+"is_new": false
+},
+{
+"title": "Play from start",
+"description": "Don’t worry if you missed a few parts. Just restart the show, and enjoy it all over again.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/play-from-start.png",
+"video_url": "",
+"is_new": false
+},
+{
+"title": "Multi-device support",
+"description": "With easy access via smartphone, tablet, TV or PC, just tap tap away to your favourite content.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/agmulti.png",
+"video_url": "",
+"is_new": false
+}
+],
+"bm": [
+{
+"title": "Interactive mode",
+"description": "Stream LIVE matches, get instant highlights & statistics, and more of what football fans need.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/interactive-mode.png",
+"video_url": "",
+"is_new": false
+},
+{
+"title": "Multi-user profiles",
+"description": "Build up to 5 personal profiles for tailored content. Enjoy more of what you love, and your loved ones can too.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/mup_1.png",
+"video_url": "",
+"is_new": true
+},
+{
+"title": "Smart search",
+"description": "Have something in mind? Just type in a little clue, and we’ll find it for you in no time.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/search.png",
+"video_url": "",
+"is_new": false
+},
+{
+"title": "Play from start",
+"description": "Don’t worry if you missed a few parts. Just restart the show, and enjoy it all over again.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/play-from-start.png",
+"video_url": "",
+"is_new": false
+},
+{
+"title": "Multi-device support",
+"description": "With easy access via smartphone, tablet, TV or PC, just tap tap away to your favourite content.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/agmulti.png",
+"video_url": "",
+"is_new": false
+}
+]
+},
+"half_banner": {
+"en": {
+"title": "Your best pick comes in a pack",
+"description": "Complete your home with an Astro TV pack from only RM59.99 / mth! Choose from our inclusive packages, plus broadband offers and more.",
+"button_url": "https://product.astro.com.my/tv",
+"button_text": "See all TV packs",
+"background": "",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/half_banner.png"
+},
+"bm": {
+"title": "Your best pick comes in a pack",
+"description": "Complete your home with an Astro TV pack from only RM59.99 / mth! Choose from our inclusive packages, plus broadband offers and more.",
+"button_url": "https://product.astro.com.my/tv",
+"button_text": "See all TV packs",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/half_banner.png",
+"background": "'linear-gradient(90deg, rgba(247, 156, 6, 0.15) 0%, rgba(245, 85, 60, 0.15) 100%)'"
+}
+},
+"faq": {
+"header": {
+"en": "Frequently asked questions",
+"bm": "Frequently asked questions"
+},
+"footer": {
+"en": {
+"text": "View all FAQ",
+"url": "https://support.astro.com.my/sub-category/astro-go"
+},
+"bm": {
+"text": "View all FAQ",
+"url": "https://support.astro.com.my/sub-category/astro-go"
+}
+},
+"en": [
+{
+"title": "What is Astro GO？",
+"description": "<p><a href=\"https://onelink.to/phh42h\" target=\"_blank\" style=\"color:#e6007d;\">Astro GO</a> is a free streaming companion app for all Astro customers to enjoy their favourite shows and channels on their smartphones, tablets, and computers – anytime, anywhere in Malaysia. Astro customers with an active Pay-TV subscription can link their accounts to watch corresponding on demand and TV channels available on Astro GO as part of their subscription.</p><p>‍</p>"
+},
+{
+"title": "Do I have to pay extra to use Astro GO?",
+"description": "<p>No, Astro GO is a free app for Astro customers. The content available on Astro GO will depend on the subscription pack that you aresubscribed to.</p></br><p>If you do not have an Astro subscription, please click <a href=\"https://product.astro.com.my/tv\" target=\"_blank\" style=\"color:#e6007d;\">here</a> to find out packages available.</p>"
+},
+{
+"title": "What can I watch on Astro GO?",
+"description": "<p id=\"\">Your access to Astro GO will depend on the subscription pack that you are subscribed to. Not all shows/channels will be available on Astro GO as this depends on contractual rights with specific guidelines on the entitlement of these shows/channels. We are continuously working hard to make more content available on Astro GO.</p><p id=\"\">‍</p><p id=\"\">You may navigate around the menu on the side bar on Astro GO app, or top bar on the Astro GO web version to find shows available.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\"><div><img src=\"https://uploads-ssl.webflow.com/5df887b040a1a9d6b16b68f8/63e9eec34bd907f151eaa06c_Picture1.jpg\" loading=\"lazy\"></div></figure><figure id=\"\" class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\"><div id=\"\"><img src=\"https://uploads-ssl.webflow.com/5df887b040a1a9d6b16b68f8/614058a70013392a8c4f178e_Picture2.png\" loading=\"lazy\" width=\"auto\" height=\"auto\" id=\"\"></div></figure><p id=\"\"><strong id=\"\">Menu Guide:</strong></p><p id=\"\"><strong id=\"\">Home</strong>: Check out all the recommended content or watch your subscribed TV channels via the Channel Guide at the bottom of your home screen. </p><p id=\"\"><strong id=\"\">Catch Up</strong>: Missed an episode of your favourite series? Fret not, Catch Up on the latest episode of your favourite shows on Astro GO. </p><p id=\"\"><strong id=\"\">Boxsets</strong>: Watch complete seasons and series from our On Demand library anytime anywhere. </p><p id=\"\"><strong id=\"\">Movies</strong>: Watch recent and popular movies on your devices! You can access a large catalogue of On Demand movies, according to your subscription. </p><p id=\"\"><strong id=\"\">Kids</strong>: Catch all the cartoons, animations and a variety of shows for kids of all ages. </p><p id=\"\"><strong id=\"\">Sports</strong>: Watch the biggest sporting shows LIVE on your mobile device, anytime anywhere. </p><p id=\"\"><strong id=\"\">Store</strong>: Other than your subscribed packages, you can also purchase and watch your favourite Pay-Per-View movies and other Astro exclusive content (not available on iOS devices).</p><p id=\"\">‍</p>"
+},
+{
+"title": "Can I use Astro GO without an Astro subscription?",
+"description": "<p>No. Astro GO is a FREE entitlement exclusively for customers with an Astro subscription. If you do not have an Astro subscription account, please visit <a href=\"https://product.astro.com.my/tv\" target=\"_blank\" style=\"color:#e6007d;\">product.astro.com.my/tv</a> to find out more.</p>"
+},
+{
+"title": "What is the difference between Astro GO and Astro GO+?",
+"description": "<p id=\"\">Astro GO is a companion app that is complimentary for all Astro subscribers and allows up to 2 users to stream at the same time. 200 hours of cloud recording come complimentary with your Pay TV subscription*.</p><p id=\"\"><br></p><p id=\"\">Astro GO+ is an add-on service that enables up to 4 users to watch Astro GO and Multiroom Smart TV at the same time (simultaneously). The amount of cloud recording storage will also be increased to 1500 hours.</p><p id=\"\">‍</p><figure id=\"\" class=\"w-richtext-figure-type-image w-richtext-align-floatleft\" data-rt-type=\"image\" data-rt-align=\"floatleft\"><div id=\"\"><img src=\"https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/astro-go-table.jpeg\" loading=\"lazy\" id=\"\" width=\"100%\" height=\"auto\"></div></figure><p id=\"\"><br></p><p id=\"\"><em id=\"\">*Cloud recording hours are shared across your Astro Box, Astro GO and Multiroom Smart TV</em></p>"
+}
+],
+"bm": [
+{
+"title": "What is Astro GO？",
+"description": "<p><a href=\"http://onelink.to/exqgqd\" target=\"_blank\" style=\"color:#e6007d;\">Astro GO</a> is a free streaming companion app for all Astro customers to enjoy their favourite shows and channels on their smartphones, tablets, and computers – anytime, anywhere in Malaysia. Astro customers with an active Pay-TV subscription can link their accounts to watch corresponding on demand and TV channels available on Astro GO as part of their subscription.</p>"
+},
+{
+"title": "Do I have to pay extra to use Astro GO?",
+"description": "<p>No, Astro GO is a free app for Astro customers. The content available on Astro GO will depend on the subscription pack that you aresubscribed to.</p><br><p>If you do not have an Astro subscription, please click <a href=\"https://product.astro.com.my/tv\" target=\"_blank\" style=\"color:#e6007d;\">here</a> to find out packages available.</p>"
+},
+{
+"title": "What can I watch on Astro GO?",
+"description": "<p id=\"\">Your access to Astro GO will depend on the subscription pack that you are subscribed to. Not all shows/channels will be available on Astro GO as this depends on contractual rights with specific guidelines on the entitlement of these shows/channels. We are continuously working hard to make more content available on Astro GO.</p><p id=\"\">‍</p><p id=\"\">You may navigate around the menu on the side bar on Astro GO app, or top bar on the Astro GO web version to find shows available.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\"><div><img src=\"https://uploads-ssl.webflow.com/5df887b040a1a9d6b16b68f8/63e9eec34bd907f151eaa06c_Picture1.jpg\" loading=\"lazy\"></div></figure><figure id=\"\" class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\"><div id=\"\"><img src=\"https://uploads-ssl.webflow.com/5df887b040a1a9d6b16b68f8/614058a70013392a8c4f178e_Picture2.png\" loading=\"lazy\" width=\"auto\" height=\"auto\" id=\"\"></div></figure><p id=\"\"><strong id=\"\">Menu Guide:</strong></p><p id=\"\"><strong id=\"\">Home</strong>: Check out all the recommended content or watch your subscribed TV channels via the Channel Guide at the bottom of your home screen. </p><p id=\"\"><strong id=\"\">Catch Up</strong>: Missed an episode of your favourite series? Fret not, Catch Up on the latest episode of your favourite shows on Astro GO. </p><p id=\"\"><strong id=\"\">Boxsets</strong>: Watch complete seasons and series from our On Demand library anytime anywhere. </p><p id=\"\"><strong id=\"\">Movies</strong>: Watch recent and popular movies on your devices! You can access a large catalogue of On Demand movies, according to your subscription. </p><p id=\"\"><strong id=\"\">Kids</strong>: Catch all the cartoons, animations and a variety of shows for kids of all ages. </p><p id=\"\"><strong id=\"\">Sports</strong>: Watch the biggest sporting shows LIVE on your mobile device, anytime anywhere. </p><p id=\"\"><strong id=\"\">Store</strong>: Other than your subscribed packages, you can also purchase and watch your favourite Pay-Per-View movies and other Astro exclusive content (not available on iOS devices).</p><p id=\"\">‍</p>"
+},
+{
+"title": "Can I use Astro GO without an Astro subscription?",
+"description": "<p>No. Astro GO is a FREE entitlement exclusively for customers with an Astro subscription. If you do not have an Astro subscription account, please visit <a href=\"https://product.astro.com.my/tv\" target=\"_blank\" style=\"color:#e6007d;\">product.astro.com.my/tv</a> to find out more.</p>"
+},
+{
+"title": "What is the difference between Astro GO and Astro GO+?",
+"description": "<p id=\"\">Astro GO is a companion app that is complimentary for all Astro subscribers and allows up to 2 users to stream at the same time. 200 hours of cloud recording come complimentary with your Pay TV subscription*.</p><p id=\"\"><br></p><p id=\"\">Astro GO+ is an add-on service that enables up to 4 users to watch Astro GO and Multiroom Smart TV at the same time (simultaneously). The amount of cloud recording storage will also be increased to 1500 hours.</p><p id=\"\">‍</p><figure id=\"\" class=\"w-richtext-figure-type-image w-richtext-align-floatleft\" data-rt-type=\"image\" data-rt-align=\"floatleft\"><div id=\"\"><img src=\"https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/astro-go-table.jpeg\" loading=\"lazy\" id=\"\" width=\"100%\" height=\"auto\"></div></figure><p id=\"\"><br></p><p id=\"\"><em id=\"\">*Cloud recording hours are shared across your Astro Box, Astro GO and Multiroom Smart TV</em></p>"
+}
+]
+}
+},
+"schema_id": null,
+"editable": true
+},
+{
+"key": "connected_box",
+"name": "connected_box",
+"value": {
+"carousel": {
+"en": [
+{
+"heading": "Taking home entertainment to the next level",
+"title": "Entertainment",
+"description": "Step into an immersive entertainment experience from the comfort of your home.",
+"media": {
+"mobile": {
+"videoUrl": "https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided-flow-homepage-assets/221017-local-360x616.webm",
+"imageUrl": "https://resizer-acm.eco.astro.com.my/tr:h-616/https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided/acm_hero-banner_local_mobile_360x550px_1.jpg",
+"alt": "Connected box"
+},
+"desktop": {
+"videoUrl": "https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided-flow-homepage-assets/221017-local-1280x616.webm",
+"imageUrl": "https://resizer-acm.eco.astro.com.my/tr:h-616/https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided/acm_hero-banner_local_desktop_1280x550px.jpg",
+"alt": "Connected box"
+}
+},
+"button": {
+"text": "Get Astro ",
+"url": "https://product.astro.com.my/tv"
+}
+},
+{
+"heading": "Best of Locals",
+"title": "Best of Locals",
+"description": "Step into an immersive entertainment experience from the comfort of your home.",
+"media": {
+"mobile": {
+"videoUrl": "https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided-flow-homepage-assets/221017-local-360x616.webm",
+"imageUrl": "https://resizer-acm.eco.astro.com.my/tr:h-616/https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided/acm_hero-banner_local_mobile_360x550px_1.jpg",
+"alt": "Connected box"
+},
+"desktop": {
+"videoUrl": "https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided-flow-homepage-assets/221017-local-1280x616.webm",
+"imageUrl": "https://resizer-acm.eco.astro.com.my/tr:h-616/https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided/acm_hero-banner_local_desktop_1280x550px.jpg",
+"alt": "Connected box"
+}
+},
+"button": {
+"text": "Get Astro ",
+"url": "https://product.astro.com.my/tv"
+}
+}
+],
+"bm": [
+{
+"heading": "Taking home entertainment to the next level",
+"title": "Entertainment",
+"description": "Step into an immersive entertainment experience from the comfort of your home.",
+"media": {
+"mobile": {
+"videoUrl": "https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided-flow-homepage-assets/221017-local-360x616.webm",
+"imageUrl": "https://resizer-acm.eco.astro.com.my/tr:h-616/https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided/acm_hero-banner_local_mobile_360x550px_1.jpg",
+"alt": "Connected box"
+},
+"desktop": {
+"videoUrl": "https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided-flow-homepage-assets/221017-local-1280x616.webm",
+"imageUrl": "https://resizer-acm.eco.astro.com.my/tr:h-616/https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided/acm_hero-banner_local_desktop_1280x550px.jpg",
+"alt": "Connected box"
+}
+},
+"button": {
+"text": "Get Astro ",
+"url": "https://product.astro.com.my/tv"
+}
+},
+{
+"heading": "Best of Locals",
+"title": "Best of Locals",
+"description": "Step into an immersive entertainment experience from the comfort of your home.",
+"media": {
+"mobile": {
+"videoUrl": "https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided-flow-homepage-assets/221017-local-360x616.webm",
+"imageUrl": "https://resizer-acm.eco.astro.com.my/tr:h-616/https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided/acm_hero-banner_local_mobile_360x550px_1.jpg",
+"alt": "Connected box"
+},
+"desktop": {
+"videoUrl": "https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided-flow-homepage-assets/221017-local-1280x616.webm",
+"imageUrl": "https://resizer-acm.eco.astro.com.my/tr:h-616/https://d3riyfoij6hyxp.cloudfront.net/acm/media/guided/acm_hero-banner_local_desktop_1280x550px.jpg",
+"alt": "Connected box"
+}
+},
+"button": {
+"text": "Get Astro ",
+"url": "https://product.astro.com.my/tv"
+}
+}
+]
+},
+"colorful_text": {
+"en": {
+"title": "A cinematic experience that completes your home",
+"description": "Our connected boxes bring 4K UHD and 3D sound quality to your big screen. Unwind with entertainment that moves you, uninterrupted, rain or shine."
+},
+"bm": {
+"title": "A cinematic experience that completes your home",
+"description": "Our connected boxes bring 4K UHD and 3D sound quality to your big screen. Unwind with entertainment that moves you, uninterrupted, rain or shine."
+}
+},
+"feature_cards": {
+"header": {
+"en": "More than your everyday plug and play",
+"bm": "More than your everyday plug and play"
+},
+"button": {
+"en": {
+"text": "Sign up now",
+"url": "https://product.astro.com.my/tv"
+},
+"bm": {
+"text": "Sign up now",
+"url": "https://product.astro.com.my/tv"
+}
+},
+"en": [
+{
+"title": "Ready-to-go setup",
+"description": "No satellite dish, no problem. Just connect to your home wifi to start.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/plug_play.svg"
+},
+{
+"title": "Spatial audio experience",
+"description": "Immerse yourself in 3D sound quality with Dolby Atmos.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/spatial.svg"
+},
+{
+"title": "On demand, anytime",
+"description": "Over 90,000 content ready for you via Video On Demand (VOD).",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/vod.svg"
+},
+{
+"title": "Features for your favourites",
+"description": "Enjoy handy features to keep track of what you love.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/fav.svg"
+}
+],
+"bm": [
+{
+"title": "Ready-to-go setup",
+"description": "No satellite dish, no problem. Just connect to your home wifi to start.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/plug_play.svg"
+},
+{
+"title": "Spatial audio experience",
+"description": "Immerse yourself in 3D sound quality with Dolby Atmos.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/spatial.svg"
+},
+{
+"title": "On demand, anytime",
+"description": "Over 90,000 content ready for you via Video On Demand (VOD).",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/vod.svg"
+},
+{
+"title": "Features for your favourites",
+"description": "Enjoy handy features to keep track of what you love.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/fav.svg"
+}
+]
+},
+"pack_card": {
+"header": {
+"en": "The best out of the box entertainment experience for you",
+"bm": "The best out of the box entertainment experience for you"
+},
+"en": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/ultrabox.svg",
+"logo_name": "Ultra Box",
+"title": "<p>Free* <p style=\"font-size: 16px; line-height: 22px; margin-left: 5px\">installation fee</p></p>",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/ultrabox.png",
+"description": "Enjoy the best viewing quality for your big screen.",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Astro Box details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/4k.svg",
+"text": "4K UHD & Full HD"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/router.svg",
+"text": "Requires <b>30Mbps broadband</b> for 4K viewing"
+},
+{
+"text": "Up to <b>1500 hours</b> of cloud recording",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg"
+},
+{
+"text": "Video on demand",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/vod.svg"
+}
+],
+"buttonText": "Upgrade now",
+"buttonUrl": "https://store.astro.com.my/box-upgrade",
+"backgroundColor": "linear-gradient(90deg, rgba(13, 208, 236, 0.1) 0%, rgba(26, 125, 226, 0.1) 100%)",
+"secondaryButtonText": "<b>FREE*</b><br/>installation fee"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/ultibox.svg",
+"logo_name": "Ulti Box",
+"title": "RM19.00* <p style=\"font-size: 16px; line-height: 22px; margin-left: 5px\">installation fee</p>",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/ultibox.png",
+"description": "Watch your favourite content in High Definition.",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Astro Box details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/hd.svg",
+"text": "Full HD only"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/router.svg",
+"text": "Requires <b>10Mbps broadband</b> for HD viewing"
+},
+{
+"text": "Up to <b>1500 hours</b> of cloud recording",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg"
+},
+{
+"text": "Video on demand",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/vod.svg"
+}
+],
+"buttonText": "Upgrade now",
+"buttonUrl": "https://store.astro.com.my/box-upgrade",
+"backgroundColor": "linear-gradient(90deg, rgba(13, 208, 236, 0.1) 0%, rgba(26, 125, 226, 0.1) 100%)",
+"secondaryButtonText": "<b>FREE*</b><br/>installation fee"
+}
+],
+"bm": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/ultrabox.svg",
+"logo_name": "Ultra Box",
+"title": "<p>Free* <p style=\"font-size: 16px; line-height: 22px; margin-left: 5px\">installation fee</p></p>",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/ultrabox.png",
+"description": "Enjoy the best viewing quality for your big screen.",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Astro Box details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/4k.svg",
+"text": "4K UHD & Full HD"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/router.svg",
+"text": "Requires <b>30Mbps broadband</b> for 4K viewing"
+},
+{
+"text": "Up to <b>1500 hours</b> of cloud recording",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg"
+},
+{
+"text": "Video on demand",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/vod.svg"
+}
+],
+"buttonText": "Upgrade now",
+"buttonUrl": "https://store.astro.com.my/box-upgrade"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/ultibox.svg",
+"logo_name": "Ulti Box",
+"title": "RM19.00* <p style=\"font-size: 16px; line-height: 22px; margin-left: 5px\">installation fee</p>",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/ultibox.png",
+"description": "Watch your favourite content in High Definition.",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Astro Box details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/hd.svg",
+"text": "Full HD only"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/router.svg",
+"text": "Requires <b>10Mbps</b> broadband for HD viewing"
+},
+{
+"text": "Up to <b>1500</b> hours of cloud recording",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg"
+},
+{
+"text": "Video on demand",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/vod.svg"
+}
+],
+"buttonText": "Upgrade now",
+"buttonUrl": "https://store.astro.com.my/box-upgrade"
+}
+]
+},
+"feature_banner": {
+"header": {
+"en": "More cool features built just for you",
+"bm": "More cool features built just for you"
+},
+"en": [
+{
+"title": "Multi-user profiles",
+"description": "Explore and stream all the entertainment apps you love, seamlessly on the Ultra Box and Ulti Box.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/mup_1.png",
+"video_url": "",
+"is_new": "true"
+},
+{
+"title": "Apps shortcut",
+"description": "Explore and stream all the entertainment apps you love, seamlessly on the Ultra Box and Ulti Box.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/apps-shortcut.png",
+"video_url": "",
+"is_new": "false"
+},
+{
+"title": "Multiroom viewing",
+"description": "Watch different channels, in different rooms, at the same time.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/multiroom_4.png",
+"video_url": "",
+"is_new": "false"
+},
+{
+"title": "Smart search",
+"description": "Don’t worry if you missed a few parts. Just restart the show, and enjoy it all over again.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/search.png",
+"video_url": "",
+"is_new": "false"
+}
+],
+"bm": [
+{
+"title": "Multi-user profiles",
+"description": "Explore and stream all the entertainment apps you love, seamlessly on the Ultra Box and Ulti Box.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/mup_1.png",
+"video_url": "",
+"is_new": "true"
+},
+{
+"title": "Apps shortcut",
+"description": "Explore and stream all the entertainment apps you love, seamlessly on the Ultra Box and Ulti Box.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/apps-shortcut.png",
+"video_url": "",
+"is_new": "false"
+},
+{
+"title": "Multiroom viewing",
+"description": "Watch different channels, in different rooms, at the same time.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/multiroom_4.png",
+"video_url": "",
+"is_new": "false"
+},
+{
+"title": "Smart search",
+"description": "Don’t worry if you missed a few parts. Just restart the show, and enjoy it all over again.",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/search.png",
+"video_url": "",
+"is_new": "false"
+}
+]
+},
+"half_banner": {
+"en": {
+"title": "Your Astro Box is better with a reliable connection",
+"description": "Level up your home entertainment with Astro Fibre – our internet plans with TV pack bundles that match every need and budget, from only RM99.00 / mth!",
+"button_url": "https://www.astro.com.my/fibre",
+"button_text": "See all Astro Fibre plans",
+"background": "linear-gradient(90deg, rgba(223, 20, 125, 0.15) 0%, rgba(88, 40, 152, 0.15) 100%)",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/router6.png"
+},
+"bm": {
+"title": "Your Astro Box is better with a reliable connection",
+"description": "Level up your home entertainment with Astro Fibre – our internet plans with TV pack bundles that match every need and budget, from only RM99.00 / mth!",
+"button_url": "https://www.astro.com.my/fibre",
+"button_text": "See all Astro Fibre plans",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/router6.png",
+"background": "linear-gradient(90deg, rgba(223, 20, 125, 0.15) 0%, rgba(88, 40, 152, 0.15) 100%)"
+}
+},
+"faq": {
+"header": {
+"en": "Frequently asked questions",
+"bm": "Soalan lazim"
+},
+"footer": {
+"en": [
+{
+"text": "Ultra Box FAQ",
+"url": "https://support.astro.com.my/sub-category/ultra-box"
+},
+{
+"text": "Ulti Box FAQ",
+"url": "https://support.astro.com.my/sub-category/ulti-box"
+}
+],
+"bm": [
+{
+"text": "Ultra Box FAQ",
+"url": "https://support.astro.com.my/sub-category/ultra-box"
+},
+{
+"text": "Ulti Box FAQ",
+"url": "https://support.astro.com.my/sub-category/ulti-box"
+}
+]
+},
+"en": [
+{
+"title": "What is Ultra Box?",
+"description": "<p id=\"\">The Ultra Box is Astro’s latest generation of 4K UHD enabled box with Cloud recording feature, redesigned new interface, and a dedicated UHD channel. Just connect the Ultra Box to the internet and take control of your entertainment and explore over 60,000 videos that are waiting to be streamed, anytime.</p><p id=\"\">‍</p><p id=\"\">The new interface on Astro Ultra Box offers an enhanced viewing experience with a brand- new look and feel with features such as:</p><ul id=\"\"> <li><strong id=\">New Home Screen</strong> - Everything you see is yours</li><li><strong id=\">Discover VOD</strong> - Discover 60,000 videos, stream anytime, anywhere</li><li><strong id=\">Search</strong> - Search faster and easier</li><li><strong id=\">Play from Start</strong> - You missed the start? Just restart</li><li><strong id=\">Stop Here, Continue There</strong> - Stop on one screen and continue on another device</li><li><strong id=\">Multi-Screen</strong> - Stream seamlessly across any device</li><li><strong id=\">Cloud Recording</strong> - Record all the programmes you want at the same time</li> </ul>"
+},
+{
+"title": "What is Ulti Box?",
+"description": "<p id=\"\">Astro introduces the new Ulti Box with a redesigned new interface, Cloud recording feature, enhanced search capabilities and more. Just connect the all new Ulti Box to the Internet and take control of your entertainment and stream up to 60,000 videos on demand, anytime.</p><p id=\"\">‍</p><p id=\"\">The features of the new Ulti Box include:</p><ul id=\"\"> <li><strong id=\">New Home Screen</strong> - Everything you see is yours</li><li><strong id=\">Discover VOD</strong> - Discover 60,000 videos, stream anytime, anywhere</li><li><strong id=\">Search</strong> - Search faster and easier</li><li><strong id=\">Play from Start</strong> - You missed the start? Just restart</li><li><strong id=\">Stop Here, Continue There</strong> - Stop on one screen and continue on another device</li><li><strong id=\">Multi-Screen</strong> - Stream seamlessly across any device</li><li><strong id=\">Cloud Recording</strong> - Record all the programmes you want at the same time</li> </ul>"
+},
+{
+"title": "Am I eligible for the Ultra Box / Ulti Box?",
+"description": "<p id=\"\">Customers must be an existing or new Astro customer (NJOI customers are not eligible).</p><p id=\"\">‍</p><p id=\"\">For the Ultra Box, the following criteria applies: </p><ul id=\"\"> <li id=\"\">- Have an internet connection at home (recommended >10Mbps speed)</li> <li id=\"\">- Maintain a minimum subscription with a HD + Recording service</li><br><li id=\"\">If you live in a high-rise building, please call us at 03-7481 8000 to check if your building can support the Ultra Box. If your high-rise building allows for the set-up of individual dishes you will be able to upgrade to the Ultra Box, subject to the criteria above.</li><br><li id=\"\">We recommend a 4K UHD supported TV that is HDCP2.2 compliant to access the Astro UHD channels.</li></ul><p id=\"\"> </p><p id=\"\">Note: If you do not have an internet connection at home, you may take up the Ultra Box bundled with Astro & Broadband package with rebates up to RM39 / month. You will enjoy free installation of Ultra Box when you sign up for Astro & Broadband bundle packages with Entertainment Pack and above. For more details and to sign up for Astro & Broadband, please <a href=\"https://product.astro.com.my/broadband\" target=\"_blank\" style=\"color:#e6007d;\">click here</a>.</p><br><p id=\"\"> </p><p id=\"\">For the Ulti Box, the following criteria applies: </p><ul id=\"\"> <li id=\"\">- New Astro customers with a Primary Pack subscription will receive the Ulti Box with a choice of 24/12/0-month box commitment.</li> <li id=\"\">- Have an internet connection at home (recommended >10Mbps speed).</li></ul><p id=\"\"><br></p><p id=\"\">Note: Existing Ultra Box customers are not eligible for a swap to the Ulti Box. If your existing box is a PVR, you will lose access to all the recordings stored in the PVR</p><p id=\"\"><br></p><p id=\"\">For new Multiroom subscriptions, customers subscribing for an additional Multiroom subscription will receive the Ulti Box as part of the subscription. You will also be required to upgrade to our new Astro packages to add a Multiroom.</p>"
+},
+{
+"title": "What is Multi-User Profile?",
+"description": "<p id=\"\">Multi-User Profile is our latest feature where users can create multiple profiles within the household. Different profiles will tailor your Astro experience to suit your preference including choosing your own avatar, having personalized shows recommended to you based on your past shows, personal Favourites and a profile for Kids with Kids-friendly shows as well.</p><p>‍</p><p id=\"\">Read more about our Multi-User profile <a href=\"https://acm-cms-assets.eco.astro.com.my/acm/media/other/mup-faq-v2.pdf\" style=\"color:#e6007d;\">here</a>.</p>"
+},
+{
+"title": "How do I contact Astro for more information?",
+"description": "<p>Call 03-7481 8000 or click the WhatsApp button below to start a conversation with us. You can also walk in to our<a href=\"https://www.astro.com.my/contactus/locatebranches.aspx\" target=\"_blank\" style=\"color:#e6007d;\"> Customer Service Centres</a> and we will be more than happy to help you out.</p>"
+}
+],
+"bm": [
+{
+"title": "What is Ultra Box?",
+"description": "<p id=\"\">The Ultra Box is Astro’s latest generation of 4K UHD enabled box with Cloud recording feature, redesigned new interface, and a dedicated UHD channel. Just connect the Ultra Box to the internet and take control of your entertainment and explore over 60,000 videos that are waiting to be streamed, anytime.</p><p id=\"\">‍</p><p id=\"\">The new interface on Astro Ultra Box offers an enhanced viewing experience with a brand- new look and feel with features such as:</p><ul id=\"\"> <li><strong id=\">New Home Screen</strong> - Everything you see is yours</li><li><strong id=\">Discover VOD</strong> - Discover 60,000 videos, stream anytime, anywhere</li><li><strong id=\">Search</strong> - Search faster and easier</li><li><strong id=\">Play from Start</strong> - You missed the start? Just restart</li><li><strong id=\">Stop Here, Continue There</strong> - Stop on one screen and continue on another device</li><li><strong id=\">Multi-Screen</strong> - Stream seamlessly across any device</li><li><strong id=\">Cloud Recording</strong> - Record all the programmes you want at the same time</li> </ul>"
+},
+{
+"title": "What is Ulti Box?",
+"description": "<p id=\"\">Astro introduces the new Ulti Box with a redesigned new interface, Cloud recording feature, enhanced search capabilities and more. Just connect the all new Ulti Box to the Internet and take control of your entertainment and stream up to 60,000 videos on demand, anytime.</p><p id=\"\">‍</p><p id=\"\">The features of the new Ulti Box include:</p><ul id=\"\"> <li><strong id=\">New Home Screen</strong> - Everything you see is yours</li><li><strong id=\">Discover VOD</strong> - Discover 60,000 videos, stream anytime, anywhere</li><li><strong id=\">Search</strong> - Search faster and easier</li><li><strong id=\">Play from Start</strong> - You missed the start? Just restart</li><li><strong id=\">Stop Here, Continue There</strong> - Stop on one screen and continue on another device</li><li><strong id=\">Multi-Screen</strong> - Stream seamlessly across any device</li><li><strong id=\">Cloud Recording</strong> - Record all the programmes you want at the same time</li> </ul>"
+},
+{
+"title": "Am I eligible for the Ultra Box / Ulti Box?",
+"description": "<p id=\"\">Customers must be an existing or new Astro customer (NJOI customers are not eligible).</p><p id=\"\">‍</p><p id=\"\">For the Ultra Box, the following criteria applies: </p><ul id=\"\"> <li id=\"\">- Have an internet connection at home (recommended >10Mbps speed)</li> <li id=\"\">- Maintain a minimum subscription with a HD + Recording service</li><br><li id=\"\">If you live in a high-rise building, please call us at 03-7481 8000 to check if your building can support the Ultra Box. If your high-rise building allows for the set-up of individual dishes you will be able to upgrade to the Ultra Box, subject to the criteria above.</li><br><li id=\"\">We recommend a 4K UHD supported TV that is HDCP2.2 compliant to access the Astro UHD channels.</li></ul><p id=\"\"> </p><p id=\"\">Note: If you do not have an internet connection at home, you may take up the Ultra Box bundled with Astro & Broadband package with rebates up to RM39 / month. You will enjoy free installation of Ultra Box when you sign up for Astro & Broadband bundle packages with Entertainment Pack and above. For more details and to sign up for Astro & Broadband, please <a href=\"https://product.astro.com.my/broadband\" target=\"_blank\" style=\"color:#e6007d;\">click here</a>.</p><br><p id=\"\"> </p><p id=\"\">For the Ulti Box, the following criteria applies: </p><ul id=\"\"> <li id=\"\">- New Astro customers with a Primary Pack subscription will receive the Ulti Box with a choice of 24/12/0-month box commitment.</li> <li id=\"\">- Have an internet connection at home (recommended >10Mbps speed).</li></ul><p id=\"\"><br></p><p id=\"\">Note: Existing Ultra Box customers are not eligible for a swap to the Ulti Box. If your existing box is a PVR, you will lose access to all the recordings stored in the PVR</p><p id=\"\"><br></p><p id=\"\">For new Multiroom subscriptions, customers subscribing for an additional Multiroom subscription will receive the Ulti Box as part of the subscription. You will also be required to upgrade to our new Astro packages to add a Multiroom.</p>"
+},
+{
+"title": "What is Multi-User Profile?",
+"description": "<p id=\"\">Multi-User Profile is our latest feature where users can create multiple profiles within the household. Different profiles will tailor your Astro experience to suit your preference including choosing your own avatar, having personalized shows recommended to you based on your past shows, personal Favourites and a profile for Kids with Kids-friendly shows as well.</p><p>‍</p><p id=\"\">Read more about our Multi-User profile <a href=\"https://acm-cms-assets.eco.astro.com.my/acm/media/other/mup-faq-v2.pdf\" style=\"color:#e6007d;\">here</a>.</p>"
+},
+{
+"title": "How do I contact Astro for more information?",
+"description": "<p>Call 03-7481 8000 or click the WhatsApp button below to start a conversation with us. You can also walk in to our<a href=\"https://www.astro.com.my/contactus/locatebranches.aspx\" target=\"_blank\" style=\"color:#e6007d;\"> Customer Service Centres</a> and we will be more than happy to help you out.</p>"
+}
+]
+}
+},
+"schema_id": null,
+"editable": true
+},
+{
+"key": "multiroom",
+"name": "multiroom",
+"value": {
+"carousel": {
+"en": [
+{
+"heading": "Multiple excitement made for the whole family",
+"title": "Multiroom",
+"description": "Enjoy more of Astro in different rooms with your family, together or separately.",
+"media": {
+"mobile": {
+"videoUrl": "",
+"imageUrl": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/multiroom_carousel_mobile.png",
+"alt": "Astro Multiroom"
+},
+"desktop": {
+"videoUrl": "",
+"imageUrl": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/multiroom_carousel_desktop.png",
+"alt": "Astro Multiroom"
+}
+},
+"button": {
+"text": "Get Multiroom",
+"url": "https://store.astro.com.my/multiroom"
+}
+}
+],
+"bm": [
+{
+"heading": "Multiple excitement made for the whole family",
+"title": "Multiroom",
+"description": "Enjoy more of Astro in different rooms with your family, together or separately.",
+"media": {
+"mobile": {
+"videoUrl": "",
+"imageUrl": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/multiroom_carousel_mobile.png",
+"alt": "Astro Multiroom"
+},
+"desktop": {
+"videoUrl": "",
+"imageUrl": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/multiroom_carousel_desktop.png",
+"alt": "Astro Multiroom"
+}
+},
+"button": {
+"text": "Get Multiroom",
+"url": "https://store.astro.com.my/multiroom"
+}
+}
+]
+},
+"colorful_text": {
+"en": {
+"title": "Entertainment you love in every part of your home",
+"description": "Keep your family close and your favourite shows closer. With Multiroom, you can enjoy Astro from more than one TV in your home, at the same time."
+},
+"bm": {
+"title": "Entertainment you love in every part of your home",
+"description": "Keep your family close and your favourite shows closer. With Multiroom, you can enjoy Astro from more than one TV in your home, at the same time."
+}
+},
+"feature_cards": {
+"header": {
+"en": "Fun from one room to another",
+"bm": "Fun from one room to another"
+},
+"button": {
+"en": {
+"text": "",
+"url": ""
+},
+"bm": {
+"text": "",
+"url": ""
+}
+},
+"en": [
+{
+"title": "Your TV time is all yours",
+"description": "No more TV remote drama. Watch different shows at the same time.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/multiroom_tv.svg"
+},
+{
+"title": "Pause here, play there",
+"description": "Stop or resume shows in different rooms without missing out.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/play_pause.svg"
+},
+{
+"title": "Up close and personalised",
+"description": "Enjoy tailored content based on you and your family’s interests.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/personalised.svg"
+}
+],
+"bm": [
+{
+"title": "Your TV time is all yours",
+"description": "No more TV remote drama. Watch different shows at the same time.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/multiroom_tv.svg"
+},
+{
+"title": "Pause here, play there",
+"description": "Stop or resume shows in different rooms without missing out.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/play_pause.svg"
+},
+{
+"title": "Up close and personalised",
+"description": "Enjoy tailored content based on you and your family’s interests.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/personalised.svg"
+}
+]
+},
+"pack_card": {
+"header": {
+"en": "Multiply your home entertainment with our best offers",
+"bm": "Multiply your home entertainment with our best offers"
+},
+"en": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/smarttv.svg",
+"logo_name": "Smart TV app",
+"title": "<p>RM14.99*<p style=\"font-size: 16px; line-height: 22px; margin-left: 5px\">/ mth  <p style=\"text-decoration: line-through; color: #B2B3B8; font-size: 16px; line-height: 22px; font-weight: 400;\">    RM29.99</p>",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/smtv.png",
+"description": "Get endless entertainment for your Smart TV with the Astro app. *T&Cs apply",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Smart TV app details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/4k.svg",
+"text": "4K UHD & Full HD"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/household.svg",
+"text": "<b>1 Smart TV</b> per household",
+"popup": {
+"title": "Multiroom (Smart TV app) subscription",
+"description": "You are eligible to download the Astro app for your Smart TV. Only 1 Multiroom (Smart TV app) is allowed per household. \n    </br></br>\n    <b>Note</b>: You may subscribe to up to 3 Multiroom (Astro Box) per TV pack plan."
+}
+},
+{
+"text": "Up to <b>4 screens</b> with Astro GO+",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg",
+"popup": {
+"title": "More screens for you with Astro GO+",
+"description": "Your subscription includes Astro GO that lets you watch from 2 screens via other devices, and up to 4 screens when you upgrade to Astro GO+."
+}
+},
+{
+"text": "Supported by <b>Samsung, LG, Sharp, Sony</b>",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/smarttv.svg",
+"popup": {
+"title": "Smart TV models that support Astro App",
+"description": "<div style=\"display: flex; flex-wrap: wrap;\">\n    <div>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">Sharp</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Android 8 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">N/A</span></p>\n      </div>\n      </br>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">Sony</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Android 8 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">N/A</span></p>\n      </div>\n    </div>\n    </br></br>\n    <div>\n      </br>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">Samsung</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Tizen 4.0 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">2018 & above</span></p>\n      </div>\n      </br>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">LG</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Web OS 4.0 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">2018 & above</span></p>\n      </div>\n    </div>\n</div>"
+}
+}
+],
+"buttonText": "Upgrade now",
+"buttonUrl": "https://store.astro.com.my/multiroom?id=aSmartTV"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/ultrabox.svg",
+"logo_name": "Ultra Box",
+"title": "<p>RM49.99<p style=\"font-size: 16px; line-height: 22px; margin-left: 5px\">/ mth</p></p></p>",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/ultrabox.png",
+"description": "Enjoy the best viewing quality for your big screen.",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Astro Box details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/4k.svg",
+"text": "4K UHD & Full HD"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/household.svg",
+"text": "More than <b>1 Astro Box</b> per household",
+"popup": {
+"title": "Multiroom (Astro Box) subscription",
+"description": "You are eligible to get up to <b>3 Astro Boxes per TV pack plan</b>, each for RM49.99 / mth. Opt for multiple Astro Boxes to enjoy more of Astro in different rooms."
+}
+},
+{
+"text": "Video on demand",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/vod.svg"
+},
+{
+"text": "Cloud recording",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg"
+}
+],
+"buttonText": "Upgrade now",
+"buttonUrl": "https://store.astro.com.my/multiroom"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/ultibox.svg",
+"logo_name": "Ulti Box",
+"title": "<p>RM49.99<p style=\"font-size: 16px; line-height: 22px; margin-left: 5px\">/ mth</p></p></p>",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/ultibox.png",
+"description": "Watch your favourite content in High Definition.",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Astro Box details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/hd.svg",
+"text": "Full HD only"
+},
+{
+"popup": {
+"title": "Multiroom (Astro Box) subscription",
+"description": "You are eligible to get up to <b>3 Astro Boxes per TV pack plan</b>, each for RM49.99 / mth. Opt for multiple Astro Boxes to enjoy more of Astro in different rooms."
+},
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/multi_devices.svg",
+"text": "More than <b>1 Astro Box</b> per household"
+},
+{
+"text": "Video on demand",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/vod.svg"
+},
+{
+"text": "Cloud recording",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg"
+}
+],
+"buttonText": "Upgrade now",
+"buttonUrl": "https://store.astro.com.my/multiroom"
+}
+],
+"bm": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/smarttv.svg",
+"logo_name": "Smart TV app",
+"title": "<p>RM14.99*<p style=\"font-size: 16px; line-height: 22px; margin-left: 5px\">/ mth  <p style=\"text-decoration: line-through; color: #B2B3B8; font-size: 16px; line-height: 22px; font-weight: 400;\">    RM29.99</p>",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/smtv.png",
+"description": "Get endless entertainment for your Smart TV with the Astro app. *T&Cs apply",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Smart TV app details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/4k.svg",
+"text": "4K UHD & Full HD"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/household.svg",
+"text": "<b>1 Smart TV</b> per household",
+"popup": {
+"title": "Multiroom (Smart TV app) subscription",
+"description": "You are eligible to download the Astro app for your Smart TV. Only 1 Multiroom (Smart TV app) is allowed per household. \n    </br></br>\n    <b>Note</b>: You may subscribe to up to 3 Multiroom (Astro Box) per TV pack plan."
+}
+},
+{
+"text": "Up to <b>4 screens</b> with Astro GO+",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg",
+"popup": {
+"title": "More screens for you with Astro GO+",
+"description": "Your subscription includes Astro GO that lets you watch from 2 screens via other devices, and up to 4 screens when you upgrade to Astro GO+."
+}
+},
+{
+"text": "Supported by <b>Samsung, LG, Sharp, Sony</b>.",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/smarttv.svg",
+"popup": {
+"title": "Smart TV models that support Astro App",
+"description": "<div style=\"display: flex; flex-wrap: wrap;\">\n    <div>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">Sharp</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Android 8 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">N/A</span></p>\n      </div>\n      </br>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">Sony</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Android 8 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">N/A</span></p>\n      </div>\n    </div>\n    </br></br>\n    <div>\n      </br>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">Samsung</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Tizen 4.0 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">2018 & above</span></p>\n      </div>\n      </br>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">LG</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Web OS 4.0 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">2018 & above</span></p>\n      </div>\n    </div>\n</div>"
+}
+}
+],
+"buttonText": "Upgrade now",
+"buttonUrl": "https://store.astro.com.my/multiroom?id=aSmartTV"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/ultrabox.svg",
+"logo_name": "Ultra Box",
+"title": "<p>RM49.99<p style=\"font-size: 16px; line-height: 22px; margin-left: 5px\">/ mth</p></p></p>",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/ultrabox.png",
+"description": "Enjoy the best viewing quality for your big screen.",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Astro Box details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/4k.svg",
+"text": "4K UHD & Full HD"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/household.svg",
+"text": "More than <b>1 Astro Box</b> per household",
+"popup": {
+"title": "Multiroom (Astro Box) subscription",
+"description": "You are eligible to get up to <b>3 Astro Boxes per TV pack plan</b>, each for RM49.99 / mth. Opt for multiple Astro Boxes to enjoy more of Astro in different rooms."
+}
+},
+{
+"text": "Video on demand",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/vod.svg"
+},
+{
+"text": "Cloud recording",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg"
+}
+],
+"buttonText": "Upgrade now",
+"buttonUrl": "https://store.astro.com.my/multiroom"
+},
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/ultibox.svg",
+"logo_name": "Ulti Box",
+"title": "<p>RM49.99<p style=\"font-size: 16px; line-height: 22px; margin-left: 5px\">/ mth</p></p></p>",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/ultibox.png",
+"description": "Watch your favourite content in High Definition.",
+"description_logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/star.svg",
+"detailsHeader": "Astro Box details",
+"details": [
+{
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/hd.svg",
+"text": "Full HD only"
+},
+{
+"popup": {
+"title": "Multiroom (Astro Box) subscription",
+"description": "You are eligible to get up to <b>3 Astro Boxes per TV pack plan</b>, each for RM49.99 / mth. Opt for multiple Astro Boxes to enjoy more of Astro in different rooms."
+},
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/multi_devices.svg",
+"text": "More than <b>1 Astro Box</b> per household"
+},
+{
+"text": "Video on demand",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/vod.svg"
+},
+{
+"text": "Cloud recording",
+"logo_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/cloud_recording.svg"
+}
+],
+"buttonText": "Upgrade now",
+"buttonUrl": "https://store.astro.com.my/multiroom"
+}
+]
+},
+"feature_banner": {
+"header": {
+"en": "Watch more and save more with our Multiroom Smart TV app",
+"bm": "Watch more and save more with our Multiroom Smart TV app"
+},
+"en": {
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/multiroom_2.png",
+"description": "Upgrade your subscription at only <b>RM14.99*</b> to watch Astro in more rooms! Simply download and enjoy the Astro app via your Smart TV.",
+"text": "Our app is supported by these global TV brands",
+"brands": [
+"https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/sharp_tv.svg",
+"https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/samsung_tv.svg",
+"https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/lagi_tv.svg",
+"https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/sony_tv.svg"
+],
+"popup": {
+"title": "Smart TV models that support Astro App",
+"description": "<div style=\"display: flex; flex-wrap: wrap;\">\n    <div>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">Sharp</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Android 8 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">N/A</span></p>\n      </div>\n      </br>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">Sony</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Android 8 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">N/A</span></p>\n      </div>\n    </div>\n    </br></br>\n    <div>\n      </br>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">Samsung</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Tizen 4.0 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">2018 & above</span></p>\n      </div>\n      </br>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">LG</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Web OS 4.0 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">2018 & above</span></p>\n      </div>\n    </div>\n</div>"
+},
+"link_text": "<p style=\"color: #e6007d\"\">See if your Smart TV is listed</p>"
+},
+"bm": {
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/multiroom_2.png",
+"description": "Upgrade your subscription at only <b>RM14.99*</b> to watch Astro in more rooms! Simply download and enjoy the Astro app via your Smart TV.",
+"text": "Our app is supported by these global TV brands",
+"brands": [
+"https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/sharp_tv.svg",
+"https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/samsung_tv.svg",
+"https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/lagi_tv.svg",
+"https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/sony_tv.svg"
+],
+"popup": {
+"title": "Smart TV models that support Astro App",
+"description": "<div style=\"display: flex; flex-wrap: wrap;\">\n    <div>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">Sharp</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Android 8 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">N/A</span></p>\n      </div>\n      </br>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">Sony</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Android 8 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">N/A</span></p>\n      </div>\n    </div>\n    </br></br>\n    <div>\n      </br>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">Samsung</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Tizen 4.0 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">2018 & above</span></p>\n      </div>\n      </br>\n      <div>\n        <p style=\"font-weight: 800; font-size: 18px; line-height: 24px; color: #010414; margin-bottom: 8px;\">LG</p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Supported OS: <span style=\"font-weight: 400;\">Web OS 4.0 & above</span></p>\n          <p style=\"font-weight: 700; font-size: 16px; line-height: 22px; color: #010414\">Manufactured in: <span style=\"font-weight: 400;\">2018 & above</span></p>\n      </div>\n    </div>\n</div>"
+},
+"link_text": "<p style=\"color: #e6007d\"\">See if your Smart TV is listed</p>"
+}
+},
+"chat": {
+"title": {
+"bm": "Need more details about our Multiroom? We got you!",
+"en": "Need more details about our Multiroom? We got you!"
+}
+},
+"half_banner": {
+"en": {
+"title": "Your best pick comes in a pack",
+"description": "Complete your home with an Astro TV pack from only RM59.99 / mth! Choose from our inclusive packages, plus broadband offers and more.",
+"button_url": "https://product.astro.com.my/tv",
+"button_text": "See all TV packs",
+"background": "linear-gradient(90deg, rgba(247, 156, 6, 0.15) 0%, rgba(245, 85, 60, 0.15) 100%)",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/half_banner.png"
+},
+"bm": {
+"title": "Your best pick comes in a pack",
+"description": "Complete your home with an Astro TV pack from only RM59.99 / mth! Choose from our inclusive packages, plus broadband offers and more.",
+"button_url": "https://product.astro.com.my/tv",
+"button_text": "See all TV packs",
+"image_url": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/half_banner.png",
+"background": "linear-gradient(90deg, rgba(247, 156, 6, 0.15) 0%, rgba(245, 85, 60, 0.15) 100%)"
+}
+},
+"faq": {
+"header": {
+"en": "Frequently asked questions",
+"bm": "Frequently asked questions"
+},
+"footer": {
+"en": {
+"text": "",
+"url": ""
+},
+"bm": {
+"text": "",
+"url": ""
+}
+},
+"en": [
+{
+"title": "What is Multiroom (Smart TV)?",
+"description": "Multiroom (Smart TV) is a secondary subscription that allows you to enjoy your favourite Astro shows instantly in different rooms at the same time on your Smart TV. Subscribe to Multiroom (Smart TV) at promotion price of RM14.99* / month (excl. any govt. tax), and simply download the Astro app on your second TV-screen and connect to your home Wi-Fi to stream."
+},
+{
+"title": "What are the Smart TV models supported by Multiroom (Smart TV)?",
+"description": "<p>Currently the Multiroom (Smart TV) app is supported on four (4) brands with the software version listed below:</p>\n</br>\n<p>i. Samsung TV 2018 Model and above with OS Tizen 4.0 and above</p>\n<p>ii. LG TV 2018 Model and above with Web OS 4.0 and above</p>\n<p>iii. Sharp Android TV version 8.0 & above</p>\n<p>iv. Sony Android TV version 8.0 & above</p>\n</br>\n<p>To download the full list, <a target=\"_blank\" href='https://acm-cms-assets.eco.astro.com.my/acm/media/other/smtvlist.pdf' style=\"color: #e6007d\">click here</a>.</p>"
+},
+{
+"title": "Does the Multiroom (Smart TV) utilise one (1) of my Astro GO concurrency?",
+"description": "<p>Yes, the Multiroom (Smart TV) will utilise one (1) of your Astro GO concurrency.</br></br>Customers subscribing to Multiroom (Smart TV) can enjoy access up to 4 concurrency (watch 4 screens at the same time) which is shared across one Smart TV device and 3 mobile/laptop/tablet device(s), for limited period only. The default is 2 concurrency per Astro account.</p>"
+},
+{
+"title": "What is the difference between Multiroom (Astro Box) and Multiroom (Smart TV)?",
+"description": "<p>Multiroom (Astro Box) requires an Astro box to be setup and can be accessed through the regular satellite feed or streaming on home Wi-Fi. Meanwhile, the Multiroom (Smart TV) only requires a Smart TV and no installation needed. Customer can download the Astro app on the Smart TV and connect to home Wi-Fi to stream.</p>\n</br><div style=\"display: flex; justify-content:center;\">\n<img src=\"https://acm-cms-assets.eco.astro.com.my/acm/media/other/product/multiroom_contract.png\" alt=\"multiroom\" width=\"100%\">\n</div>"
+},
+{
+"title": "What are the minimum requirements for each Multiroom type?",
+"description": "<p style=\"font-weight: 800; font-size: 16px\">Multiroom(Smart TV)</p>\n\n<p>Any active Astro subscriber with a main subscription on new Astro packs(Primary pack onwards) are able to subscribe to Multiroom (Smart TV) at RM29.99 monthly (subscription price excludes Govt Tax and is subject to Govt Tax if applicable).</p>\n</br>\n<p style=\"font-weight: 800; font-size: 16px\">Multiroom(Astro Box)</p>\n\n<p>Any active Astro subscriber with a main subscription of RM100 or more can now choose to subscribe Multiroom (Astro Box) service at a price of RM49.99 monthly (subscription price excludes Govt Tax and is subject to Govt Tax if applicable).Both Multiroom service must be installed at the same registered address as your main subscription</p>\n\n</br><a target=\"_blank\" href=\"https://acm-cms-assets.eco.astro.com.my/acm/media/document/smtv-faq.pdf\" style=\"color:#e6007d;\">Learn more here</a>"
+},
+{
+"title": "Where can I get more information about Multiroom?",
+"description": "<p>To view the terms and conditions, <a target=\"_blank\" href=\"https://acm-cms-assets.eco.astro.com.my/acm/media/document/multiroom_tncs_smtv.pdf\" style=\"color:#e6007d;\">click here</a>.</p>"
+}
+],
+"bm": [
+{
+"title": "What is Multiroom (Smart TV)?",
+"description": "Multiroom (Smart TV) is a secondary subscription that allows you to enjoy your favourite Astro shows instantly in different rooms at the same time on your Smart TV. Subscribe to Multiroom (Smart TV) at promotion price of RM14.99* / month (excl. any govt. tax), and simply download the Astro app on your second TV-screen and connect to your home Wi-Fi to stream."
+},
+{
+"title": "What are the Smart TV models supported by Multiroom (Smart TV)?",
+"description": "<p>Currently the Multiroom (Smart TV) app is supported on four (4) brands with the software version listed below:</p>\n</br>\n<p>i. Samsung TV 2018 Model and above with OS Tizen 4.0 and above</p>\n<p>ii. LG TV 2018 Model and above with Web OS 4.0 and above</p>\n<p>iii. Sharp Android TV version 8.0 & above</p>\n<p>iv. Sony Android TV version 8.0 & above</p>\n</br>\n<p>To download the full list, <a target=\"_blank\" href='https://acm-cms-assets.eco.astro.com.my/acm/media/other/smtvlist.pdf' style=\"color: #e6007d\">click here</a>.</p>"
+},
+{
+"title": "Does the Multiroom (Smart TV) utilise one (1) of my Astro GO concurrency?",
+"description": "<p>Yes, the Multiroom (Smart TV) will utilise one (1) of your Astro GO concurrency.</br></br>Customers subscribing to Multiroom (Smart TV) can enjoy access up to 4 concurrency (watch 4 screens at the same time) which is shared across one Smart TV device and 3 mobile/laptop/tablet device(s), for limited period only. The default is 2 concurrency per Astro account.</p>"
+},
+{
+"title": "What is the difference between Multiroom (Astro Box) and Multiroom (Smart TV)?",
+"description": "<p>Multiroom (Astro Box) requires an Astro box to be setup and can be accessed through the regular satellite feed or streaming on home Wi-Fi. Meanwhile, the Multiroom (Smart TV) only requires a Smart TV and no installation needed. Customer can download the Astro app on the Smart TV and connect to home Wi-Fi to stream.</p>\n</br><div style=\"display: flex; justify-content:center;\">\n<img src=\"https://acm-cms-assets.eco.astro.com.my/acm/media/other/product/multiroom_contract.png\" alt=\"multiroom\" width=\"100%\">\n</div>"
+},
+{
+"title": "What are the minimum requirements for each Multiroom type?",
+"description": "<p style=\"font-weight: 800; font-size: 16px\">Multiroom(Smart TV)</p>\n\n<p>Any active Astro subscriber with a main subscription on new Astro packs(Primary pack onwards) are able to subscribe to Multiroom (Smart TV) at RM29.99 monthly (subscription price excludes Govt Tax and is subject to Govt Tax if applicable).</p>\n</br>\n<p style=\"font-weight: 800; font-size: 16px\">Multiroom(Astro Box)</p>\n\n<p>Any active Astro subscriber with a main subscription of RM100 or more can now choose to subscribe Multiroom (Astro Box) service at a price of RM49.99 monthly (subscription price excludes Govt Tax and is subject to Govt Tax if applicable).Both Multiroom service must be installed at the same registered address as your main subscription</p>\n\n</br><a target=\"_blank\" href=\"https://acm-cms-assets.eco.astro.com.my/acm/media/document/smtv-faq.pdf\" style=\"color:#e6007d;\">Learn more here</a>"
+},
+{
+"title": "Where can I get more information about Multiroom?",
+"description": "<p>To view the terms and conditions, <a target=\"_blank\" href=\"https://acm-cms-assets.eco.astro.com.my/acm/media/document/multiroom_tncs_smtv.pdf\" style=\"color:#e6007d;\">click here</a>.</p>"
+}
+]
+}
+},
+"schema_id": null,
+"editable": true
+},
+{
+"key": "sports",
+"name": "sports",
+"value": {
+"locale": {
+"bm": {
+"perMonthShortText": "/bln"
+},
+"en": {
+"perMonthShortText": "/mth"
+}
+},
+"banner": {
+"en": {
+"videoSrc": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/video/feb%202023/acm-mfl-desktop-45s.mp4",
+"subtitle": "<span style='color: #FFFFFF'>With AstroGo, you get access to live events, game replays, sports exclusives and more!</span>",
+"title": "Let the Live Sports begin",
+"posterSrc": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e6038fef63f73ab9dccbdc_230203_Desktop_ACM_Homepage_MFL_Adaptation%20(1).jpg",
+"description": null,
+"button": {
+"name": "Get it now",
+"link": "#packs"
+}
+},
+"bm": {
+"videoSrc": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/video/feb%202023/acm-mfl-desktop-45s.mp4",
+"subtitle": "<span style='color: #FFFFFF'>Dengan AstroGo, anda dapat akses ke siaran secara langsung, perlawanan ulang tayang, ekslusif sports dan banyak lagi!</span>",
+"posterSrc": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e6038fef63f73ab9dccbdc_230203_Desktop_ACM_Homepage_MFL_Adaptation%20(1).jpg",
+"title": "Biarkan Live Sports dimulakan",
+"description": null,
+"button": {
+"name": "Get it now",
+"link": "#packs"
+}
+}
+},
+"featured_sports": {
+"en": {
+"title": "Featured Sports",
+"see_all": {
+"name": "See all channels",
+"link": "https://content.astro.com.my/channels?categories=sports"
+}
+},
+"bm": {
+"title": "Pilihan Sukan",
+"see_all": {
+"name": "Lihat semua saluran",
+"link": "https://content.astro.com.my/channels?categories=sports"
+}
+},
+"channels": [
+{
+"image_url": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e625dccba71b7e4165066d_liga-super-malaysia-astro-sports-live-stream.jpg",
+"title": "Liga Malaysia",
+"channel": "Astro Arena Bola"
+},
+{
+"image_url": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e64bcd119027c356735206_Wimbledon.jpg",
+"title": "Wimbledon",
+"channel": "SPOTV"
+},
+{
+"image_url": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e624e8fdf8130085b31e32_632ab7942dd0ea95ea2450f3_UFC.jpg",
+"title": "UFC",
+"channel": "Astro SuperSport 5"
+},
+{
+"image_url": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e64aac5d208686676a05bf_STL%203.jpg",
+"title": "STL 3",
+"channel": "Astro Arena"
+},
+{
+"image_url": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e6257659b04e5456eead0d_Premier%20League.jpg",
+"title": "Premier League",
+"channel": "Astro SuperSport"
+},
+{
+"image_url": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e64c365d95dc3fa8a1a6dc_NSL%202.jpg",
+"title": "Netball Super League 2022",
+"channel": "Astro Arena"
+},
+{
+"image_url": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e64a026c01919f7b68bc32_NBA.jpg",
+"title": "NBA",
+"channel": "Astro SuperSport"
+},
+{
+"image_url": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e6248e330bf43ee43f7413_632ab87018f62baba0454d46_MOTOGP.jpg",
+"title": "MotoGP",
+"channel": "SPOTV"
+},
+{
+"image_url": "https://product.astro.com.my/img/5df887b040a1a9d6b16b68f8/63e649a5fdf813068bb5beba_BWF%201.jpg",
+"title": "BWF 2022",
+"channel": "Astro Arena"
+}
+]
+},
+"packs": {
+"en": {
+"title": "Just sports or sports with a few extras? Your choice."
+},
+"bm": {
+"title": "Hanya sukan atau nak lebih dari sukan? Pilihan ada di tangan anda."
+},
+"packs": [
+"sportsPack",
+"sportsPlusPack",
+"premiumPackOne"
+]
+},
+"categories": {
+"en": {
+"title": "Explore more in these categories",
+"categories": [
+{
+"background_image": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/2.jpeg",
+"tagline": "Trending Now",
+"movie_title": "Project High Council",
+"icon_url": "https://product.astro.com.my/img/5de87425133808841c6e3b3e/634d5b370007a11d5c37e2df_Group%2026178.png",
+"title": "Best of Locals",
+"description": "Locally made, internationally acclaimed",
+"button": {
+"title": "Choose your pack",
+"link": "https://product.astro.com.my/local"
+}
+},
+{
+"background_image": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/1.jpeg",
+"tagline": "Trending Now",
+"movie_title": "Glass Onion",
+"icon_url": "https://product.astro.com.my/img/5de87425133808841c6e3b3e/634d5b370007a1604837e2e1_Group%2026179.png",
+"title": "Home of Movies & Series",
+"description": "New Astro Movies Plus. Stream it all in one place, easy!",
+"button": {
+"title": "Choose your pack",
+"link": "https://product.astro.com.my/international"
+}
+}
+]
+},
+"bm": {
+"title": "Teroka lebih banyak dalam kategori ini",
+"categories": [
+{
+"background_image": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/2.jpeg",
+"tagline": "Trending Now",
+"movie_title": "Project High Council",
+"icon_url": "https://product.astro.com.my/img/5de87425133808841c6e3b3e/634d5b370007a11d5c37e2df_Group%2026178.png",
+"title": "Hiburan Tempatan Terbaik",
+"description": "Hiburan tempatan, kualiti kayangan",
+"button": {
+"title": "Pilih pek anda",
+"link": "https://product.astro.com.my/local"
+}
+},
+{
+"background_image": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/1.jpeg",
+"tagline": "Trending Now",
+"movie_title": "Glass Onion",
+"icon_url": "https://product.astro.com.my/img/5de87425133808841c6e3b3e/634d5b370007a1604837e2e1_Group%2026179.png",
+"title": "Destinasi Filem & Siri Terhebat",
+"description": "Movies Plus Astro baharu! Strim semuanya di sini, kan senang!",
+"button": {
+"title": "Pilih pek anda",
+"link": "https://product.astro.com.my/international"
+}
+}
+]
+}
+},
+"faq": {
+"en": [
+{
+"title": "Why is Astro introducing new packs?",
+"description": "<p>As our customers deserve the best entertainment experience, Astro is refreshing its content and packages to offer more choice, value, flexibility, and better experience in a streaming world as part of the new Astro experience.  </p><p>&zwj;</p><p>The all-new Astro packs are designed for customers in the streaming and connected world, where they can stream all the shows they love on Ultra Box and Ulti Box. Customers can now enjoy their favourite shows all on Astro, from global streaming services like Netflix, Disney+ Hotstar, HBO GO, iQIYI, TVBAnywhere+ as well as all Astro’s flagship shows and the best of live sports in one place, on the big screen. Our new packages offer unbeaten value, a greater variety of content and greater convenience, all made better with our Astro & Broadband for better connectivity. </p>"
+},
+{
+"title": "I am an existing Astro customer; must I get the new packs?",
+"description": "<p>No, you can remain in your current pack, however starting 9 November 2021, you would need to subscribe to the new packages to make any changes to your subscription. We strongly encourage customers to switch to the new packs to enjoy the best content experience from Astro.</p>"
+},
+{
+"title": "I am a new Astro customer; must I get the new packs?",
+"description": "<p>Yes, starting 9 November 2021, these new packs will be Astro’s default offering.</p>"
+},
+{
+"title": "As a current Astro customer, will I be charged a switching fee for moving to these new packs?",
+"description": "<p>There are no switching fees apply when existing Astro customer move to new packs.</p>"
+}
+],
+"bm": [
+{
+"title": "Kenapa Astro memperkenalkan pek-pek baharu?",
+"description": "<p>Oleh kerana pelanggan kami layak mendapat pengalaman hiburan  yang terbaik, Astro memperbaharui semula rancangan dan pakej untuk menawarkan  lebih pilihan, nilai, fleksibiliti, dan pengalaman yang lebih baik dalam  dunia penstriman sebagai sebahagian daripada pengalaman Astro baharu.</p><p></p><p>Pek Astro baharu direka untuk pelanggan dalam dunia penstriman  dan rangkaian dunia, di mana mereka boleh menstrim semua rancangan yang  mereka minati pada Ultra Box dan Ulti Box. Kini pelanggan boleh menikmati  semua rancangan kesukaan mereka di Astro, daripada perkhidmatan penstriman  global seperti Netflix, Disney+ Hotstar, HBO GO, iQIYI, TVBAnywhere+ juga  semua rancangan utama Astro dan siaran langsung sukan dalam satu tempat, pada  skrin besar. Pakej baharu kami menawarkan nilai yang tiada bandingnya, pelbagai  rancangan dan keseronokan terhebat semuanya lebih baik dengan sambungan Astro  Broadband kami.Pek Astro baharu direka untuk pelanggan dalam dunia penstriman  dan rangkaian dunia, di mana mereka boleh menstrim semua rancangan yang  mereka minati pada Ultra Box dan Ulti Box. Kini pelanggan boleh menikmati  semua rancangan kesukaan mereka di Astro, daripada perkhidmatan penstriman  global seperti Netflix, Disney+ Hotstar, HBO GO, iQIYI, TVBAnywhere+ juga  semua rancangan utama Astro dan siaran langsung sukan dalam satu tempat, pada  skrin besar. Pakej baharu kami menawarkan nilai yang tiada bandingnya, pelbagai  rancangan dan keseronokan terhebat semuanya lebih baik dengan sambungan Astro  Broadband kami.</p>"
+},
+{
+"title": "Saya pelanggan sedia ada Astro; perlukah saya melanggan pek baharu?",
+"description": "<p>Tidak, anda boleh kekal dalam pek semasa anda, tapi mulai 9 November 2021, anda perlu melanggan pakej baharu untuk membuat sebarang perubahan pada langganan anda. Kami amat menggalakkan pelanggan beralih kepada pek baharu untuk menikmati pengalaman rancangan terbaik daripada Astro.</p>"
+},
+{
+"title": "Saya pelanggan Astro baharu; perlukah saya melanggan pek baharu?",
+"description": "<p>Ya, bermula 9 November 2021, pek baharu ini akan menjadi tawaran asas Astro.</p>"
+},
+{
+"title": "Sebagai pelanggan Astro sedia ada, adakah saya akan dikenakan caj penukaran bila beralih kepada pek baharu ini?",
+"description": "<p>Tiada caj penukaran dikenakan apabila pelanggan Astro sedia ada bertukar kepada pek baharu.</p>"
+}
+],
+"header": {
+"en": "Frequently Asked Questions",
+"bm": "Soalan Lazim"
+}
+}
+},
+"schema_id": null,
+"editable": true
+},
+{
+"key": "astro_near_me",
+"name": "astro_near_me",
+"value": {
+"statePlaceholder": {
+"bm": "Pilih negeri",
+"en": "Select state"
+},
+"cityPlaceholder": {
+"bm": "Pilih bandar",
+"en": "Select city"
+},
+"title": {
+"bm": "Kunjungi cawangan kami",
+"en": "Visit us at these locations"
+},
+"description": {
+"en": "Astro Help & Support",
+"bm": "Bantuan & Sokongan Astro"
+},
+"popUpText": {
+"en": "More about",
+"bm": "Info tentang"
+},
+"direction": {
+"en": "Get direction",
+"bm": "Panduan arah"
+},
+"bannerImage": {
+"xs": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/contact-us/near_sm.jpeg",
+"sm": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/contact-us/near_sm.jpeg",
+"md": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/contact-us/near_md.png",
+"lg": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/contact-us/near_lg.png",
+"xl": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/contact-us/near_xl.png"
+},
+"helpSupportLink": "https://acm-support-web-stg.pink.cat/support",
+"noBranch": {
+"en": "There is no branch available in this category. Try different one or change your location.",
+"bm": "Tiada cawangan dijumpai bagi kategori ini. Sila cuba yang lain atau tukar lokasi anda."
+}
+},
+"schema_id": null,
+"editable": true
+},
+{
+"key": "support",
+"name": "support",
+"value": {
+"keywords": {
+"en": [
+{
+"text": "Astro ID",
+"url": "https://support-stg.pink.cat/sub-category/astro-id"
+},
+{
+"text": "Account",
+"url": "https://support-stg.pink.cat/sub-category/account-details"
+},
+{
+"text": "Payment",
+"url": "https://support-stg.pink.cat/sub-category/payment"
+},
+{
+"text": "TV Box Troubleshooting",
+"url": "https://support-stg.pink.cat/category/technical-help"
+},
+{
+"text": "Billing",
+"url": "https://support-stg.pink.cat/sub-category/billing"
+}
+],
+"bm": [
+{
+"text": "ID Astro",
+"url": "https://support-stg.pink.cat/sub-category/astro-id"
+},
+{
+"text": "Akaun",
+"url": "https://support-stg.pink.cat/sub-category/account-details"
+},
+{
+"text": "Bayaran",
+"url": "https://support-stg.pink.cat/sub-category/payment"
+},
+{
+"text": "Isu teknikal TV Box",
+"url": "https://support-stg.pink.cat/category/technical-help"
+},
+{
+"text": "Bil",
+"url": "https://support-stg.pink.cat/sub-category/billing"
+}
+]
+},
+"topBanner": {
+"bannerImage": {
+"desktop": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/contact-us/support_bg_image.png",
+"mobile": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/top_banner_mobile.png"
+},
+"title": {
+"en": "Astro Help & Support is here for you",
+"bm": "Kami di Astro sentiasa bersama anda"
+},
+"error": {
+"en": "Please enter more than 2 characters",
+"bm": "Sila masukkan lebih daripada 2 aksara "
+},
+"placeholder": {
+"en": "Search anything you need",
+"bm": "Cari topik atau kata kunci"
+}
+},
+"questions": {
+"title": {
+"en": "What can we help you with today?",
+"bm": "Bagaimana kami boleh membantu anda?"
+},
+"cards": [
+{
+"iconUrl": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/tv.svg",
+"title": {
+"en": "Technical Support",
+"bm": "Bantuan teknikal"
+},
+"links": [
+{
+"text": {
+"en": "TV",
+"bm": "TV"
+},
+"href": "https://support-stg.pink.cat/category/technical-help"
+},
+{
+"text": {
+"en": "Broadband",
+"bm": "Jalur lebar"
+},
+"href": "https://support-stg.pink.cat/category/broadband-technical-help"
+}
+]
+},
+{
+"iconUrl": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/payment.svg",
+"title": {
+"en": "Account & Billing",
+"bm": "Akaun & bil"
+},
+"links": [
+{
+"text": {
+"en": "My Account",
+"bm": "Akaun saya"
+},
+"href": "https://support-stg.pink.cat/category/my-account"
+},
+{
+"text": {
+"en": "Billing & Payment",
+"bm": "Bil & pembayaran"
+},
+"href": "https://support-stg.pink.cat/category/billing-payment"
+},
+{
+"text": {
+"en": "Rewards",
+"bm": "Ganjaran"
+},
+"href": "https://support-stg.pink.cat/category/rewards"
+}
+]
+},
+{
+"iconUrl": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/multiroom_tv.svg",
+"title": {
+"en": "Products & Services",
+"bm": "Produk & perkhidmatan"
+},
+"links": [
+{
+"text": {
+"en": "TV Packs",
+"bm": "Pek TV"
+},
+"href": "https://support-stg.pink.cat/category/all-new-astro-packs"
+},
+{
+"text": {
+"en": "Astro & Broadband",
+"bm": "Astro & jalur lebar"
+},
+"href": "https://support-stg.pink.cat/category/astro-broadband"
+},
+{
+"text": {
+"en": "Astro Fibre",
+"bm": "Astro Fibre"
+},
+"href": "https://support-stg.pink.cat/category/astro-fibre"
+},
+{
+"text": {
+"en": "Other Products & Services",
+"bm": "Lain-lain produk & perkhidmatan"
+},
+"href": "https://support-stg.pink.cat/category/other-products-and-services"
+}
+]
+},
+{
+"iconUrl": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/icons/smarttv.svg",
+"title": {
+"en": "Others",
+"bm": "Lain-lain"
+},
+"links": [
+{
+"text": {
+"en": "Contact Channels",
+"bm": "Saluran perkhidmatan"
+},
+"href": "https://support-stg.pink.cat/category/contact-us"
+},
+{
+"text": {
+"en": "Reporting Copyright",
+"bm": "Lapor pelanggaran hak cipta"
+},
+"href": "https://support-stg.pink.cat/category/reporting-potential-copyright-infringement"
+}
+]
+}
+]
+},
+"help": {
+"imageUrl": {
+"desktop": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/contact-us/support_find_branch.png",
+"mobile": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/other/product/find_mobile.png"
+},
+"title": {
+"en": "Need more help? We're available near you",
+"bm": "Perlukan bantuan lain? Kunjungi kami"
+},
+"statePlaceholder": {
+"en": "Select state",
+"bm": "Pilih negeri"
+},
+"cityPlaceholder": {
+"en": "Select city",
+"bm": "Pilih bandar"
+},
+"button": {
+"text": {
+"en": "Locate us",
+"bm": "Cari lokasi kami"
+}
+}
+},
+"solution": {
+"imageUrl": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/contact-us/support_solution.png",
+"title": {
+"en": "Reach out for a solution",
+"bm": "Solusi anda ada di sini"
+},
+"description": {
+"en": "Drop a hello, share your details, and we'll get back to you as soon as we can.",
+"bm": "Kongsikan pendapat dan info anda, kami akan membalasnya secepat mungkin."
+},
+"button": {
+"href": "https://acm-support-web-stg.pink.cat/feedback-form",
+"text": {
+"en": "Contact us",
+"bm": "Hubungi kami"
+}
+}
+}
+},
+"schema_id": null,
+"editable": true
+},
+{
+"key": "contact_us",
+"name": "contact_us",
+"value": {
+"topBanner": {
+"bannerImage": {
+"desktop": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/contact-us/support-feedback-form-banner.png",
+"mobile": "https://dj7fdt04hl8tv.cloudfront.net/acm/media/contact-us/contactus_bg_mobile.png"
+},
+"en": {
+"title": "Let’s get in touch",
+"description": "Astro Help & Support"
+},
+"bm": {
+"title": "Mari Berhubung",
+"description": "Bantuan & Sokongan Astro"
+}
+},
+"form": {
+"en": {
+"title": "Feedback",
+"descriptions": "Tell us more about it below. Our representative will get in touch with you within 48 hours.",
+"personalDetails": "Personal details",
+"feedbackTypeId": {
+"title": "Feedback type",
+"placeholder": "Select category",
+"error": "This field is required",
+"regex": ""
+},
+"issueId": {
+"title": "Issue",
+"placeholder": "Select subcategory",
+"error": "This field is required"
+},
+"typeOfApp": {
+"title": "Type of Apps",
+"placeholder": "Select app",
+"regex": ""
+},
+"description": {
+"title": "Description",
+"placeholder": "Share your concerns here",
+"remaining": "characters remaining",
+"error": "This field is required",
+"regex": ""
+},
+"attachment": {
+"title": "Attachment",
+"error": {
+"tooBig": "Total file size is larger than 15MB",
+"largeFile": "File size is larger than 5MB",
+"formatNotSupported": "File format is not supported",
+"moreThan3": "You may upload up to 3 files only"
+},
+"placeholder": "<span style=\"color: #e6007d\">Click to upload</span> or drag and drop",
+"subPlaceholder": "Up to 3 files with a total size of 15MB in JPG, BMP, PNG, DOCX, or PDF",
+"regex": ""
+},
+"accountNoIcPassport": {
+"title": "Astro account number/ MyKad/ Passport",
+"placeholder": "888888888",
+"error": "Enter a valid Astro account number/ MyKad/ Passport",
+"regex": "^[a-zA-Z0-9-]{1,15}$"
+},
+"salutation": {
+"placeholder": "Mr",
+"data": [
+"Mr",
+"Mrs"
+]
+},
+"name": {
+"title": "Full name as per MyKad/ Passport",
+"placeholder": "Muhammad Ali",
+"error": "Enter a valid name",
+"regex": "([A-Za-z]{3,})"
+},
+"appLoginId": {
+"title": "Login ID",
+"placeholder": "abc@abc.com",
+"error": "This field is required",
+"regex": ""
+},
+"primaryContactNumber": {
+"title": "Mobile number",
+"prefix": "+60",
+"placeholder": "123456789",
+"error": "Enter a valid mobile number",
+"regex": "^[0-1][0-9]{8,11}$"
+},
+"secondaryContactNumber": {
+"title": "Alternate mobile number",
+"placeholder": "123456789",
+"prefix": "+60",
+"error": "Enter a valid mobile number",
+"regex": "^[0-1][0-9]{8,11}$"
+},
+"email": {
+"title": "Email",
+"placeholder": "abc@abc.com",
+"error": "Enter a valid email",
+"regex": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+},
+"contactMethod": {
+"title": "Preferred contact method",
+"placeholder": "abc@abc.com",
+"data": [
+"Mobile Number",
+"Email"
+],
+"regex": ""
+},
+"preferredLanguage": {
+"title": "Preferred language",
+"placeholder": "English",
+"data": [
+"English",
+"Bahasa Malaysia",
+"Chinese"
+],
+"regex": ""
+},
+"contactTime": {
+"title": "Preferred contact time",
+"placeholder": "Select time",
+"data": [
+"9 am",
+"10 am",
+"11 am",
+"12 pm",
+"1 pm",
+"2 pm",
+"3 pm",
+"4 pm",
+"5 pm",
+"6 pm",
+"7 pm",
+"8 pm"
+],
+"regex": ""
+},
+"tnc": {
+"text": "I have read and understood the <a style=\"color: #e6007d\" href=\"https://www.astro.com.my/general-terms-and-conditions-for-astro-subscribers\" target=\"_blank\" rel=\"noopener noreferrer\"> Terms and Conditions </a>and <a style=\"color: #e6007d\"  href=\"https://www.astro.com.my/privacy-notice\" target=\"_blank\" rel=\"noopener noreferrer\"> Privacy Notice</a> and I acknowledged that I have provided true,accurate, complete and correct information here.",
+"error": "Please agree to the Terms and Conditions before proceeding"
+},
+"submit": "Submit"
+},
+"bm": {
+"title": "Maklum balas",
+"descriptions": "Kongsikan pendapat anda di sini. Wakil kami akan hubungi anda dalam masa 48 jam.",
+"personalDetails": "Info peribadi",
+"feedbackTypeId": {
+"title": "Isu",
+"placeholder": "Pilih subkategori",
+"error": "This field is required",
+"regex": ""
+},
+"issueId": {
+"title": "Issue",
+"placeholder": "Select subcategory",
+"error": "This field is required"
+},
+"typeOfApp": {
+"title": "Type of Apps",
+"placeholder": "Select app",
+"regex": ""
+},
+"description": {
+"title": "Keterangan",
+"remaining": "huruf lagi",
+"placeholder": "Nyatakan maklum balas anda di sini",
+"error": "This field is required",
+"regex": ""
+},
+"attachment": {
+"title": "Lampiran",
+"error": {
+"tooBig": "Total file size is larger than 15MB",
+"largeFile": "File size is larger than 5MB",
+"formatNotSupported": "File format is not supported",
+"moreThan3": "You may upload up to 3 files only"
+},
+"placeholder": "<span style=\"color: #e6007d\">Click to upload</span> or drag and drop",
+"subPlaceholder": "Lampirkan sehingga 3 fail dengan jumlah saiz maksimum 5MB dalam format JPG, BMP, PNG, DOCX, atau PDF",
+"regex": ""
+},
+"accountNoIcPassport": {
+"title": "Astro account number/ MyKad/ Passport",
+"placeholder": "888888888",
+"error": "Enter a valid Astro account number/ MyKad/ Passport",
+"regex": "^[a-zA-Z0-9-]{1,15}$"
+},
+"salutation": {
+"placeholder": "Encik",
+"data": [
+"Encik",
+"Cik"
+]
+},
+"name": {
+"title": "Nama penuh mengikut Mykad/Pasport",
+"placeholder": "Muhammad Ali",
+"error": "Enter a valid name",
+"regex": "([A-Za-z]{3,})"
+},
+"appLoginId": {
+"title": "Login ID",
+"placeholder": "abc@abc.com",
+"error": "This field is required",
+"regex": ""
+},
+"primaryContactNumber": {
+"title": "Nombor telefon",
+"prefix": "+60",
+"placeholder": "123456789",
+"error": "Enter a valid mobile number",
+"regex": "^[0-1][0-9]{8,11}$"
+},
+"secondaryContactNumber": {
+"title": "Alternate mobile number",
+"placeholder": "123456789",
+"prefix": "+60",
+"error": "Enter a valid mobile number",
+"regex": "^[0-1][0-9]{8,11}$"
+},
+"email": {
+"title": "E-mel",
+"placeholder": "abc@abc.com",
+"error": "Enter a valid email",
+"regex": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+},
+"contactMethod": {
+"title": "Preferred contact method",
+"placeholder": "abc@abc.com",
+"data": [
+"Mobile Number",
+"Email"
+],
+"regex": ""
+},
+"preferredLanguage": {
+"title": "Bahasa pilihan",
+"placeholder": "English",
+"data": [
+"English",
+"Bahasa Malaysia",
+"Chinese"
+],
+"regex": ""
+},
+"contactTime": {
+"title": "Waktu untuk dihubungi",
+"placeholder": "Select time",
+"data": [
+"9 am",
+"10 am",
+"11 am",
+"12 pm",
+"1 pm",
+"2 pm",
+"3 pm",
+"4 pm",
+"5 pm",
+"6 pm",
+"7 pm",
+"8 pm"
+],
+"regex": ""
+},
+"tnc": {
+"text": "Saya telah membaca <a style=\"color: #e6007d\" href=\"https://www.astro.com.my/general-terms-and-conditions-for-astro-subscribers\" target=\"_blank\" rel=\"noopener noreferrer\"> Terma dan Syarat </a>dan <a style=\"color: #e6007d\"  href=\"https://www.astro.com.my/privacy-notice\" target=\"_blank\" rel=\"noopener noreferrer\"> Notis Privasi</a> dan memahami dan saya akui maklumat yang diberikan adalah benar, tepat dan lengkap.",
+"error": "Please agree to the Terms and Conditions before proceeding"
+},
+"submit": "Hantar"
+}
+},
+"thankYou": {
+"en": {
+"title": "Thank you for sharing",
+"description": "We have received your inquiry and will get back to you within 48 hours.",
+"href": "https://acm-support-web-stg.pink.cat/",
+"button": "Back to home"
+},
+"bm": {
+"title": "Perkongsian anda amat dihargai",
+"description": "Maklum balas anda telah diterima dan kami akan hubungi anda secepat mungkin",
+"href": "https://acm-support-web-stg.pink.cat/",
+"button": "Kembali ke halaman utama"
+}
+},
+"helpSupportLink": "https://acm-support-web-stg.pink.cat/support"
+},
+"schema_id": null,
+"editable": true
+},
+{
+"key": "primevideo",
+"name": "primevideo",
+"value": {
+"locales": {
+"bm": {
+"tutorial": {
+"title": "",
+"ctaButton": {
+"text": "",
+"link": ""
+},
+"signUpLink": {
+"text": "",
+"link": ""
+},
+"steps": [
+{
+"stepTitle": "",
+"icon": {
+"src": "",
+"alt": ""
+},
+"description": ""
+},
+{
+"stepTitle": "",
+"icon": {
+"src": "",
+"alt": ""
+},
+"description": ""
+},
+{
+"stepTitle": "",
+"icon": {
+"src": "",
+"alt": ""
+},
+"description": ""
+}
+]
+},
+"activationModal": {
+"addPrimeVideoTitle": "Add Prime Video to your Astro Bill",
+"addPrimeVideoDescription": "By clicking on proceed, you will add Prime Video to your Astro Bill",
+"multiSmcAddPrimeVideoTitle": "Get or Activate Prime Video now",
+"taxTitle": "6% Service Tax",
+"pricePrefix": "RM{price}",
+"priceTitle": "Price",
+"doLaterCtaText": "I will do it later",
+"ctaButtonText": "Proceed",
+"backCtaText": "Back",
+"upgradeCtaText": "Upgrade pack to enjoy FREE Prime Video",
+"activateLaterText": "I will do it later",
+"addToBillAndActivatePrimeVideoDescription": "Yay! You have successfully added Prime Video to your Astro bill.</br></br>You are just one step away. You will be redirected to Prime Video to complete your activation.",
+"loadingText": "Processing your request...<br />This may take up to 60 seconds",
+"activatePrimeVideoDescription": "Thank you for subscribing. You are just one step away. You will be redirected to Prime Video to complete your activation.",
+"activatePrimeVideoTitle": "Activate Prime Video",
+"totalPriceTitle": "Total",
+"pricePerMonthText": "RM{price}/mth",
+"whatsAppLink": "https://api.whatsapp.com/send?phone=60395433838&text=Enquires",
+"statusBannerText": "If you have an active subscription on this mobile, this purchase with Astro will be added on top",
+"dropdown": {
+"placeholder": 123456789,
+"title": "Smartcard number*",
+"modalTitle": "Select your account",
+"accountPrefix": "Account ",
+"smartCardText": "SmartCard",
+"statusText": "Status",
+"availableToPurchaseText": "Available to purchase",
+"availableToActivateText": "Available to activate",
+"activatedText": "Activated",
+"description": "Please select the current subscription that you would like to use.",
+"tooltip": "You have already added Prime Video with this smartcard.",
+"findSmartcardNumber": {
+"text": "Find your smartcard number",
+"modalTitle": "Where to find my smartcard number?",
+"smartcardNumberFormatText": "12-digit Smartcard Number",
+"smartcardNumberStepText": "Tune in to Channel 200",
+"imageUrl": "https://acm-assets.eco.astro.com.my/images/cassandra/pack-config/how-to-check-smartcard.webp"
+}
+}
+},
+"heroBanner": {
+"bannerImage": {
+"src": "",
+"alt": ""
+},
+"dividerImage": {
+"src": "",
+"alt": ""
+},
+"logoImage": {
+"src": "",
+"alt": ""
+},
+"primaryCta": {
+"text": "Aktifkan atau dapatkan Prime Video sekarang",
+"link": ""
+},
+"packLink": {
+"text": "",
+"link": ""
+},
+"title": "",
+"description": ""
+}
+}
+},
+"heroBanner": {
+"bannerImage": {
+"src": "https://de-digital-fortress-stg-assets.eco.astro.com.my/staging/af7348b4afda34fb06cc8dbb9b4c1c36.png",
+"alt": "banner image"
+},
+"dividerImage": {
+"src": "https://assets-global.website-files.com/5de87425133808841c6e3b3e/641ab2f3f64c5e5aa65c2349_Group%2023444.png",
+"alt": "divider"
+},
+"logoImage": {
+"src": "https://de-digital-fortress-stg-assets.eco.astro.com.my/staging/fe7a163e15c0d4331889b7a525dd5a94.png",
+"alt": "Prime video logo"
+},
+"ctaButton": {
+"link": {
+"url": "#",
+"name": "test"
+},
+"name": "Activate or get Prime Video now ",
+"url": "#",
+"text": "Activate or get Prime Video now"
+},
+"packLink": {
+"link": {
+"url": "https://product.astro.com.my/tv",
+"name": "test"
+},
+"text": "Don’t have Astro yet? Get a pack now",
+"url": "https://product.astro.com.my/tv",
+"name": "Don’t have Astro yet? Get a pack now"
+},
+"title": "Prime Video is now on Movies* pack ",
+"description": "For Movies Pack customers, Prime Video is already included in your subscription. Activate now and start streaming!​​"
+},
+"tutorial": {
+"title": "Watch Prime Video on your Ultra box in 3 simple steps!",
+"ctaButton": {
+"text": "Get now at RM10.50/mth ",
+"discountText": "RM14.90",
+"link": {
+"name": "cta link",
+"url": ""
+}
+},
+"signUpLink": {
+"name": "Don’t have Astro yet? Sign up today!",
+"text": "Don’t have Astro yet? Sign up today!",
+"link": {
+"name": "signupLink",
+"url": "https://id.astro.com.my/signup"
+},
+"url": "https://id.astro.com.my/signup"
+},
+"loggedInLink": {
+"name": "Don’t have Astro yet? Sign up today!",
+"url": "https://product.astro.com.my/tv"
+},
+"steps": [
+{
+"title": "Step 1",
+"icon": {
+"src": "https://assets-global.website-files.com/5de87425133808841c6e3b3e/641ab32f1b9332d496586e19_Step%201.png",
+"alt": "Step 1"
+},
+"description": "Create an Astro ID and click on Get WeTV now"
+},
+{
+"title": "Step 2",
+"icon": {
+"src": "https://assets-global.website-files.com/5de87425133808841c6e3b3e/641ab32f1b93329b73586e0b_Step%202.png",
+"alt": "Step 2"
+},
+"description": "On your Ultrabox, launch Prime Video and login with your Astro ID"
+},
+{
+"title": "Step 3",
+"icon": {
+"src": "https://assets-global.website-files.com/5de87425133808841c6e3b3e/641ab32f1b93323474586e09_Step%203.png",
+"alt": "Step 3"
+},
+"description": "Hooray! Start watching now!"
+}
+]
+},
+"faq": {
+"title": "Frequently asked questions",
+"fullFaq": {
+"name": "View all FAQ",
+"url": ""
+},
+"entries": [
+{
+"title": "What is Astro Fibre?",
+"description": "Astro Fibre is Astro’s own internet service that enables you to enjoy Astro content while staying connected with high-speed fibre broadband. You will enjoy substantial discounts by choosing your desired broadband speed of 50 Mbps to 800 Mbps to accompany your Astro TV packages."
+},
+{
+"title": "What is Astro Fibre?",
+"description": "Astro Fibre is Astro’s own internet service that enables you to enjoy Astro content while staying connected with high-speed fibre broadband. You will enjoy substantial discounts by choosing your desired broadband speed of 50 Mbps to 800 Mbps to accompany your Astro TV packages."
+},
+{
+"title": "What is Astro Fibre?",
+"description": "Astro Fibre is Astro’s own internet service that enables you to enjoy Astro content while staying connected with high-speed fibre broadband. You will enjoy substantial discounts by choosing your desired broadband speed of 50 Mbps to 800 Mbps to accompany your Astro TV packages."
+}
+]
+},
+"activationModal": {
+"addPrimeVideoTitle": "Add Prime Video to your Astro Bill",
+"multiSmcAddPrimeVideoTitle": "Get or Activate Prime Video now",
+"addPrimeVideoDescription": "By clicking on proceed, you will add Prime Video to your Astro Bill",
+"taxTitle": "6% Service Tax",
+"pricePrefix": "RM{price}",
+"priceTitle": "Price",
+"doLaterCtaText": "I will do it later",
+"ctaButtonText": "Proceed",
+"backCtaText": "Back",
+"upgradeCtaText": "Upgrade pack to enjoy FREE Prime Video",
+"activateLaterText": "I will do it later",
+"addToBillAndActivatePrimeVideoDescription": "Yay! You have successfully added Prime Video to your Astro bill.</br></br>You are just one step away. You will be redirected to Prime Video to complete your activation.",
+"loadingText": "Processing your request...<br />This may take up to 60 seconds",
+"activatePrimeVideoDescription": "Thank you for subscribing. You are just one step away. You will be redirected to Prime Video to complete your activation.",
+"activatePrimeVideoTitle": "Activate Prime Video",
+"totalPriceTitle": "Total",
+"pricePerMonthText": "RM{price}/mth",
+"whatsAppLink": "https://api.whatsapp.com/send?phone=60395433838&text=Enquires",
+"statusBannerText": "If you have an active subscription on this mobile, this purchase with Astro will be added on top",
+"dropdown": {
+"placeholder": 123456789,
+"title": "Smartcard number*",
+"modalTitle": "Select your account",
+"accountPrefix": "Account ",
+"smartCardText": "SmartCard",
+"statusText": "Status",
+"availableToPurchaseText": "Available to purchase",
+"availableToActivateText": "Available to activate",
+"activatedText": "Activated",
+"description": "Please select the current subscription that you would like to use.",
+"tooltip": "You have already added Prime Video with this smartcard.",
+"findSmartcardNumber": {
+"text": "Find your smartcard number",
+"modalTitle": "Where to find my smartcard number?",
+"smartcardNumberFormatText": "12-digit Smartcard Number",
+"smartcardNumberStepText": "Tune in to Channel 200",
+"imageUrl": "https://acm-assets.eco.astro.com.my/images/cassandra/pack-config/how-to-check-smartcard.webp"
+}
+}
+}
+},
+"schema_id": null,
+"editable": true
+}
+]
+}
+}
